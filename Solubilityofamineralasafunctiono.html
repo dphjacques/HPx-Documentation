@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -191,77 +191,77 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts11">External Script File "ReactionDefinition.in"</span></p>
 <p class="rvps2"><a class="rvts21" href="USE.htm"><br/></a></p>
-<p class="rvps2"><a class="rvts56" href="USE.htm">USE</a><span class="rvts58"> solution 1</span></p>
-<p class="rvps2"><a class="rvts56" href="EQUILIBRUIM_PHASES.htm">EQUILIBRIUM_PHASES</a><span class="rvts58"> 1</span></p>
-<p class="rvps2"><span class="rvts58">Fix_H+ </span><span class="rvts92">-@pHIterator</span><span class="rvts58"> NaOH 10</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter and subsequently change its value by its incremental value</span></p>
-<p class="rvps2"><a class="rvts56" href="force_equality.htm">-force_equality</a><span class="rvts58"> true</span></p>
-<p class="rvps2"><span class="rvts58">O2(g) -0.677</span></p>
-<p class="rvps2"><span class="rvts58">Fe(OH)3(a) 0 0</span></p>
-<p class="rvps2"><a class="rvts56" href="END.htm">end</a></p>
+<p class="rvps2"><a class="rvts57" href="USE.htm">USE</a><span class="rvts59"> solution 1</span></p>
+<p class="rvps2"><a class="rvts57" href="EQUILIBRUIM_PHASES.htm">EQUILIBRIUM_PHASES</a><span class="rvts59"> 1</span></p>
+<p class="rvps2"><span class="rvts59">Fix_H+ </span><span class="rvts94">-@pHIterator</span><span class="rvts59"> NaOH 10</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter and subsequently change its value by its incremental value</span></p>
+<p class="rvps2"><a class="rvts57" href="force_equality.htm">-force_equality</a><span class="rvts59"> true</span></p>
+<p class="rvps2"><span class="rvts59">O2(g) -0.677</span></p>
+<p class="rvps2"><span class="rvts59">Fe(OH)3(a) 0 0</span></p>
+<p class="rvps2"><a class="rvts57" href="END.htm">end</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts11">External Script File "Solution1.in"</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts58">SOLUTION 1</span></p>
-<p class="rvps2"><span class="rvts58">pH @pHStart</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#pH is linked to the initial pH</span></p>
-<p class="rvps2"><span class="rvts58">units mol/kgw</span></p>
-<p class="rvps2"><span class="rvts58">Fe(3) 1e-1</span></p>
-<p class="rvps2"><span class="rvts58">Na @=ISiterator</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter without changing its value</span></p>
-<p class="rvps2"><span class="rvts58">F &nbsp;@/ISiterator</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter and subsequently divide its value by its incremental value</span></p>
-<p class="rvps2"><span class="rvts58">end</span></p>
-<p class="rvps2"><span class="rvts58">include$ solubility.in</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#loop over pH for the current ionic strength conditions</span></p>
-<p class="rvps2"><span class="rvts58">end</span></p>
-<p class="rvps2"><span class="rvts58">punch 1000 gnuplot "10^{@&lt;log10(@=ISiterator)&gt; M}"</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#indicate a new dataset when using gnuplot for plotting: two empty lines and a heading are included</span></p>
-<p class="rvps2"><span class="rvts58">counter &amp;pHIterator</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#reset counter to its starting value</span></p>
-<p class="rvps2"><span class="rvts58">end</span></p>
+<p class="rvps2"><span class="rvts59">SOLUTION 1</span></p>
+<p class="rvps2"><span class="rvts59">pH @pHStart</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#pH is linked to the initial pH</span></p>
+<p class="rvps2"><span class="rvts59">units mol/kgw</span></p>
+<p class="rvps2"><span class="rvts59">Fe(3) 1e-1</span></p>
+<p class="rvps2"><span class="rvts59">Na @=ISiterator</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter without changing its value</span></p>
+<p class="rvps2"><span class="rvts59">F &nbsp;@/ISiterator</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#use counter and subsequently divide its value by its incremental value</span></p>
+<p class="rvps2"><span class="rvts59">end</span></p>
+<p class="rvps2"><span class="rvts59">include$ solubility.in</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#loop over pH for the current ionic strength conditions</span></p>
+<p class="rvps2"><span class="rvts59">end</span></p>
+<p class="rvps2"><span class="rvts59">punch 1000 gnuplot "10^{@&lt;log10(@=ISiterator)&gt; M}"</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#indicate a new dataset when using gnuplot for plotting: two empty lines and a heading are included</span></p>
+<p class="rvps2"><span class="rvts59">counter &amp;pHIterator</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#reset counter to its starting value</span></p>
+<p class="rvps2"><span class="rvts59">end</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts11">Phreeqc input file</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts58">PHASES</span></p>
-<p class="rvps2"><span class="rvts58">Fix_H+; H+ = H+; log_k 0</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE pHStart 2</span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE pHEnd 12</span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE pHSteps 100</span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE ISStart 1E-1</span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE ISEnd 1E-4</span></p>
-<p class="rvps2"><span class="rvts58">GLOBAL_VARIABLE ISSteps 4</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58">COUNTER pHIterator @pHStart&nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#define pH iterator</span></p>
-<p class="rvps2"><span class="rvts58">COUNTERINCR pHIterator = (@pHEnd-@pHStart)/@pHSteps "+" "4.2e"</span></p>
-<p class="rvps2"><span class="rvts58">COUNTER ISiterator @ISStart</span></p>
-<p class="rvps2"><span class="rvts58">COUNTERINCR ISiterator = 10*(log10(@ISStart)-log10(@ISEnd))/(@ISSteps-1)</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#define ionic strength iterator</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58">REPEAT "ReactionDefinition.in" "solubility.in" @pHSteps&nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#create file for looping over pH</span></p>
-<p class="rvps2"><span class="rvts58">REPEAT "Solution1.in" "ionicstrength.in" @ISSteps</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#create file for looping over ionic strength</span></p>
+<p class="rvps2"><span class="rvts59">PHASES</span></p>
+<p class="rvps2"><span class="rvts59">Fix_H+; H+ = H+; log_k 0</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE pHStart 2</span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE pHEnd 12</span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE pHSteps 100</span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE ISStart 1E-1</span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE ISEnd 1E-4</span></p>
+<p class="rvps2"><span class="rvts59">GLOBAL_VARIABLE ISSteps 4</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59">COUNTER pHIterator @pHStart&nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#define pH iterator</span></p>
+<p class="rvps2"><span class="rvts59">COUNTERINCR pHIterator = (@pHEnd-@pHStart)/@pHSteps "+" "4.2e"</span></p>
+<p class="rvps2"><span class="rvts59">COUNTER ISiterator @ISStart</span></p>
+<p class="rvps2"><span class="rvts59">COUNTERINCR ISiterator = 10*(log10(@ISStart)-log10(@ISEnd))/(@ISSteps-1)</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#define ionic strength iterator</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59">REPEAT "ReactionDefinition.in" "solubility.in" @pHSteps&nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#create file for looping over pH</span></p>
+<p class="rvps2"><span class="rvts59">REPEAT "Solution1.in" "ionicstrength.in" @ISSteps</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts85">#create file for looping over ionic strength</span></p>
 <p class="rvps2"><span class="rvts85"><br/></span></p>
-<p class="rvps2"><span class="rvts58">selected_output 1000</span></p>
-<p class="rvps2"><span class="rvts58">-file solubility.out2</span></p>
-<p class="rvps2"><span class="rvts58">-totals Fe Na F</span></p>
-<p class="rvps2"><span class="rvts58">-pH</span></p>
-<p class="rvps2"><span class="rvts58">-ionic_strength</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58">selected_graph 1000</span></p>
-<p class="rvps2"><span class="rvts58">...</span></p>
-<p class="rvps2"><span class="rvts58">-key "IonicStrength" ISIterator "gnuplot format"</span></p>
-<p class="rvps2"><span class="rvts58">&nbsp;-fig_x pH&nbsp;</span></p>
-<p class="rvps2"><span class="rvts58">&nbsp;-fig_y Fe &lt; km IonicStrength i all&gt;</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58">end</span></p>
-<p class="rvps2"><span class="rvts58">print&nbsp;</span></p>
-<p class="rvps2"><span class="rvts58">-reset false</span></p>
-<p class="rvps2"><span class="rvts58">include$ ionicstrength.in&nbsp;</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
+<p class="rvps2"><span class="rvts59">selected_output 1000</span></p>
+<p class="rvps2"><span class="rvts59">-file solubility.out2</span></p>
+<p class="rvps2"><span class="rvts59">-totals Fe Na F</span></p>
+<p class="rvps2"><span class="rvts59">-pH</span></p>
+<p class="rvps2"><span class="rvts59">-ionic_strength</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59">selected_graph 1000</span></p>
+<p class="rvps2"><span class="rvts59">...</span></p>
+<p class="rvps2"><span class="rvts59">-key "IonicStrength" ISIterator "gnuplot format"</span></p>
+<p class="rvps2"><span class="rvts59">&nbsp;-fig_x pH&nbsp;</span></p>
+<p class="rvps2"><span class="rvts59">&nbsp;-fig_y Fe &lt; km IonicStrength i all&gt;</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59">end</span></p>
+<p class="rvps2"><span class="rvts59">print&nbsp;</span></p>
+<p class="rvps2"><span class="rvts59">-reset false</span></p>
+<p class="rvps2"><span class="rvts59">include$ ionicstrength.in&nbsp;</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/NewItem1.png"></p>
-<p class="rvps2"><span class="rvts58"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Free Web Help generator</a></p>
+<p class="rvps2"><span class="rvts59"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com">Free Web Help generator</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -300,7 +300,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

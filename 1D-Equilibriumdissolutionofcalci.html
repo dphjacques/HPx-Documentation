@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -190,12 +190,12 @@
                 
 <p class="rvps2"><span class="rvts6">The objective of this example is to illustrate how to change porosity and hydraulic conductivity when a solid phase is dissolving. The change in porosity and hydraulic conductivity is described by </span><a class="rvts21" href="ScalingFactors.html">the linear model for temporal-spatial variability of hydraulic properties using scaling factors</a><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h1 class="rvps25"><span class="rvts0"><span class="rvts66">Description of example</span></span></h1>
+<h1 class="rvps26"><span class="rvts0"><span class="rvts67">Description of example</span></span></h1>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h1 class="rvps25"><span class="rvts0"><span class="rvts66">Implementation</span></span></h1>
+<h1 class="rvps26"><span class="rvts0"><span class="rvts67">Implementation</span></span></h1>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h4 class="rvps22"><span class="rvts0"><span class="rvts53">Additions to database</span></span></h4>
+<h4 class="rvps23"><span class="rvts0"><span class="rvts54">Additions to database</span></span></h4>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Two script functions are defined to account for evolving hydraulic properties:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -204,34 +204,34 @@
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<div class="rvps27">
+<div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts57">calculate_values</span><br/><span class="rvts71">InitialCalculation</span><br/><span class="rvts149">-state </span><span class="rvts71">initial </span><span class="rvts151">#scripts that are performed just before the start of the transport simulations</span><br/><span class="rvts151">#one execution for each node</span><br/><span class="rvts151">#used here to calculate inert solid phase</span><br/><span class="rvts149">-mybasic&nbsp;</span><br/><span class="rvts149">-start</span></p>
-   <p class="rvps28"><span class="rvts71">ths = </span><span class="rvts119">transprop</span><span class="rvts71">(</span><span class="rvts118">"ths"</span><span class="rvts71">) </span><span class="rvts151">#get porosity from HYDRUS GUI for given node number</span><br/><span class="rvts71">inertsolidphase = </span><span class="rvts120">1</span><span class="rvts71"> - ths - </span><span class="rvts119">equi</span><span class="rvts71">(</span><span class="rvts118">"calcite"</span><span class="rvts71">)*</span><span class="rvts120">36</span><span class="rvts71">.</span><span class="rvts120">9</span><span class="rvts71">/</span><span class="rvts120">1000</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"Inert"</span><span class="rvts71">,inertsolidphase) </span><span class="rvts151">#save value</span><br/><span class="rvts119">change_por0</span><span class="rvts71">(ths)</span><br/><span class="rvts151">#to punch</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"porosity"</span><span class="rvts71">,ths)</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"sfwater"</span><span class="rvts71">,</span><span class="rvts119">get_sfwater</span><span class="rvts71">())</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"sfcond"</span><span class="rvts71">,</span><span class="rvts84">get_sfcond()</span><span class="rvts71">)</span></p>
-   <p class="rvps4"><span class="rvts149">-end</span></p>
-   <p class="rvps4"><span class="rvts149"></span><br/><span class="rvts71">UpdateHydraulic</span><br/><span class="rvts149">-state </span><span class="rvts71">update </span><span class="rvts151">#script will be performed for each node and time step after geochemical calculation</span><br/><span class="rvts151">#used to calculate changed porosity (via scaling factor water content)</span><br/><span class="rvts151">#and hydraulic conductivity (via scaling factor hydraulic conductivity)</span><br/><span class="rvts149">-mybasic</span><br/><span class="rvts149">-start</span></p>
-   <p class="rvps28"><span class="rvts71">cal =</span><span class="rvts119">equi</span><span class="rvts71">(</span><span class="rvts118">"calcite"</span><span class="rvts71">)*</span><span class="rvts120">36</span><span class="rvts71">.</span><span class="rvts120">9</span><span class="rvts71">/</span><span class="rvts120">1000</span><br/><span class="rvts71">solidphase = </span><span class="rvts119">get_node</span><span class="rvts71">(</span><span class="rvts118">"Inert"</span><span class="rvts71">) + cal</span><br/><span class="rvts71">porosity = </span><span class="rvts120">1</span><span class="rvts71"> - solidphase&nbsp;</span><br/><span class="rvts119">change_por</span><span class="rvts71">(porosity)</span><br/><span class="rvts119">update_sfwater</span><span class="rvts71">(porosity)</span><br/><span class="rvts151">#update hydraulic conductivity using the Carman-Kozeny relation</span><br/><span class="rvts71">alphaK = (porosity^</span><span class="rvts120">3</span><span class="rvts71"> / (</span><span class="rvts120">1</span><span class="rvts71">-porosity)^</span><span class="rvts120">2</span><span class="rvts71">) * ((</span><span class="rvts120">1</span><span class="rvts71">-g</span><span class="rvts84">et_por0()</span><span class="rvts71">)^</span><span class="rvts120">2</span><span class="rvts71"> / </span><span class="rvts84">get_por0()</span><span class="rvts71">^</span><span class="rvts120">3</span><span class="rvts71">)</span><br/><span class="rvts119">change_sfcond</span><span class="rvts71">(alphaK)</span><br/><span class="rvts151">#to punch</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"porosity"</span><span class="rvts71">,porosity)</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"sfwater"</span><span class="rvts71">,</span><span class="rvts119">get_sfwater</span><span class="rvts71">())</span><br/><span class="rvts119">put_node</span><span class="rvts71">(</span><span class="rvts118">"sfcond"</span><span class="rvts71">,alphaK)</span></p>
-   <p class="rvps4"><span class="rvts165">-end</span></p>
+   <p class="rvps4"><span class="rvts58">calculate_values</span><br/><span class="rvts72">InitialCalculation</span><br/><span class="rvts153">-state </span><span class="rvts72">initial </span><span class="rvts155">#scripts that are performed just before the start of the transport simulations</span><br/><span class="rvts155">#one execution for each node</span><br/><span class="rvts155">#used here to calculate inert solid phase</span><br/><span class="rvts153">-mybasic&nbsp;</span><br/><span class="rvts153">-start</span></p>
+   <p class="rvps29"><span class="rvts72">ths = </span><span class="rvts123">transprop</span><span class="rvts72">(</span><span class="rvts122">"ths"</span><span class="rvts72">) </span><span class="rvts155">#get porosity from HYDRUS GUI for given node number</span><br/><span class="rvts72">inertsolidphase = </span><span class="rvts124">1</span><span class="rvts72"> - ths - </span><span class="rvts123">equi</span><span class="rvts72">(</span><span class="rvts122">"calcite"</span><span class="rvts72">)*</span><span class="rvts124">36</span><span class="rvts72">.</span><span class="rvts124">9</span><span class="rvts72">/</span><span class="rvts124">1000</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"Inert"</span><span class="rvts72">,inertsolidphase) </span><span class="rvts155">#save value</span><br/><span class="rvts123">change_por0</span><span class="rvts72">(ths)</span><br/><span class="rvts155">#to punch</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"porosity"</span><span class="rvts72">,ths)</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"sfwater"</span><span class="rvts72">,</span><span class="rvts123">get_sfwater</span><span class="rvts72">())</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"sfcond"</span><span class="rvts72">,</span><span class="rvts84">get_sfcond()</span><span class="rvts72">)</span></p>
+   <p class="rvps4"><span class="rvts153">-end</span></p>
+   <p class="rvps4"><span class="rvts153"></span><br/><span class="rvts72">UpdateHydraulic</span><br/><span class="rvts153">-state </span><span class="rvts72">update </span><span class="rvts155">#script will be performed for each node and time step after geochemical calculation</span><br/><span class="rvts155">#used to calculate changed porosity (via scaling factor water content)</span><br/><span class="rvts155">#and hydraulic conductivity (via scaling factor hydraulic conductivity)</span><br/><span class="rvts153">-mybasic</span><br/><span class="rvts153">-start</span></p>
+   <p class="rvps29"><span class="rvts72">cal =</span><span class="rvts123">equi</span><span class="rvts72">(</span><span class="rvts122">"calcite"</span><span class="rvts72">)*</span><span class="rvts124">36</span><span class="rvts72">.</span><span class="rvts124">9</span><span class="rvts72">/</span><span class="rvts124">1000</span><br/><span class="rvts72">solidphase = </span><span class="rvts123">get_node</span><span class="rvts72">(</span><span class="rvts122">"Inert"</span><span class="rvts72">) + cal</span><br/><span class="rvts72">porosity = </span><span class="rvts124">1</span><span class="rvts72"> - solidphase&nbsp;</span><br/><span class="rvts123">change_por</span><span class="rvts72">(porosity)</span><br/><span class="rvts123">update_sfwater</span><span class="rvts72">(porosity)</span><br/><span class="rvts155">#update hydraulic conductivity using the Carman-Kozeny relation</span><br/><span class="rvts72">alphaK = (porosity^</span><span class="rvts124">3</span><span class="rvts72"> / (</span><span class="rvts124">1</span><span class="rvts72">-porosity)^</span><span class="rvts124">2</span><span class="rvts72">) * ((</span><span class="rvts124">1</span><span class="rvts72">-g</span><span class="rvts84">et_por0()</span><span class="rvts72">)^</span><span class="rvts124">2</span><span class="rvts72"> / </span><span class="rvts84">get_por0()</span><span class="rvts72">^</span><span class="rvts124">3</span><span class="rvts72">)</span><br/><span class="rvts123">change_sfcond</span><span class="rvts72">(alphaK)</span><br/><span class="rvts155">#to punch</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"porosity"</span><span class="rvts72">,porosity)</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"sfwater"</span><span class="rvts72">,</span><span class="rvts123">get_sfwater</span><span class="rvts72">())</span><br/><span class="rvts123">put_node</span><span class="rvts72">(</span><span class="rvts122">"sfcond"</span><span class="rvts72">,alphaK)</span></p>
+   <p class="rvps4"><span class="rvts169">-end</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h4 class="rvps22"><span class="rvts0"><span class="rvts53">GeoChemistry</span></span></h4>
+<h4 class="rvps23"><span class="rvts0"><span class="rvts54">GeoChemistry</span></span></h4>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The amount of calcite is defined with </span><a class="rvts54" href="EQUILIBRIUM_PHASES.html">equilibrium_phases</a><span class="rvts6"> data block</span></p>
-<p class="rvps2"><span class="rvts6">The identifier</span><span class="rvts88"> </span><a class="rvts55" href="update.html">-update hydraulicprop</a><span class="rvts6"> in </span><a class="rvts54" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts6"> data block indicates that&nbsp;</span><a class="rvts21" href="ScalingFactors.html"> the scaling factor of the water content</a><span class="rvts6"> and </span><a class="rvts21" href="ScalingFactors.html">the scaling factor of the hydraulic conductivity</a><span class="rvts6"> are updated during the transport calculations according the calculations done with scripts defined in the </span><a class="rvts54" href="CALCULATE_VALUES.html">calculate_values</a><span class="rvts6"> data block for which </span><a class="rvts55" href="state1.html">-state update</a><span class="rvts6"> is defined.</span></p>
+<p class="rvps2"><span class="rvts6">The amount of calcite is defined with </span><a class="rvts55" href="EQUILIBRIUM_PHASES.html">equilibrium_phases</a><span class="rvts6"> data block</span></p>
+<p class="rvps2"><span class="rvts6">The identifier</span><span class="rvts89"> </span><a class="rvts56" href="update.html">-update hydraulicprop</a><span class="rvts6"> in </span><a class="rvts55" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts6"> data block indicates that&nbsp;</span><a class="rvts21" href="ScalingFactors.html"> the scaling factor of the water content</a><span class="rvts6"> and </span><a class="rvts21" href="ScalingFactors.html">the scaling factor of the hydraulic conductivity</a><span class="rvts6"> are updated during the transport calculations according the calculations done with scripts defined in the </span><a class="rvts55" href="CALCULATE_VALUES.html">calculate_values</a><span class="rvts6"> data block for which </span><a class="rvts56" href="state1.html">-state update</a><span class="rvts6"> is defined.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<div class="rvps27">
+<div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts57">equilibrium_phases</span><span class="rvts71"> </span><span class="rvts120">1001</span><br/><span class="rvts88">-material</span><span class="rvts71"> </span><span class="rvts120">1</span><br/><span class="rvts152">calcite </span><span class="rvts120">0</span><span class="rvts71"> </span><span class="rvts120">3</span><br/><span class="rvts152">O2(g) </span><span class="rvts71">-</span><span class="rvts120">0</span><span class="rvts71">.</span><span class="rvts120">68</span></p>
-   <p class="rvps4"><span class="rvts120"></span><br/><span class="rvts57">reactive_transport</span><br/><span class="rvts88">-update hydraulicprop true</span></p>
+   <p class="rvps4"><span class="rvts58">equilibrium_phases</span><span class="rvts72"> </span><span class="rvts124">1001</span><br/><span class="rvts89">-material</span><span class="rvts72"> </span><span class="rvts124">1</span><br/><span class="rvts156">calcite </span><span class="rvts124">0</span><span class="rvts72"> </span><span class="rvts124">3</span><br/><span class="rvts156">O2(g) </span><span class="rvts72">-</span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">68</span></p>
+   <p class="rvps4"><span class="rvts124"></span><br/><span class="rvts58">reactive_transport</span><br/><span class="rvts89">-update hydraulicprop true</span></p>
   </td>
  </tr>
 </table>
@@ -239,20 +239,20 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h1 class="rvps25"><span class="rvts0"><span class="rvts66">Results</span></span></h1>
+<h1 class="rvps26"><span class="rvts0"><span class="rvts67">Results</span></span></h1>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"></p>
-<p class="rvps32"><span class="rvts90">Figure - Profiles of calcite content at selected times.</span></p>
+<p class="rvps32"><span class="rvts91">Figure - Profiles of calcite content at selected times.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h4 class="rvps22"><span class="rvts0"><span class="rvts53">HPx Project</span></span></h4>
+<h4 class="rvps23"><span class="rvts0"><span class="rvts54">HPx Project</span></span></h4>
 <p class="rvps2"><a class="rvts21" href="Deposit/HPx/1D/Examples/Evolving%20transport%20properties/Hydraulic%20properties%20-%20Equilibrium%20dissolution.zip">Hydraulic properties - Equilibrium dissolution calcite.zip</a><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Effortlessly bring your documentation online with HelpNDoc</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Effortlessly bring your documentation online with HelpNDoc</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -291,7 +291,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

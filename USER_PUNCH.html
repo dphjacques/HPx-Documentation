@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -188,43 +188,48 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts57">user_punch</span><span class="rvts6"> allows for definition of scripts that can be used during execution.</span></p>
-<p class="rvps2"><span class="rvts46">HPx</span><span class="rvts6"> has additional identifiers to </span><span class="rvts57">user_punch</span><span class="rvts6"> to :</span></p>
+<p class="rvps2"><span class="rvts58">user_punch</span><span class="rvts6"> allows for definition of scripts that can be used during execution.</span></p>
+<p class="rvps2"><span class="rvts46">HPx</span><span class="rvts6"> has additional identifiers to </span><span class="rvts58">user_punch</span><span class="rvts6"> to :</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <li class="rvps4 noindent"><span class="rvts6">indicate labels and units of variables for defining axis labels (plot_titles, plot_units)</span></li>
-  <li class="rvps4 noindent"><span class="rvts6">indicate the </span><a class="rvts21" href="Scripting.html">scripting language</a><span class="rvts6"> of the scripts (</span><a class="rvts55" href="mybasic.html">-mybasic</a><span class="rvts6">).</span></li>
+  <li class="rvps4 noindent"><span class="rvts6">indicate the </span><a class="rvts21" href="Scripting.html">scripting language</a><span class="rvts6"> of the scripts (</span><a class="rvts56" href="mybasic.html">-mybasic</a><span class="rvts6">).</span></li>
  </ul>
 </ul>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">For reactive transport calculations, following options are added:</span></p>
-<p class="rvps4"><span class="rvts6">When the sum of variables over region of the domain is asked via &nbsp;</span><a class="rvts55" href="horizon.html">-horizon</a><span class="rvts6">,</span><a class="rvts55" href="layer.html">-layer</a><span class="rvts6">, </span><a class="rvts55" href="node.html">-node</a><span class="rvts6">, and </span><a class="rvts55" href="depth.html">-depth</a><span class="rvts6"> in </span><a class="rvts54" href="REACTIVE_TRANSPORT_OUTPUT.html">reactive_transport_output</a></p>
+<p class="rvps4"><span class="rvts6">When the sum of variables over region of the domain is asked via &nbsp;</span><a class="rvts56" href="horizon.html">-horizon</a><span class="rvts6">,</span><a class="rvts56" href="layer.html">-layer</a><span class="rvts6">, </span><a class="rvts56" href="node.html">-node</a><span class="rvts6">, and </span><a class="rvts56" href="depth.html">-depth</a><span class="rvts6"> in </span><a class="rvts55" href="REACTIVE_TRANSPORT_OUTPUT.html">reactive_transport_output</a></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps4 noindent"><span class="rvts6">Indicating the kind of sum that should be calculated over a region of the domain for a punched variable (</span><a class="rvts55" href="integralsum.html">-integralsum</a><span class="rvts6">)</span></li>
+  <li class="rvps4 noindent"><span class="rvts6">Indicating the kind of sum that should be calculated over a region of the domain for a punched variable (</span><a class="rvts56" href="integralsum.html">-integralsum</a><span class="rvts6">)</span></li>
   <li class="rvps4 noindent"><span class="rvts6">Indicating the unit of that variable (-integralunits)</span></li>
  </ul>
 </ul>
 <p class="rvps4"><span class="rvts6">For models with mobile-immobile solute transport :</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps28 noindent"><span class="rvts6">Indicating if the total of the punched variable should be calculated (-totalsum)</span></li>
+  <li class="rvps29 noindent"><span class="rvts6">Indicating if and how the total (=sum of value in mobile and immobile domain) of the punched variable should be calculated (</span><a class="rvts56" href="totalsum.html">-totalsum</a><span class="rvts6">)</span></li>
  </ul>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h3 class="rvps29"><span class="rvts0"><span class="rvts81">Definition</span></span></h3>
-<p class="rvps2"><span class="rvts57">user_punch</span></p>
-<p class="rvps4"><span class="rvts58"><br/></span></p>
-<p class="rvps4"><span class="rvts58"><br/></span></p>
+<h3 class="rvps22"><span class="rvts0"><span class="rvts52">Definition</span></span></h3>
+<p class="rvps2"><span class="rvts58">user_punch&nbsp;</span></p>
+<p class="rvps4"><a class="rvts56" href="mybasic.html">-my_basic</a></p>
+<p class="rvps4"><span class="rvts59">-plot_titles</span></p>
+<p class="rvps4"><span class="rvts59">-plot_units</span></p>
+<p class="rvps4"><a class="rvts56" href="totalsum.html">-totalsum</a></p>
+<p class="rvps4"><a class="rvts56" href="integralsum.html">-integralsum</a></p>
+<p class="rvps4"><span class="rvts6">-integralunits</span><span class="rvts59">&nbsp;</span></p>
+<p class="rvps4"><a class="rvts56" href="start.html">-start</a></p>
+<p class="rvps4"><a class="rvts56" href="end.html">-end</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"><br/></span></p>
-<h3 class="rvps29"><span class="rvts0"><span class="rvts81">Explanation</span></span></h3>
+<h3 class="rvps22"><span class="rvts0"><span class="rvts52">Explanation</span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps4">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps2"><span class="rvts58"><br/></span></p>
+   <p class="rvps2"><span class="rvts59"><br/></span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
    <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -235,7 +240,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps2"><span class="rvts58"><br/></span></p>
+   <p class="rvps2"><span class="rvts59"><br/></span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
    <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -248,11 +253,11 @@
 </div>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"></span><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-hlp-winhelp-help-file-to-a-chm-html-help-help-file/">Make the switch to CHM with HelpNDoc's hassle-free WinHelp HLP to CHM conversion tool</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-hlp-winhelp-help-file-to-a-chm-html-help-help-file/">Make the switch to CHM with HelpNDoc's hassle-free WinHelp HLP to CHM conversion tool</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -291,7 +296,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

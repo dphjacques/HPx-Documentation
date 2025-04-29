@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -191,19 +191,19 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Inline variables are indicated with the symbol @ in the input file. During runtime, these inline variables are replaced by values (numerical or alphanumerical) when a specific logical line is read by the program. Because lines are read line by line during execution and not all at once in the beginning, the corresponding values are adapted dynamically to their definitions during runtime. A logical line is different from a physical line when reading the input file: one physical line can contain more than one logical line when it contains the line separator ; - a logical line can be composed of several physical lines by the line continuation operator \. The alphanumerical values can not contain line separators, continuation operators, hard returns (which forms an extra physical line after a logical line has been identified), nor the comment character (#, after which characters are not included in the logical line).&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">When an integer is expected in the input file, an exponential format of the value may result in an error during execution. For example, 1.00100E3 will not be interpreted as the integer 1001 which may lead to an error message or even just an error in the calculation. Examples are e.g. when saving a result (</span><a class="rvts54" href="SAVE1.html">SAVE</a><span class="rvts6">) or when defining the solution numbers of the </span><a class="rvts54" href="MIX.html">MIX</a><span class="rvts6"> statement. &nbsp;The format is indicated by text between %%, see </span><a class="rvts21" href="Inlinevariables1.html#Format">below</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">When an integer is expected in the input file, an exponential format of the value may result in an error during execution. For example, 1.00100E3 will not be interpreted as the integer 1001 which may lead to an error message or even just an error in the calculation. Examples are e.g. when saving a result (</span><a class="rvts55" href="SAVE1.html">SAVE</a><span class="rvts6">) or when defining the solution numbers of the </span><a class="rvts55" href="MIX.html">MIX</a><span class="rvts6"> statement. &nbsp;The format is indicated by text between %%, see </span><a class="rvts21" href="Inlinevariables1.html#Format">below</a><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The inline variables can refer to single numerical or alphanumerical values or can indicate a simple expression. In its most simplest form, the inline variable is defined by a global variable using </span><a class="rvts54" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6">The inline variables can refer to single numerical or alphanumerical values or can indicate a simple expression. In its most simplest form, the inline variable is defined by a global variable using </span><a class="rvts55" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6">:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts54" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts58">ExchangeSite 0.1 "Site of the exchange site"</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts55" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts59">ExchangeSite 0.1 "Site of the exchange site"</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts57">EXHANGE</span><span class="rvts6"> 1</span></p>
-<p class="rvps4"><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">X </span><span class="rvts92">@ExchangeSite</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">EXHANGE</span><span class="rvts6"> 1</span></p>
+<p class="rvps4"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">X </span><span class="rvts94">@ExchangeSite</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The values that will replace the inline variables are or can be defined in different ways:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2 noindent"><span class="rvts6">a global variable defined or adapted by </span><a class="rvts54" href="GLOBAL_VARIABLE.html">global_variable</a></li>
+ <li class="rvps2 noindent"><span class="rvts6">a global variable defined or adapted by </span><a class="rvts55" href="GLOBAL_VARIABLE.html">global_variable</a></li>
  <li class="rvps2 noindent"><span class="rvts6">a global variable defined or adapted by in a script using put_var()</span></li>
  <li class="rvps2 noindent"><span class="rvts6">a counter variable defined by COUNTER with the option to change or reset values after replacing the inline variable</span></li>
  <li class="rvps2 noindent"><span class="rvts6">a value from a datablock defined by DATABLOCK given each column has a heading name and a column acting as row indicator has been defined.</span></li>
@@ -222,7 +222,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The special functions are detailed below.</span></p>
 <p class="rvps2"><span class="rvts11"><br/></span></p>
-<h1 class="rvps25"><a name="Inline"></a><span class="rvts0"><span class="rvts66">Inline variables</span></span></h1>
+<h1 class="rvps26"><a name="Inline"></a><span class="rvts0"><span class="rvts67">Inline variables</span></span></h1>
 <h2 class="rvps21"><span class="rvts0"><span class="rvts50">GLOBAL_VARIABLE</span></span></h2>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <h2 class="rvps21"><span class="rvts0"><span class="rvts50">COUNTER</span></span></h2>
@@ -232,21 +232,21 @@
 <h2 class="rvps21"><span class="rvts0"><span class="rvts50">CALCULATE_VALUES</span></span></h2>
 <p class="rvps2"><span class="rvts6">The inline variable consists simple of the name of the script defined in a calculate_value datablock:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts92">@calculate_values_name</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts94">@calculate_values_name</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Note that this is limited to numerical values only. When a - sign precedes the name, the inline value is a single space (note that the script still needs a (dummy) return value). This option is useful if one needs to adapt the value of several global variables (via put_var()):</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps30"><span class="rvts92">@-calculate_values_name</span></p>
+<p class="rvps30"><span class="rvts94">@-calculate_values_name</span></p>
 <p class="rvps2"><span class="rvts11"><br/></span></p>
-<h1 class="rvps25"><a name="Functionalities"></a><span class="rvts0"><span class="rvts66">Functionalities</span></span></h1>
+<h1 class="rvps26"><a name="Functionalities"></a><span class="rvts0"><span class="rvts67">Functionalities</span></span></h1>
 <p class="rvps2"><span class="rvts11">Mathematical expression</span></p>
 <p class="rvps2"><span class="rvts6">To define a mathematical expression as a inline value, the following sequences is used @&lt;</span><span class="rvts82">mathematical expression</span><span class="rvts6">&gt; where the mathematical expression following the syntax of the mathematical parser and interpreter </span><a class="rvts21" href="MathparserX.html">muparserX</a><span class="rvts6"> :</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts54" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts58">ExchangeSiteDensity 0.01 "Site of the exchange site / g clay"</span></p>
-<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts54" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts58">AmountClay &nbsp;&nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; 10 &nbsp; "gram of clay in the system"</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts55" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts59">ExchangeSiteDensity 0.01 "Site of the exchange site / g clay"</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts55" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts59">AmountClay &nbsp;&nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; 10 &nbsp; "gram of clay in the system"</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts57">EXHANGE</span><span class="rvts6"> 1</span></p>
-<p class="rvps4"><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">X </span><span class="rvts92">@&lt;@ExchangeSiteDensity*@AmountClay&gt;</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">EXHANGE</span><span class="rvts6"> 1</span></p>
+<p class="rvps4"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">X </span><span class="rvts94">@&lt;@ExchangeSiteDensity*@AmountClay&gt;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Mathematical expressions cannot be nested.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -254,25 +254,25 @@
 <p class="rvps2"><span class="rvts6">For the expression @!</span><span class="rvts82">expression</span><span class="rvts6">!, only !</span><span class="rvts82">expression</span><span class="rvts6">! is replaced and the expression remains an inline variable. It allows for defining the inline variables based on global or datablock variables.&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6">For example, assuming a datablock with pH values for different experiments (see </span><a class="rvts21" href="Examplesofinlinedefinitionanduse.html#DATABLOCK_Example1">Examples of inline definition and use</a><span class="rvts6">)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">GLOBAL_VARIABLE Experiment$ Exp01</span></p>
-<p class="rvps2"><span class="rvts58"><br/></span></p>
-<p class="rvps2"><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">solution</span></p>
-<p class="rvps2"><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">-pH </span><span class="rvts92">@!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;!</span></p>
-<p class="rvps2"><span class="rvts92"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">GLOBAL_VARIABLE Experiment$ Exp01</span></p>
+<p class="rvps2"><span class="rvts59"><br/></span></p>
+<p class="rvps2"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">solution</span></p>
+<p class="rvps2"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">-pH </span><span class="rvts94">@!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;!</span></p>
+<p class="rvps2"><span class="rvts94"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The expression </span><span class="rvts92">!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;! </span><span class="rvts6">will first be evaluated resulting in this particular example in </span><span class="rvts122">ExperimentalConditions:pH:Exp01</span><span class="rvts6">. The line remains&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">The expression </span><span class="rvts94">!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;! </span><span class="rvts6">will first be evaluated resulting in this particular example in </span><span class="rvts126">ExperimentalConditions:pH:Exp01</span><span class="rvts6">. The line remains&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts92">@ExperimentalConditions:pH:Exp01</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts94">@ExperimentalConditions:pH:Exp01</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">This inline variable will then be replaced. The value will taken from the datablock </span><span class="rvts58">ExperimentalConditions</span><span class="rvts6">, the column </span><span class="rvts58">pH</span><span class="rvts6"> and the row with label </span><span class="rvts58">Exp01</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">This inline variable will then be replaced. The value will taken from the datablock </span><span class="rvts59">ExperimentalConditions</span><span class="rvts6">, the column </span><span class="rvts59">pH</span><span class="rvts6"> and the row with label </span><span class="rvts59">Exp01</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><a name="Format"></a><span class="rvts11">Format of numerical values</span></p>
 <p class="rvps2"><span class="rvts6">For an inline variable of the typ @%</span><span class="rvts82">format%name</span><span class="rvts6">, the value of </span><span class="rvts82">name</span><span class="rvts6"> is printed with the format </span><span class="rvts82">format. </span><span class="rvts6">This only applies for numerical values. </span><span class="rvts82">format</span><span class="rvts6"> follows basically the C++ format specifier:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts123">%[flags][width][.precision][length]specifier</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts127">%[flags][width][.precision][length]specifier</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">with&nbsp;</span></p>
-<p class="rvps28"><span class="rvts6">specifier</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specifies the type of the output.&nbsp;</span></p>
+<p class="rvps29"><span class="rvts6">specifier</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specifies the type of the output.&nbsp;</span></p>
 <p class="rvps42"><span class="rvts6">Most relevant specifiers are:</span></p>
 <p class="rvps43"><span class="rvts82">d&nbsp;</span><span class="rvts6"> or </span><span class="rvts82">i</span><span class="rvts6">&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integer</span></p>
 <p class="rvps43"><span class="rvts82">f</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">floating point</span></p>
@@ -295,11 +295,11 @@
 <p class="rvps2"><span class="rvts6">The default format is %12.4e.</span></p>
 <p class="rvps2"><span class="rvts6">The format symbol @%</span><span class="rvts82">format%</span><span class="rvts6"> can be combined with the mathematical expression symbol (@%</span><span class="rvts82">format%</span><span class="rvts6">&lt;</span><span class="rvts82">mathematical expression</span><span class="rvts6">&gt;) or the formation symbol (@%</span><span class="rvts82">format%</span><span class="rvts6">!</span><span class="rvts82">expression</span><span class="rvts6">!</span><span class="rvts82">).</span><span class="rvts6"> &nbsp;&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Eliminate the Struggles of Documentation with a Help Authoring Tool</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Eliminate the Struggles of Documentation with a Help Authoring Tool</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -338,7 +338,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

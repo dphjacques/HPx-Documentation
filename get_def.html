@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -195,9 +195,9 @@
    <p class="rvps2"><span class="rvts44">PHREEQC-BASIC</span></p>
   </td>
   <td style="padding: 1px; width: 830px;">
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,&lt;int:rownr&gt;)</span></p>
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,&lt;int:colnr&gt;|&lt;str:heading&gt;,&lt;int:rownr&gt;|&lt;str:label&gt;)</span></p>
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,{&lt;int|str:index&gt;})</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,&lt;int:rownr&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,&lt;int:colnr&gt;|&lt;str:heading&gt;,&lt;int:rownr&gt;|&lt;str:label&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,{&lt;int|str:index&gt;})</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -205,19 +205,19 @@
    <p class="rvps2"><span class="rvts44">MY-BASIC</span></p>
   </td>
   <td style="padding: 1px; width: 830px;">
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,&lt;int:rownr&gt;)</span></p>
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,&lt;int:colnr&gt;|&lt;str:heading&gt;,&lt;int:rownr&gt;|&lt;str:label&gt;)</span></p>
-   <p class="rvps2"><span class="rvts89">get_def(&lt;str::datablockname&gt;,{&lt;int|str:index&gt;})</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,&lt;int:rownr&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,&lt;int:colnr&gt;|&lt;str:heading&gt;,&lt;int:rownr&gt;|&lt;str:label&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">get_def(&lt;str::datablockname&gt;,{&lt;int|str:index&gt;})</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">It gets the value at an identified position in a data block defined with </span><a class="rvts54" href="DATABLOCK.html">datablock </a><span class="rvts6">or with </span><a class="rvts91" href="put_def.html">put_def()</a><span class="rvts6">defined in scripts.</span></p>
+<p class="rvps31"><span class="rvts6">It gets the value at an identified position in a data block defined with </span><a class="rvts55" href="DATABLOCK.html">datablock </a><span class="rvts6">or with </span><a class="rvts93" href="put_def.html">put_def()</a><span class="rvts6">defined in scripts.</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">Data blocks created with </span><a class="rvts54" href="DATABLOCK.html">datablock</a><span class="rvts6"> require a name a row indicator (for a vector type) or a column and row indicator. These indicators can be either integers or strings given that </span><a class="rvts55" href="headings.html">-headings</a><span class="rvts6"> or a </span><a class="rvts55" href="rowid.html">-rowid</a><span class="rvts6"> are specified for the columns and rows, respectively.</span></p>
-<p class="rvps31"><span class="rvts6">Data blocks that have been initiated within scripts with </span><a class="rvts91" href="put_def.html">put_def()</a><span class="rvts6"> require a name, and a series of indices (numeric and/or alphanumeric).</span></p>
+<p class="rvps31"><span class="rvts6">Data blocks created with </span><a class="rvts55" href="DATABLOCK.html">datablock</a><span class="rvts6"> require a name a row indicator (for a vector type) or a column and row indicator. These indicators can be either integers or strings given that </span><a class="rvts56" href="headings.html">-headings</a><span class="rvts6"> or a </span><a class="rvts56" href="rowid.html">-rowid</a><span class="rvts6"> are specified for the columns and rows, respectively.</span></p>
+<p class="rvps31"><span class="rvts6">Data blocks that have been initiated within scripts with </span><a class="rvts93" href="put_def.html">put_def()</a><span class="rvts6"> require a name, and a series of indices (numeric and/or alphanumeric).</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts82">Return value: </span><span class="rvts6">flt or str</span></p>
 <p class="rvps31"><span class="rvts82"><br/></span></p>
@@ -228,7 +228,7 @@
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">datablockname</span></p>
+   <p class="rvps4"><span class="rvts59">datablockname</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
    <p class="rvps4"><span class="rvts82">str</span><span class="rvts6">: Case sensitive name of the data block name</span></p>
@@ -236,53 +236,53 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">colnr</span></p>
+   <p class="rvps4"><span class="rvts59">colnr</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts82">int:</span><span class="rvts6"> Column number in a data black defined by </span><a class="rvts54" href="DATABLOCK.html">datablock</a><span class="rvts6">. The data block columns are zero-based indexed by default, except if a different origin is specified with </span><a class="rvts55" href="origin.html">-origin</a><span class="rvts6">.</span></p>
+   <p class="rvps4"><span class="rvts82">int:</span><span class="rvts6"> Column number in a data black defined by </span><a class="rvts55" href="DATABLOCK.html">datablock</a><span class="rvts6">. The data block columns are zero-based indexed by default, except if a different origin is specified with </span><a class="rvts56" href="origin.html">-origin</a><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">rownr</span></p>
+   <p class="rvps4"><span class="rvts59">rownr</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts82">int:</span><span class="rvts6"> Row number in a data block defined by </span><a class="rvts54" href="DATABLOCK.html">datablock</a><span class="rvts6">. The data block rows are zero-based indexed by default, except if a different origin is specified with </span><a class="rvts55" href="origin.html">-origin</a><span class="rvts6">.</span></p>
+   <p class="rvps4"><span class="rvts82">int:</span><span class="rvts6"> Row number in a data block defined by </span><a class="rvts55" href="DATABLOCK.html">datablock</a><span class="rvts6">. The data block rows are zero-based indexed by default, except if a different origin is specified with </span><a class="rvts56" href="origin.html">-origin</a><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">label</span></p>
+   <p class="rvps4"><span class="rvts59">label</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts82">str</span><span class="rvts6">: Case sensitive row indicator for data block defined by &nbsp;</span><a class="rvts54" href="DATABLOCK.html">datablock</a><span class="rvts6">. The label is looked up in the column with the heading defined by</span><span class="rvts88"> </span><a class="rvts55" href="rowid.html">-rowid</a><span class="rvts6">.</span></p>
+   <p class="rvps4"><span class="rvts82">str</span><span class="rvts6">: Case sensitive row indicator for data block defined by &nbsp;</span><a class="rvts55" href="DATABLOCK.html">datablock</a><span class="rvts6">. The label is looked up in the column with the heading defined by</span><span class="rvts89"> </span><a class="rvts56" href="rowid.html">-rowid</a><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">heading</span></p>
+   <p class="rvps4"><span class="rvts59">heading</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts82">str:</span><span class="rvts6"> Case sensitive heading of the columns in a data block defined by </span><a class="rvts54" href="DATABLOCK.html">datablock</a><span class="rvts6">. Headings are defined by </span><a class="rvts55" href="headings.html">-headings</a><span class="rvts6">.</span></p>
+   <p class="rvps4"><span class="rvts82">str:</span><span class="rvts6"> Case sensitive heading of the columns in a data block defined by </span><a class="rvts55" href="DATABLOCK.html">datablock</a><span class="rvts6">. Headings are defined by </span><a class="rvts56" href="headings.html">-headings</a><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px; height: 21px;">
-   <p class="rvps4"><span class="rvts58">index</span></p>
+   <p class="rvps4"><span class="rvts59">index</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px; height: 21px;">
-   <p class="rvps4"><span class="rvts82">int|str:</span><span class="rvts6"> one index or more indices to indicate a particular value as was used to define the variable using </span><a class="rvts91" href="put_def.html">put_def()</a><span class="rvts6">. Indices can be numeric or alphanumeric.&nbsp;</span></p>
+   <p class="rvps4"><span class="rvts82">int|str:</span><span class="rvts6"> one index or more indices to indicate a particular value as was used to define the variable using </span><a class="rvts93" href="put_def.html">put_def()</a><span class="rvts6">. Indices can be numeric or alphanumeric.&nbsp;</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">5 Reasons Why a Help Authoring Tool is Better than Microsoft Word for Documentation</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">5 Reasons Why a Help Authoring Tool is Better than Microsoft Word for Documentation</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -321,7 +321,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

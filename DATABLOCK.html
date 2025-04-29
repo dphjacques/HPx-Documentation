@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -188,42 +188,42 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts57">Datablock</span><span class="rvts6"> is used to define additional constants, parameters and strings in a datablock grouped in records (rows) each with a number of elements (columns).</span></p>
+<p class="rvps2"><span class="rvts58">Datablock</span><span class="rvts6"> is used to define additional constants, parameters and strings in a datablock grouped in records (rows) each with a number of elements (columns).</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The values can be used in:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps4 noindent"><span class="rvts6">Scripts with the function </span><a class="rvts91" href="get_def.html">get_def()</a><span class="rvts84"> </span><span class="rvts6">in </span><a class="rvts97" href="USER_PRINT.html">USER_PRINT</a><span class="rvts6">, </span><a class="rvts97" href="USER_PUNCH.html">USER_PUNCH</a><span class="rvts6">, </span><a class="rvts97" href="RATES.html">RATES</a><span class="rvts6">, </span><a class="rvts97" href="CALCULATE_VALUES.html">CALCULATE_VALUES</a><span class="rvts6">.</span></li>
-  <li class="rvps4 noindent"><span class="rvts6">Inline variables for a </span><a class="rvts54" href="COUNTER.html#Datablock">counter</a></li>
+  <li class="rvps4 noindent"><span class="rvts6">Scripts with the function </span><a class="rvts93" href="get_def.html">get_def()</a><span class="rvts84"> </span><span class="rvts6">in </span><a class="rvts99" href="USER_PRINT.html">USER_PRINT</a><span class="rvts6">, </span><a class="rvts99" href="USER_PUNCH.html">USER_PUNCH</a><span class="rvts6">, </span><a class="rvts99" href="RATES.html">RATES</a><span class="rvts6">, </span><a class="rvts99" href="CALCULATE_VALUES.html">CALCULATE_VALUES</a><span class="rvts6">.</span></li>
+  <li class="rvps4 noindent"><span class="rvts6">Inline variables for a </span><a class="rvts55" href="COUNTER.html#Datablock">counter</a></li>
   <li class="rvps2 noindent"><span class="rvts6">Inline variables </span><span class="rvts6"></span><span class="rvts6">&nbsp;</span></li>
  </ul>
 </ul>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h1 class="rvps25"><span class="rvts0"><span class="rvts98">Definition</span></span></h1>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts57">DATABLOCK</span></p>
-<p class="rvps4"><span class="rvts58">name</span></p>
-<p class="rvps28"><a class="rvts55" href="origin.html">-origin</a></p>
-<p class="rvps28"><a class="rvts55" href="headings.html">-headings</a></p>
-<p class="rvps28"><a class="rvts55" href="rowid.html">-rowid</a></p>
-<p class="rvps28"><span class="rvts88">-</span><a class="rvts55" href="casesensitive.html">casesensitive</a></p>
-<p class="rvps28"><a class="rvts55" href="delimiter.html">-delimiter</a></p>
-<p class="rvps28"><a class="rvts55" href="start.html">-start</a></p>
-<p class="rvps31"><span class="rvts58">value11</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">value12</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">value1n</span></p>
-<p class="rvps31"><span class="rvts58">value21</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">value22</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">value2n</span></p>
-<p class="rvps31"><span class="rvts58">&nbsp; &nbsp;....</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span></p>
-<p class="rvps31"><span class="rvts58">valuem1</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">valuem2</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">...</span><span class="rvts58"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts58">valuemn &nbsp; &nbsp;&nbsp;</span></p>
-<p class="rvps28"><a class="rvts55" href="end.html">-end</a></p>
+<h1 class="rvps26"><span class="rvts0"><span class="rvts100">Definition</span></span></h1>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts58">DATABLOCK</span></p>
+<p class="rvps4"><span class="rvts59">name</span></p>
+<p class="rvps29"><a class="rvts56" href="origin.html">-origin</a></p>
+<p class="rvps29"><a class="rvts56" href="headings.html">-headings</a></p>
+<p class="rvps29"><a class="rvts56" href="rowid.html">-rowid</a></p>
+<p class="rvps29"><span class="rvts89">-</span><a class="rvts56" href="casesensitive.html">casesensitive</a></p>
+<p class="rvps29"><a class="rvts56" href="delimiter.html">-delimiter</a></p>
+<p class="rvps29"><a class="rvts56" href="start.html">-start</a></p>
+<p class="rvps31"><span class="rvts59">value11</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">value12</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">value1n</span></p>
+<p class="rvps31"><span class="rvts59">value21</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">value22</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">value2n</span></p>
+<p class="rvps31"><span class="rvts59">&nbsp; &nbsp;....</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span></p>
+<p class="rvps31"><span class="rvts59">valuem1</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">valuem2</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">...</span><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts59">valuemn &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps29"><a class="rvts56" href="end.html">-end</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h1 class="rvps25"><span class="rvts0"><span class="rvts66">Explanation</span></span></h1>
+<h1 class="rvps26"><span class="rvts0"><span class="rvts67">Explanation</span></span></h1>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps4">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps2"><span class="rvts58">name</span></p>
+   <p class="rvps2"><span class="rvts59">name</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
    <p class="rvps2"><span class="rvts6">txt</span></p>
@@ -234,7 +234,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps2"><span class="rvts58">value</span></p>
+   <p class="rvps2"><span class="rvts59">value</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
    <p class="rvps2"><span class="rvts6">flt</span></p>
@@ -248,12 +248,12 @@
 </table>
 </div>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<p class="rvps28"><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Elevate your documentation to new heights with HelpNDoc's built-in SEO</a></p>
+<p class="rvps29"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Elevate your documentation to new heights with HelpNDoc's built-in SEO</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -292,7 +292,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

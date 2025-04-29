@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -192,7 +192,7 @@
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 830px;">
-   <p class="rvps2"><span class="rvts88">-integralsum</span><span class="rvts89"> [&lt;int:flag&gt;]</span></p>
+   <p class="rvps2"><span class="rvts89">-integralsum</span><span class="rvts90"> [&lt;int:flag&gt;]</span></p>
   </td>
  </tr>
 </table>
@@ -200,15 +200,15 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6">Identifies the kind of sum of a punched variable. Sums are taken over nodes define by the identifiers -horizon, -layer, -depth, or -node in REACTIVE_TRANSPORT_OUTPUT.&nbsp;</span></p>
-<p class="rvps31"><span class="rvts6">Details on how sums are calculated are given in </span><a class="rvts54" href="REACTIVE_TRANSPORT_OUTPUT.html">REACTIVE_TRANSPORT_OUTPUT</a><span class="rvts6">.</span></p>
-<p class="rvps31"><span class="rvts89">flag</span><span class="rvts6"> is defined for each punched variable. If not sufficient </span><span class="rvts89">flag</span><span class="rvts6"> are defined, &nbsp;</span><span class="rvts89">flag</span><span class="rvts6"> = -99 is assumed.</span></p>
+<p class="rvps31"><span class="rvts6">Details on how sums are calculated are given in </span><a class="rvts55" href="REACTIVE_TRANSPORT_OUTPUT.html">REACTIVE_TRANSPORT_OUTPUT</a><span class="rvts6">.</span></p>
+<p class="rvps31"><span class="rvts90">flag</span><span class="rvts6"> is defined for each punched variable. If not sufficient </span><span class="rvts90">flag</span><span class="rvts6"> are defined, &nbsp;</span><span class="rvts90">flag</span><span class="rvts6"> = -99 is assumed.</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts82"><br/></span></p>
 <div class="rvps31">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">flag</span></p>
+   <p class="rvps4"><span class="rvts59">flag</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
    <p class="rvps4"><span class="rvts82">int</span><span class="rvts6">: Integer identifying the kind of sum:</span></p>
@@ -265,24 +265,24 @@
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<h4 class="rvps34"><span class="rvts0"><span class="rvts53">Sum of a variable in series&nbsp;</span></span></h4>
+<h4 class="rvps34"><span class="rvts0"><span class="rvts54">Sum of a variable in series&nbsp;</span></span></h4>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">The </span><span class="rvts89">flag</span><span class="rvts6"> = -1 is only applicable for HP1.</span></p>
+<p class="rvps31"><span class="rvts6">The </span><span class="rvts90">flag</span><span class="rvts6"> = -1 is only applicable for HP1.</span></p>
 <p class="rvps31"><span class="rvts6">For each element, the value of the variable is calculated as:</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><img alt="" style="padding : 1px;" src="lib/IntegralSum%20-%20Series%20sum%20of%20an%20element.gif"></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">where </span><span class="rvts82">val</span><span class="rvts106">el</span><span class="rvts6"> is the value for the </span><span class="rvts82">i</span><span class="rvts6">th element, and </span><span class="rvts82">val</span><span class="rvts106">i-1</span><span class="rvts82"> </span><span class="rvts6">and </span><span class="rvts82">val</span><span class="rvts106">i</span><span class="rvts82"> </span><span class="rvts6">are the values at the two nodes of the </span><span class="rvts82">i</span><span class="rvts6">th element.</span><span class="rvts82"> </span><span class="rvts6">The summed variable punched to the output is:</span></p>
+<p class="rvps31"><span class="rvts6">where </span><span class="rvts82">val</span><span class="rvts109">el</span><span class="rvts6"> is the value for the </span><span class="rvts82">i</span><span class="rvts6">th element, and </span><span class="rvts82">val</span><span class="rvts109">i-1</span><span class="rvts82"> </span><span class="rvts6">and </span><span class="rvts82">val</span><span class="rvts109">i</span><span class="rvts82"> </span><span class="rvts6">are the values at the two nodes of the </span><span class="rvts82">i</span><span class="rvts6">th element.</span><span class="rvts82"> </span><span class="rvts6">The summed variable punched to the output is:</span></p>
 <p class="rvps31"><img alt="" style="padding : 1px;" src="lib/IntegralSum%20-%20Series%20sum%20total.gif"></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">where </span><span class="rvts82">val</span><span class="rvts6"> is the value punched to the output, </span><span class="rvts82">L</span><span class="rvts6"> is the length over which the sum is calculated, </span><span class="rvts82">N</span><span class="rvts80">el&nbsp;</span><span class="rvts6"> is the number of elements, </span><span class="rvts82">L</span><span class="rvts106">el</span><span class="rvts6"> is the length of the </span><span class="rvts82">el</span><span class="rvts6">th element, and </span><span class="rvts82">val</span><span class="rvts106">el</span><span class="rvts82"> </span><span class="rvts6">is the value in the </span><span class="rvts82">el</span><span class="rvts6">th element.</span></p>
+<p class="rvps31"><span class="rvts6">where </span><span class="rvts82">val</span><span class="rvts6"> is the value punched to the output, </span><span class="rvts82">L</span><span class="rvts6"> is the length over which the sum is calculated, </span><span class="rvts82">N</span><span class="rvts81">el&nbsp;</span><span class="rvts6"> is the number of elements, </span><span class="rvts82">L</span><span class="rvts109">el</span><span class="rvts6"> is the length of the </span><span class="rvts82">el</span><span class="rvts6">th element, and </span><span class="rvts82">val</span><span class="rvts109">el</span><span class="rvts82"> </span><span class="rvts6">is the value in the </span><span class="rvts82">el</span><span class="rvts6">th element.</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">Maximize Your Documentation Capabilities with a Help Authoring Tool</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">Maximize Your Documentation Capabilities with a Help Authoring Tool</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -321,7 +321,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

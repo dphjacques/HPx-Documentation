@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -196,7 +196,7 @@
    <p class="rvps2"><span class="rvts44">PHREEQC-BASIC</span></p>
   </td>
   <td style="padding: 1px; width: 477px;">
-   <p class="rvps2"><span class="rvts89">conv_t(&lt;str::unit&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">conv_t(&lt;str::unit&gt;)</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -204,7 +204,7 @@
    <p class="rvps2"><span class="rvts44">MY-BASIC</span></p>
   </td>
   <td style="padding: 1px; width: 477px;">
-   <p class="rvps2"><span class="rvts89">conv_t(&lt;str::unit&gt;)</span></p>
+   <p class="rvps2"><span class="rvts90">conv_t(&lt;str::unit&gt;)</span></p>
   </td>
  </tr>
 </table>
@@ -222,7 +222,7 @@
  </ul>
 </ul>
 <p class="rvps33"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">Note that the time unit in the geochemical calculations is the same as defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI. Time steps &nbsp;(e.g. in </span><a class="rvts54" href="KINETICS.html">kinetics</a><span class="rvts6">) and variables have thus this unit instead of the standard unit seconds in the stand-alone PHREEQC code.</span></p>
+<p class="rvps31"><span class="rvts6">Note that the time unit in the geochemical calculations is the same as defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI. Time steps &nbsp;(e.g. in </span><a class="rvts55" href="KINETICS.html">kinetics</a><span class="rvts6">) and variables have thus this unit instead of the standard unit seconds in the stand-alone PHREEQC code.</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts82">Return value: </span><span class="rvts6">conversion value</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
@@ -233,7 +233,7 @@
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts58">unit</span></p>
+   <p class="rvps4"><span class="rvts59">unit</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
    <p class="rvps4"><span class="rvts82">str</span><span class="rvts6">: variable defining the unit</span></p>
@@ -306,34 +306,34 @@
 <p class="rvps35"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts82">Examples</span></p>
 <p class="rvps31"><span class="rvts82"><br/></span></p>
-<p class="rvps31"><span class="rvts6">For a parameter </span><span class="rvts84">par</span><span class="rvts6"> with unit [T</span><span class="rvts116">-1</span><span class="rvts6">]:</span></p>
+<p class="rvps31"><span class="rvts6">For a parameter </span><span class="rvts84">par</span><span class="rvts6"> with unit [T</span><span class="rvts120">-1</span><span class="rvts6">]:</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps27"><span class="rvts58">par / </span><span class="rvts84">conv_t("d")</span><span class="rvts6"> will convert </span><span class="rvts58">par</span><span class="rvts6"> that is defined in days</span><span class="rvts116">-1</span><span class="rvts6"> to the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI.</span></p>
-<p class="rvps27"><span class="rvts6"><br/></span></p>
-<p class="rvps27"><span class="rvts58">par * </span><span class="rvts84">conv_t("d") </span><span class="rvts6">will convert </span><span class="rvts58">par</span><span class="rvts6"> from the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI to days</span><span class="rvts116">-1</span><span class="rvts6">.</span></p>
+<p class="rvps28"><span class="rvts59">par / </span><span class="rvts84">conv_t("d")</span><span class="rvts6"> will convert </span><span class="rvts59">par</span><span class="rvts6"> that is defined in days</span><span class="rvts120">-1</span><span class="rvts6"> to the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI.</span></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps28"><span class="rvts59">par * </span><span class="rvts84">conv_t("d") </span><span class="rvts6">will convert </span><span class="rvts59">par</span><span class="rvts6"> from the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI to days</span><span class="rvts120">-1</span><span class="rvts6">.</span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps31"><span class="rvts6"><br/></span></p>
-<div class="rvps27">
+<div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts58">[MyBASIC]</span></p>
-   <p class="rvps4"><span class="rvts71">rate = </span><span class="rvts120">0</span><span class="rvts71">.</span><span class="rvts120">02</span><span class="rvts71"> / </span><span class="rvts119">conv_t</span><span class="rvts71">(</span><span class="rvts118">"min"</span><span class="rvts71">)</span></p>
-   <p class="rvps4"><span class="rvts71">k = </span><span class="rvts119">hyd_cond</span><span class="rvts71">() * </span><span class="rvts119">conv_t</span><span class="rvts71">(</span><span class="rvts118">"hour"</span><span class="rvts117">)</span></p>
+   <p class="rvps4"><span class="rvts59">[MyBASIC]</span></p>
+   <p class="rvps4"><span class="rvts72">rate = </span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">02</span><span class="rvts72"> / </span><span class="rvts123">conv_t</span><span class="rvts72">(</span><span class="rvts122">"min"</span><span class="rvts72">)</span></p>
+   <p class="rvps4"><span class="rvts72">k = </span><span class="rvts123">hyd_cond</span><span class="rvts72">() * </span><span class="rvts123">conv_t</span><span class="rvts72">(</span><span class="rvts122">"hour"</span><span class="rvts121">)</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps27"><span class="rvts6"><br/></span></p>
-<p class="rvps27"><span class="rvts6"><br/></span></p>
-<p class="rvps27"><span class="rvts6">The first line changes a rate coefficient with a value of 0.02 / min. If the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI is in seconds, </span><span class="rvts119">conv_t</span><span class="rvts71">(</span><span class="rvts118">"min"</span><span class="rvts71">)</span><span class="rvts6"> equals 60 and the value of 0.02 is divided by 60.</span></p>
-<p class="rvps27"><span class="rvts6">The second line gets the hydraulic conductivity [L/T</span><span class="rvts116">-1</span><span class="rvts6">] which has the units defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI and converts it to the unit of interest (hours). If seconds is defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI, </span><span class="rvts119">conv_t</span><span class="rvts71">(</span><span class="rvts118">"hour"</span><span class="rvts117">)</span><span class="rvts6">has the value of 3600.</span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/stunning-user-interface/">Transform Your Documentation Workflow with HelpNDoc's Intuitive UI</a></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps28"><span class="rvts6">The first line changes a rate coefficient with a value of 0.02 / min. If the unit defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI is in seconds, </span><span class="rvts123">conv_t</span><span class="rvts72">(</span><span class="rvts122">"min"</span><span class="rvts72">)</span><span class="rvts6"> equals 60 and the value of 0.02 is divided by 60.</span></p>
+<p class="rvps28"><span class="rvts6">The second line gets the hydraulic conductivity [L/T</span><span class="rvts120">-1</span><span class="rvts6">] which has the units defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI and converts it to the unit of interest (hours). If seconds is defined in the </span><span class="rvts11">Time Information</span><span class="rvts6"> dialogue window of the HYDRUS GUI, </span><span class="rvts123">conv_t</span><span class="rvts72">(</span><span class="rvts122">"hour"</span><span class="rvts121">)</span><span class="rvts6">has the value of 3600.</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/stunning-user-interface/">Transform Your Documentation Workflow with HelpNDoc's Intuitive UI</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -372,7 +372,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>

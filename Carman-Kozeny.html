@@ -49,7 +49,7 @@
   <!-- Hnd styles -->
   <link href="css/layout.min.css" rel="stylesheet" />
   <link href="css/effects.min.css" rel="stylesheet" />
-  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/theme-dark-blue.min.css" rel="stylesheet" />
   <link href="css/print.min.css" rel="stylesheet" media="print" />
   <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
   <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
@@ -196,7 +196,7 @@
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts158">K</span></p>
+   <p class="rvps2"><span class="rvts162">K</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">modified hydraulic conductivity (L/T)</span></p>
@@ -204,7 +204,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts82">K</span><span class="rvts80">0</span></p>
+   <p class="rvps2"><span class="rvts82">K</span><span class="rvts81">0</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">initial hydraulic conductivity (L/T)</span></p>
@@ -212,7 +212,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts113">ϕ</span></p>
+   <p class="rvps2"><span class="rvts114">ϕ</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">modified porosity (-)</span></p>
@@ -220,7 +220,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts113">ϕ</span><span class="rvts80">0</span></p>
+   <p class="rvps2"><span class="rvts114">ϕ</span><span class="rvts81">0</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">initial porosity (-)</span></p>
@@ -228,64 +228,64 @@
  </tr>
 </table>
 </div>
-<p class="rvps42"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts87">The scaling factor of the hydraulic conductivity is thus obtained as:</span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
+<p class="rvps42"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88">The scaling factor of the hydraulic conductivity is thus obtained as:</span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20hydraulic%20conductivity%20-%20Carman-Kozeny.gif"></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts87">The script hereafter calculates the scaling factor assuming that there is a script that calculates the porosity (</span><span class="rvts84">calc_value</span><span class="rvts58">("calc_porosity")</span><span class="rvts87">):</span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<div class="rvps27">
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88">The script hereafter calculates the scaling factor assuming that there is a script that calculates the porosity (</span><span class="rvts84">calc_value</span><span class="rvts59">("calc_porosity")</span><span class="rvts88">):</span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts58">[MY-BASIC]</span></p>
-   <p class="rvps4"><span class="rvts57">calculate_values</span></p>
-   <p class="rvps4"><span class="rvts58">Initial</span></p>
-   <p class="rvps4"><span class="rvts88">-state initial</span></p>
-   <p class="rvps4"><span class="rvts88">-mybasic</span></p>
-   <p class="rvps4"><span class="rvts88">-start</span></p>
-   <p class="rvps28"><span class="rvts58">porosity0 = </span><span class="rvts84">calc_value</span><span class="rvts58">("calc_porosity")</span></p>
-   <p class="rvps28"><span class="rvts58">a = ((1-porosity0)^2 / porosity0^3)</span></p>
-   <p class="rvps28"><span class="rvts84">put_node</span><span class="rvts58">("IniFactor",a)</span></p>
-   <p class="rvps28"><span class="rvts84">change_por(</span><span class="rvts58">porosiy)</span></p>
-   <p class="rvps28"><span class="rvts84">change_por0</span><span class="rvts58">(porosity)</span></p>
-   <p class="rvps4"><span class="rvts88">-end</span></p>
-   <p class="rvps4"><span class="rvts58"><br/></span></p>
-   <p class="rvps4"><span class="rvts58">calc_update</span></p>
-   <p class="rvps4"><span class="rvts88">-state update</span></p>
-   <p class="rvps4"><span class="rvts88">-mybasic</span></p>
-   <p class="rvps4"><span class="rvts88">-start</span></p>
-   <p class="rvps28"><span class="rvts58">porosity = </span><span class="rvts84">calc_value</span><span class="rvts58">("calc_porosity")</span></p>
-   <p class="rvps28"><span class="rvts58">scale = (porosity^3 / (1-porosity)^2) * </span><span class="rvts84">get_node</span><span class="rvts58">("IniFactor")</span></p>
-   <p class="rvps28"><span class="rvts84">change_sfcond</span><span class="rvts58">(scale)</span></p>
-   <p class="rvps4"><span class="rvts88">-end</span></p>
+   <p class="rvps4"><span class="rvts59">[MY-BASIC]</span></p>
+   <p class="rvps4"><span class="rvts58">calculate_values</span></p>
+   <p class="rvps4"><span class="rvts59">Initial</span></p>
+   <p class="rvps4"><span class="rvts89">-state initial</span></p>
+   <p class="rvps4"><span class="rvts89">-mybasic</span></p>
+   <p class="rvps4"><span class="rvts89">-start</span></p>
+   <p class="rvps29"><span class="rvts59">porosity0 = </span><span class="rvts84">calc_value</span><span class="rvts59">("calc_porosity")</span></p>
+   <p class="rvps29"><span class="rvts59">a = ((1-porosity0)^2 / porosity0^3)</span></p>
+   <p class="rvps29"><span class="rvts84">put_node</span><span class="rvts59">("IniFactor",a)</span></p>
+   <p class="rvps29"><span class="rvts84">change_por(</span><span class="rvts59">porosiy)</span></p>
+   <p class="rvps29"><span class="rvts84">change_por0</span><span class="rvts59">(porosity)</span></p>
+   <p class="rvps4"><span class="rvts89">-end</span></p>
+   <p class="rvps4"><span class="rvts59"><br/></span></p>
+   <p class="rvps4"><span class="rvts59">calc_update</span></p>
+   <p class="rvps4"><span class="rvts89">-state update</span></p>
+   <p class="rvps4"><span class="rvts89">-mybasic</span></p>
+   <p class="rvps4"><span class="rvts89">-start</span></p>
+   <p class="rvps29"><span class="rvts59">porosity = </span><span class="rvts84">calc_value</span><span class="rvts59">("calc_porosity")</span></p>
+   <p class="rvps29"><span class="rvts59">scale = (porosity^3 / (1-porosity)^2) * </span><span class="rvts84">get_node</span><span class="rvts59">("IniFactor")</span></p>
+   <p class="rvps29"><span class="rvts84">change_sfcond</span><span class="rvts59">(scale)</span></p>
+   <p class="rvps4"><span class="rvts89">-end</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps27"><span class="rvts6"><br/></span></p>
-<p class="rvps27"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts87"><br/></span></p>
-<h3 class="rvps29"><span class="rvts0"><span class="rvts193">See also</span></span></h3>
-<p class="rvps2"><span class="rvts162"><br/></span></p>
-<p class="rvps4"><span class="rvts161">Keywords, identifiers, scripting</span></p>
-<p class="rvps4"><span class="rvts161"><br/></span></p>
-<p class="rvps4"><span class="rvts161">How To...</span></p>
-<p class="rvps4"><span class="rvts161"><br/></span></p>
-<p class="rvps4"><span class="rvts161"><br/></span></p>
-<p class="rvps4"><span class="rvts161">Examples</span></p>
-<p class="rvps30"><span class="rvts162">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts192"><br/></span></p>
-<p class="rvps2"><span class="rvts192"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/help-authoring-tool">Free help authoring environment</a></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts88"><br/></span></p>
+<h3 class="rvps22"><span class="rvts0"><span class="rvts197">See also</span></span></h3>
+<p class="rvps2"><span class="rvts166"><br/></span></p>
+<p class="rvps4"><span class="rvts165">Keywords, identifiers, scripting</span></p>
+<p class="rvps4"><span class="rvts165"><br/></span></p>
+<p class="rvps4"><span class="rvts165">How To...</span></p>
+<p class="rvps4"><span class="rvts165"><br/></span></p>
+<p class="rvps4"><span class="rvts165"><br/></span></p>
+<p class="rvps4"><span class="rvts165">Examples</span></p>
+<p class="rvps30"><span class="rvts166">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts196"><br/></span></p>
+<p class="rvps2"><span class="rvts196"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">  </span><a class="rvts13" href="https://www.helpndoc.com/help-authoring-tool">Free help authoring environment</a></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 by Diederik Jacques. All Rights Reserved.</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
@@ -324,7 +324,7 @@
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
-     
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
   <script src="js/polyfill.object.min.js"></script>
