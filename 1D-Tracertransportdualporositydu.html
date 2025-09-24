@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 9.3.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -31,17 +31,9 @@
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="HPx" /> 
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
-      <script src="vendors/respond-1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
 
   <!-- JsTree styles -->
   <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
@@ -75,7 +67,7 @@
 
   <header class="headroom">
     <button class="hnd-toggle btn btn-default">
-      <span class="sr-only">Toggle navigation</span>
+      <span class="visually-hidden">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
     <h1>HPx</h1>
@@ -87,28 +79,28 @@
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close" role="presentation"> 
         <button class="hnd-toggle btn btn-default" aria-label="close">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <span class="bi bi-x" aria-hidden="true"></span>
         </button>
       </li>
       
 	  
-        <li role="presentation" class="tab active">
-            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-list"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
                 Contents
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
                 Index
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
                 Search
             </a>
         </li>
@@ -145,7 +137,7 @@
                   <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="submit" aria-label="Search...">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      <span class="bi bi-search" aria-hidden="true"></span>
                     </button>
                   </span>
                 </div>
@@ -177,7 +169,7 @@
                         <li><a href="Verification.html">Verification</a></li><li><a href="HPx-1D.html">HPx - 1D</a></li><li><a href="ConservativeTransport.html">Conservative Transport</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConservativeTransport.html" title="Conservative Transport" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1D-Tracerpulseduringsteady-state.html" title="1D - Tracer pulse during steady-state flow conditions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="GasTransport.html" title="Gas Transport" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConservativeTransport.html" title="Conservative Transport" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="1D-Tracerpulseduringsteady-state.html" title="1D - Tracer pulse during steady-state flow conditions" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="GasTransport.html" title="Gas Transport" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -208,7 +200,7 @@
    <p class="rvps2"><a class="rvts21" href="WaterFlowEquation.html#DualPorosiy">Dual porosity model for water flow</a></p>
   </td>
   <td style="padding: 1px; width: 309px; height: 11px;">
-   <p class="rvps2"><span class="rvts6">vertical flow (</span><span class="rvts145">α</span><span class="rvts6">=1), no water sink (</span><span class="rvts82">S</span><span class="rvts6">=0)</span></p>
+   <p class="rvps2"><span class="rvts6">vertical flow (</span><span class="rvts146">α</span><span class="rvts6">=1), no water sink (</span><span class="rvts82">S</span><span class="rvts6">=0)</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -278,13 +270,13 @@
 <h1 class="rvps26"><span class="rvts0"><span class="rvts67">Material Parameters</span></span></h1>
 <p class="rvps51"><span class="rvts6">The hydraulic properties are described with the </span><a class="rvts21" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten - Mualem</a><span class="rvts6"> model with </span><span class="rvts82">m</span><span class="rvts6">=1-1/</span><span class="rvts82">n</span><span class="rvts6">. Parameter values are in </span><a class="rvts21" href="1D-Boundaryvalueproblemduringste.html#Table%201%20hydraulic%20parameters">Table 1</a><span class="rvts6">.</span></p>
 <p class="rvps51"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><a name="Table 1 hydraulic parameters"></a><span class="rvts91">Table 1 - Parameters of the moisture retention curve and the unsaturated hydraulic conductivity as described with the model of </span><a class="rvts146" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten -Mualem</a><span class="rvts91">.</span></p>
-<p class="rvps32"><span class="rvts91">(</span><span class="rvts147">θ</span><span class="rvts148">s,im</span><span class="rvts91"> and </span><span class="rvts147">θ</span><span class="rvts148">i,im</span><span class="rvts91"> are the saturated and residual water content of the immobile regions [-], and </span><span class="rvts149">ω</span><span class="rvts91"> is the </span><a class="rvts146" href="WaterFlowEquation.html#masstransfercoefficient">mass transfer coefficient</a><span class="rvts91">)</span></p>
+<p class="rvps32"><a name="Table 1 hydraulic parameters"></a><span class="rvts91">Table 1 - Parameters of the moisture retention curve and the unsaturated hydraulic conductivity as described with the model of </span><a class="rvts147" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten -Mualem</a><span class="rvts91">.</span></p>
+<p class="rvps32"><span class="rvts91">(</span><span class="rvts148">θ</span><span class="rvts149">s,im</span><span class="rvts91"> and </span><span class="rvts148">θ</span><span class="rvts149">i,im</span><span class="rvts91"> are the saturated and residual water content of the immobile regions [-], and </span><span class="rvts150">ω</span><span class="rvts91"> is the </span><a class="rvts147" href="WaterFlowEquation.html#masstransfercoefficient">mass transfer coefficient</a><span class="rvts91">)</span></p>
 <div class="rvps52">
 <table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps2"><span class="rvts145">θ</span><span class="rvts81">s</span></p>
+   <p class="rvps2"><span class="rvts146">θ</span><span class="rvts81">s</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
    <p class="rvps2"><span class="rvts6">0.43</span></p>
@@ -292,7 +284,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps2"><span class="rvts145">θ</span><span class="rvts81">r</span></p>
+   <p class="rvps2"><span class="rvts146">θ</span><span class="rvts81">r</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
    <p class="rvps2"><span class="rvts6">0.078</span></p>
@@ -300,7 +292,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px; height: 8px;">
-   <p class="rvps2"><span class="rvts145">α</span></p>
+   <p class="rvps2"><span class="rvts146">α</span></p>
   </td>
   <td style="padding: 1px; width: 108px; height: 8px;">
    <p class="rvps2"><span class="rvts6">0.036 /cm</span></p>
@@ -332,7 +324,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps2"><span class="rvts145">θ</span><span class="rvts81">s,im</span></p>
+   <p class="rvps2"><span class="rvts146">θ</span><span class="rvts81">s,im</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
    <p class="rvps2"><span class="rvts6">0.1</span></p>
@@ -340,7 +332,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps2"><span class="rvts145">θ</span><span class="rvts81">r,im</span></p>
+   <p class="rvps2"><span class="rvts146">θ</span><span class="rvts81">r,im</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
    <p class="rvps2"><span class="rvts6">0</span></p>
@@ -348,7 +340,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps2"><span class="rvts145">ω</span></p>
+   <p class="rvps2"><span class="rvts146">ω</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
    <p class="rvps2"><span class="rvts6">0.01 1/days</span></p>
@@ -359,7 +351,7 @@
 <p class="rvps2"><span class="rvts82"><br/></span></p>
 <p class="rvps51"><span class="rvts6">The parameters of the solute transport equation and dispersion are given in </span><a class="rvts21" href="1D-Tracertransportdualporositydu.html#Table%202%20(solute%20parameter)">Table 2</a><span class="rvts6">.</span></p>
 <p class="rvps51"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><a name="Table 2 (solute parameter)"></a><span class="rvts91">Table 2 - Parameters of the solute transport equation (</span><a class="rvts146" href="SoluteTransportEquation.html#Dual_porosityADR">dual-porosity non-equilibrium advection-dispersion equation</a><span class="rvts91">)&nbsp;</span></p>
+<p class="rvps32"><a name="Table 2 (solute parameter)"></a><span class="rvts91">Table 2 - Parameters of the solute transport equation (</span><a class="rvts147" href="SoluteTransportEquation.html#Dual_porosityADR">dual-porosity non-equilibrium advection-dispersion equation</a><span class="rvts91">)&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps52">
 <table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
@@ -376,12 +368,12 @@
    <p class="rvps2"><span class="rvts82">D</span><span class="rvts81">w</span></p>
   </td>
   <td style="padding: 1px; width: 152px;">
-   <p class="rvps2"><span class="rvts6">0 cm</span><span class="rvts120">2</span><span class="rvts6">/day</span></p>
+   <p class="rvps2"><span class="rvts6">0 cm</span><span class="rvts121">2</span><span class="rvts6">/day</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 122px;">
-   <p class="rvps2"><span class="rvts114">τ</span></p>
+   <p class="rvps2"><span class="rvts115">τ</span></p>
   </td>
   <td style="padding: 1px; width: 152px;">
    <p class="rvps2"><a class="rvts21" href="Dispersioncoefficient.html#MillingtonQuirk">Millington &amp; Quirk</a></p>
@@ -389,7 +381,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 122px;">
-   <p class="rvps2"><span class="rvts145">ω</span></p>
+   <p class="rvps2"><span class="rvts146">ω</span></p>
   </td>
   <td style="padding: 1px; width: 152px;">
    <p class="rvps2"><span class="rvts6">&nbsp;0.005 1/day</span></p>
@@ -408,7 +400,7 @@
 </ul>
 <h1 class="rvps26"><span class="rvts0"><span class="rvts67">Numerical Settings</span></span></h1>
 <p class="rvps2"><span class="rvts6">The profile is discretized in 100 elements with 101 equally-spaced nodes.</span></p>
-<p class="rvps2"><span class="rvts6">The minimum and maximum time steps are 10</span><span class="rvts120">-5</span><span class="rvts6"> and 1 days, respectively.</span></p>
+<p class="rvps2"><span class="rvts6">The minimum and maximum time steps are 10</span><span class="rvts121">-5</span><span class="rvts6"> and 1 days, respectively.</span></p>
 <p class="rvps2"><span class="rvts6">The Crank-Nicholson scheme for time weighting and the Galarkin finite element scheme for space weighting are used with a stability criterion (PeCr) equal to 2.</span></p>
 <h1 class="rvps26"><span class="rvts0"><span class="rvts67">Results</span></span></h1>
 <p class="rvps2"><a class="rvts21" href="1D-Tracertransportdualporositydu.html#Figure2TimeSeries">Figure 2</a><span class="rvts6"> shows an excellent agreement between the time series of aqueous concentration of Tracer A and B obtained with HYDRUS-1D and HPx at selected depths.</span></p>
@@ -429,7 +421,7 @@
 <h4 class="rvps23"><span class="rvts0"><span class="rvts54">HPx Project</span></span></h4>
 <p class="rvps2"><a class="rvts21" href="Deposit/HPx/1D/Verification/0210%20-%20Inert/ADR-DP-Transient.zip">ADR-DP-Transient</a></p>
 <p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Full-featured Documentation generator</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Revolutionize your documentation process with HelpNDoc's online capabilities</a></p>
 
             </div>
             
@@ -441,20 +433,20 @@
 
   </div>  <!-- /#main -->
 
-  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
   
   <!-- Modal -->
   <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -464,9 +456,8 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
   <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
@@ -475,29 +466,13 @@
   <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
-  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 
