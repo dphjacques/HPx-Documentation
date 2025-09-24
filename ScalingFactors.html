@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 9.3.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -31,17 +31,9 @@
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="HPx" /> 
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
-      <script src="vendors/respond-1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
 
   <!-- JsTree styles -->
   <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
@@ -75,7 +67,7 @@
 
   <header class="headroom">
     <button class="hnd-toggle btn btn-default">
-      <span class="sr-only">Toggle navigation</span>
+      <span class="visually-hidden">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
     <h1>HPx</h1>
@@ -87,28 +79,28 @@
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close" role="presentation"> 
         <button class="hnd-toggle btn btn-default" aria-label="close">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <span class="bi bi-x" aria-hidden="true"></span>
         </button>
       </li>
       
 	  
-        <li role="presentation" class="tab active">
-            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-list"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
                 Contents
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
                 Index
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
                 Search
             </a>
         </li>
@@ -145,7 +137,7 @@
                   <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="submit" aria-label="Search...">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      <span class="bi bi-search" aria-hidden="true"></span>
                     </button>
                   </span>
                 </div>
@@ -177,7 +169,7 @@
                         <li><a href="EquationsFunctionsandParameters.html">Equations, Functions, and Parameters</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="EquationsFunctionsandParameters.html" title="Equations, Functions, and Parameters" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Hydraulicfunctions.html" title="Hydraulic functions" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Dispersioncoefficient.html" title="Dispersion coefficient" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="EquationsFunctionsandParameters.html" title="Equations, Functions, and Parameters" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Hydraulicfunctions.html" title="Hydraulic functions" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Dispersioncoefficient.html" title="Dispersion coefficient" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -188,18 +180,18 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts88">The concept of scaling hydraulic properties is used in the HYDRUS codes to describe spatial variability in the unsaturated soil hydraulic properties in the flow domain. The spatial variability is approximated by a set of three scaling factors in a linear model for the spatial variability (</span><a class="rvts168" href="References.html#Vogeletal_1991">Vogel et al., 1991</a><span class="rvts88">). In HPx, this concept is extended to describe also the temporal variation of soil hydraulic properties. Thus, by defining spatially-temporal scaling factors, a complex time-variable parameter field can be defined.</span></p>
+<p class="rvps2"><span class="rvts88">The concept of scaling hydraulic properties is used in the HYDRUS codes to describe spatial variability in the unsaturated soil hydraulic properties in the flow domain. The spatial variability is approximated by a set of three scaling factors in a linear model for the spatial variability (</span><a class="rvts170" href="References.html#Vogeletal_1991">Vogel et al., 1991</a><span class="rvts88">). In HPx, this concept is extended to describe also the temporal variation of soil hydraulic properties. Thus, by defining spatially-temporal scaling factors, a complex time-variable parameter field can be defined.</span></p>
 <p class="rvps2"><span class="rvts88"><br/></span></p>
-<p class="rvps2"><span class="rvts88">The first is the </span><span class="rvts164">scaling factor of the water content</span><span class="rvts88">, </span><span class="rvts114">α</span><span class="rvts116">θ</span><span class="rvts88">, defined as:</span></p>
-<p class="rvps2"><span class="rvts159"><br/></span></p>
+<p class="rvps2"><span class="rvts88">The first is the </span><span class="rvts166">scaling factor of the water content</span><span class="rvts88">, </span><span class="rvts115">α</span><span class="rvts117">θ</span><span class="rvts88">, defined as:</span></p>
+<p class="rvps2"><span class="rvts161"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20water%20content%20-%20Porosity.gif"></p>
-<p class="rvps2"><span class="rvts191"><br/></span></p>
+<p class="rvps2"><span class="rvts197"><br/></span></p>
 <p class="rvps2"><span class="rvts88">where &nbsp;</span></p>
 <div class="rvps42">
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts190">x</span></p>
+   <p class="rvps2"><span class="rvts196">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -215,7 +207,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts114">ϕ</span></p>
+   <p class="rvps2"><span class="rvts115">ϕ</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">porosity (-)</span></p>
@@ -223,7 +215,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts114">θ</span><span class="rvts81">s</span><span class="rvts120">*</span></p>
+   <p class="rvps2"><span class="rvts115">θ</span><span class="rvts81">s</span><span class="rvts121">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">Reference saturated water content</span></p>
@@ -231,7 +223,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts114">θ</span><span class="rvts81">r</span><span class="rvts120">*</span></p>
+   <p class="rvps2"><span class="rvts115">θ</span><span class="rvts81">r</span><span class="rvts121">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">Reference residual water content</span></p>
@@ -241,8 +233,8 @@
 </div>
 <p class="rvps42"><span class="rvts88"><br/></span></p>
 <p class="rvps2"><span class="rvts88"><br/></span></p>
-<p class="rvps2"><span class="rvts88">The hydraulic conductivity is scaled with </span><span class="rvts164">the scaling factor of the hydraulic conductivity</span><span class="rvts88">, </span><span class="rvts114">α</span><span class="rvts192">K</span><span class="rvts88"> :</span></p>
-<p class="rvps2"><span class="rvts159"><br/></span></p>
+<p class="rvps2"><span class="rvts88">The hydraulic conductivity is scaled with </span><span class="rvts166">the scaling factor of the hydraulic conductivity</span><span class="rvts88">, </span><span class="rvts115">α</span><span class="rvts198">K</span><span class="rvts88"> :</span></p>
+<p class="rvps2"><span class="rvts161"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20hydraulic%20conductivity.gif"></p>
 <p class="rvps30"><span class="rvts88"><br/></span></p>
 <p class="rvps2"><span class="rvts88">where &nbsp;</span></p>
@@ -250,7 +242,7 @@
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts190">x</span></p>
+   <p class="rvps2"><span class="rvts196">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -274,7 +266,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts82">K</span><span class="rvts81">s</span><span class="rvts120">*</span></p>
+   <p class="rvps2"><span class="rvts82">K</span><span class="rvts81">s</span><span class="rvts121">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">reference saturated hydraulic conductivity</span></p>
@@ -289,18 +281,18 @@
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
   <li class="rvps4 noindent"><span class="rvts88">Total porosity</span></li>
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-   <li class="rvps29 noindent"><a class="rvts168" href="Carman-Kozeny.html">Carman-Kozeny</a><span class="rvts88"> relationship</span></li>
+   <li class="rvps29 noindent"><a class="rvts170" href="Carman-Kozeny.html">Carman-Kozeny</a><span class="rvts88"> relationship</span></li>
   </ul>
   <li class="rvps4 noindent"><span class="rvts88">Pore size distribution models</span></li>
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-   <li class="rvps29 noindent"><a class="rvts168" href="SelectiveradiusshiftmodelWissmei.html">Selective radius shift model</a><span class="rvts88"> (</span><a class="rvts168" href="References.html#WissmeierBarry_2009">Wissmeier and Barry, 2009</a><span class="rvts88">)</span></li>
+   <li class="rvps29 noindent"><a class="rvts170" href="SelectiveradiusshiftmodelWissmei.html">Selective radius shift model</a><span class="rvts88"> (</span><a class="rvts170" href="References.html#WissmeierBarry_2009">Wissmeier and Barry, 2009</a><span class="rvts88">)</span></li>
   </ul>
  </ul>
  <li class="rvps2 noindent"><span class="rvts88">Temperature and salinity effects through their effect on density and viscosity</span></li>
 </ul>
 <p class="rvps4"><span class="rvts88"><br/></span></p>
 <p class="rvps4"><span class="rvts88"><br/></span></p>
-<p class="rvps2"><span class="rvts88">The pressure head is scaled with </span><span class="rvts164">the scaling factor of the pressure head</span><span class="rvts88">, </span><span class="rvts114">α</span><span class="rvts192">h</span><span class="rvts88"> :</span></p>
+<p class="rvps2"><span class="rvts88">The pressure head is scaled with </span><span class="rvts166">the scaling factor of the pressure head</span><span class="rvts88">, </span><span class="rvts115">α</span><span class="rvts198">h</span><span class="rvts88"> :</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20pressure%20head.gif"></p>
 <p class="rvps2"><span class="rvts88"><br/></span></p>
 <p class="rvps30"><span class="rvts88"><br/></span></p>
@@ -309,7 +301,7 @@
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts190">x</span></p>
+   <p class="rvps2"><span class="rvts196">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -333,7 +325,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts82">h</span><span class="rvts120">*</span></p>
+   <p class="rvps2"><span class="rvts82">h</span><span class="rvts121">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">reference pressure head</span></p>
@@ -342,7 +334,7 @@
 </table>
 </div>
 <p class="rvps42"><span class="rvts88"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Effortlessly Publish Your Word Document as an eBook</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/advanced-project-analyzer/">Elevate Your Documentation with HelpNDoc's Project Analyzer Features</a></p>
 
             </div>
             
@@ -354,20 +346,20 @@
 
   </div>  <!-- /#main -->
 
-  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
   
   <!-- Modal -->
   <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -377,9 +369,8 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
   <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
@@ -388,29 +379,13 @@
   <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
-  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

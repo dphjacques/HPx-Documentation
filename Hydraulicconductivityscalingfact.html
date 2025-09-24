@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 9.3.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -31,17 +31,9 @@
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="HPx" /> 
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
-      <script src="vendors/respond-1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
 
   <!-- JsTree styles -->
   <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
@@ -75,7 +67,7 @@
 
   <header class="headroom">
     <button class="hnd-toggle btn btn-default">
-      <span class="sr-only">Toggle navigation</span>
+      <span class="visually-hidden">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
     <h1>HPx</h1>
@@ -87,28 +79,28 @@
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close" role="presentation"> 
         <button class="hnd-toggle btn btn-default" aria-label="close">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <span class="bi bi-x" aria-hidden="true"></span>
         </button>
       </li>
       
 	  
-        <li role="presentation" class="tab active">
-            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-list"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
                 Contents
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
                 Index
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
                 Search
             </a>
         </li>
@@ -145,7 +137,7 @@
                   <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="submit" aria-label="Search...">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      <span class="bi bi-search" aria-hidden="true"></span>
                     </button>
                   </span>
                 </div>
@@ -177,7 +169,7 @@
                         <li><a href="HowTo.html">How To...</a></li><li><a href="Changetransportproperties.html">Change transport properties</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Changetransportproperties.html" title="Change transport properties" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Porosityscalingfactorofwatercont.html" title="Porosity (scaling factor of water content)" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Tortuosityaqueousphase.html" title="Tortuosity aqueous phase" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Changetransportproperties.html" title="Change transport properties" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Porosityscalingfactorofwatercont.html" title="Porosity (scaling factor of water content)" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Tortuosityaqueousphase.html" title="Tortuosity aqueous phase" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -198,12 +190,12 @@
 <p class="rvps4"><span class="rvts88"><br/></span></p>
 <p class="rvps28"><span class="rvts59"><br/></span></p>
 <h3 class="rvps22"><span class="rvts0"><span class="rvts52">Setting the scaling factor for the hydraulic conductivity at the initial time</span></span></h3>
-<p class="rvps2"><span class="rvts159"><br/></span></p>
+<p class="rvps2"><span class="rvts161"><br/></span></p>
 <p class="rvps2"><span class="rvts88">The initial values of the scaling factor of the hydraulic conductivity can be set in following ways:</span></p>
 <p class="rvps2"><span class="rvts88"><br/></span></p>
-<p class="rvps4"><span class="rvts6"></span><span class="rvts166">The </span><span class="rvts165">Soil Profile - Graphical Editor</span><span class="rvts166"> or </span><span class="rvts165">Soil Profile - Summary </span><span class="rvts166">pre-processing dialogue windows of the HYDRUS graphical user interface</span></p>
-<p class="rvps4"><span class="rvts166"><br/></span></p>
-<p class="rvps29"><span class="rvts88">Via the </span><span class="rvts164">Soil Profile - Graphical Editor</span><span class="rvts165">, </span><span class="rvts88">use following commands:</span></p>
+<p class="rvps4"><span class="rvts6"></span><span class="rvts168">The </span><span class="rvts167">Soil Profile - Graphical Editor</span><span class="rvts168"> or </span><span class="rvts167">Soil Profile - Summary </span><span class="rvts168">pre-processing dialogue windows of the HYDRUS graphical user interface</span></p>
+<p class="rvps4"><span class="rvts168"><br/></span></p>
+<p class="rvps29"><span class="rvts88">Via the </span><span class="rvts166">Soil Profile - Graphical Editor</span><span class="rvts167">, </span><span class="rvts88">use following commands:</span></p>
 <p class="rvps29"><span class="rvts88"><br/></span></p>
 <p class="rvps28"><span class="rvts88">Conditions -&gt; Scaling Factor -&gt; Hydraulic conductivity</span></p>
 <p class="rvps28"><span class="rvts88">Click Edit condition (see figure below)</span></p>
@@ -213,28 +205,28 @@
 <p class="rvps28"><span class="rvts88">Select "hydraulic conductivity" &nbsp;(see figure below)</span></p>
 <p class="rvps28"><span class="rvts88">Click Edit condition (see figure below)</span></p>
 <p class="rvps28"><span class="rvts88">Select nodes and set the values for selected top and bottom node</span></p>
-<p class="rvps31"><span class="rvts159"><br/></span></p>
-<p class="rvps31"><span class="rvts159"><br/></span></p>
+<p class="rvps31"><span class="rvts161"><br/></span></p>
+<p class="rvps31"><span class="rvts161"><br/></span></p>
 <p class="rvps56"><img alt="" style="width : 485px; height : 83px; padding : 1px;" src="lib/HYDRUS%20-%20Profile%20Editor%20-%20Tool%20bar%20-%20Scaling%20factor.png"></p>
 <p class="rvps56"><img alt="" style="padding : 1px;" src="lib/HYDRUS%20-%20Profile%20Editor%20-%20Scaling%20factor%20-%20Select%20quantity%20K.png"></p>
-<p class="rvps4"><span class="rvts162"><br/></span></p>
-<p class="rvps4"><span class="rvts162"><br/></span></p>
-<p class="rvps29"><span class="rvts88">Via the </span><span class="rvts164">Soil Profile - Graphical Summary</span><span class="rvts88">:</span></p>
+<p class="rvps4"><span class="rvts164"><br/></span></p>
+<p class="rvps4"><span class="rvts164"><br/></span></p>
+<p class="rvps29"><span class="rvts88">Via the </span><span class="rvts166">Soil Profile - Graphical Summary</span><span class="rvts88">:</span></p>
 <p class="rvps31"><span class="rvts88">Nodal values for the scaling factor of the hydraulic conductivity at the initial time are defined in the column with heading Bxz (see figure below)</span></p>
-<p class="rvps31"><span class="rvts159"><br/></span></p>
-<p class="rvps31"><span class="rvts159"><br/></span></p>
+<p class="rvps31"><span class="rvts161"><br/></span></p>
+<p class="rvps31"><span class="rvts161"><br/></span></p>
 <p class="rvps56"><img alt="" style="width : 617px; height : 395px; padding : 1px;" src="lib/HYDRUS%20-%20Pre-processing%20-%20Soil%20Profile%20Summary%20-%20Dxz.png"><span class="rvts6"></span></p>
-<p class="rvps56"><span class="rvts162"><br/></span></p>
-<p class="rvps4"><span class="rvts6"></span><span class="rvts166">The </span><span class="rvts165">Project Navigator</span><span class="rvts166">&nbsp;</span></p>
+<p class="rvps56"><span class="rvts164"><br/></span></p>
+<p class="rvps4"><span class="rvts6"></span><span class="rvts168">The </span><span class="rvts167">Project Navigator</span><span class="rvts168">&nbsp;</span></p>
 <p class="rvps29"><span class="rvts88">Via Domain Properties -&gt; SF - Hydraulic Conductivity (see figure below)</span></p>
 <p class="rvps56"><img alt="" style="padding : 1px;" src="lib/HYDRUS2D%20-%20Project%20Navigator%20-%20Domain%20Properties%20-%20SF%20-%20Hydraulic%20conductivity.png"><span class="rvts6"></span></p>
-<p class="rvps56"><span class="rvts162"><br/></span></p>
-<p class="rvps4"><span class="rvts166">Initial calculations using </span><a class="rvts55" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts166"> in geochemistry input</span></p>
-<p class="rvps4"><span class="rvts162"><br/></span></p>
-<p class="rvps29"><a name="change_por0"></a><span class="rvts88">With</span><span class="rvts89"> </span><a class="rvts56" href="state1.html">-state initial</a><span class="rvts88">, the script is executed once at the beginning for the transport simulations for each node. This option can be used to calculate the values of the scaling factor of the hydraulic conductivity at initial time. The script functions </span><a class="rvts93" href="change_sfcond.html">change_sfcond()</a><span class="rvts88"> and </span><a class="rvts93" href="change_sfcond0.html">change_sfcond0() </a><span class="rvts88">are used to change the value of the scaling factor of the hydraulic conductivity and the scaling factor of the hydrauilc conductivity at the initial time (to keep the initial value).</span></p>
+<p class="rvps56"><span class="rvts164"><br/></span></p>
+<p class="rvps4"><span class="rvts168">Initial calculations using </span><a class="rvts55" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts168"> in geochemistry input</span></p>
+<p class="rvps4"><span class="rvts164"><br/></span></p>
+<p class="rvps29"><a name="change_por0"></a><span class="rvts88">With</span><span class="rvts89"> </span><a class="rvts56" href="state1.html">-state initial</a><span class="rvts88">, the script is executed once at the beginning for the transport simulations for each node. This option can be used to calculate the values of the scaling factor of the hydraulic conductivity at initial time. The script functions </span><a class="rvts94" href="change_sfcond.html">change_sfcond()</a><span class="rvts88"> and </span><a class="rvts94" href="change_sfcond0.html">change_sfcond0() </a><span class="rvts88">are used to change the value of the scaling factor of the hydraulic conductivity and the scaling factor of the hydrauilc conductivity at the initial time (to keep the initial value).</span></p>
 <p class="rvps29"><span class="rvts88"><br/></span></p>
 <p class="rvps29"><span class="rvts88">The example below illustrates how to set the values for the scaling factor for the hydraulic conductivity assuming that the it has been calculated and stored as the variable porosity.</span></p>
-<p class="rvps29"><span class="rvts159"><br/></span></p>
+<p class="rvps29"><span class="rvts161"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
@@ -247,8 +239,8 @@
    <p class="rvps29"><span class="rvts85">#statements to calculate scalingfactor</span></p>
    <p class="rvps29"><span class="rvts85">#...</span></p>
    <p class="rvps29"><span class="rvts85">#scalingfactor = ...</span></p>
-   <p class="rvps29"><a class="rvts93" href="change_sfcond0.html">change_sfcond0(</a><a class="rvts163" href="change_sfcond0.html">scalingfactor</a><a class="rvts93" href="change_por0.html">)</a></p>
-   <p class="rvps29"><a class="rvts93" href="change_sfcond.html">change_sfcond(</a><a class="rvts163" href="change_sfcond0.html">scalingfactor</a><a class="rvts93" href="update_sfwater.html">)</a></p>
+   <p class="rvps29"><a class="rvts94" href="change_sfcond0.html">change_sfcond0(</a><a class="rvts165" href="change_sfcond0.html">scalingfactor</a><a class="rvts94" href="change_por0.html">)</a></p>
+   <p class="rvps29"><a class="rvts94" href="change_sfcond.html">change_sfcond(</a><a class="rvts165" href="change_sfcond0.html">scalingfactor</a><a class="rvts94" href="update_sfwater.html">)</a></p>
    <p class="rvps4"><a class="rvts56" href="end.html">-end</a></p>
   </td>
  </tr>
@@ -265,7 +257,7 @@
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts82">Calculate and update the scaling factor</span></p>
-<p class="rvps29"><span class="rvts6">After the geochemical calculations in each time step and for each node, the scaling factor needs to be updated. The scripts associated with </span><a class="rvts56" href="state1.html">-state update</a><span class="rvts6"> of the </span><a class="rvts55" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts166"> </span><span class="rvts88">data block are executed for each node after the geochemical calculations in each time step.&nbsp;</span></p>
+<p class="rvps29"><span class="rvts6">After the geochemical calculations in each time step and for each node, the scaling factor needs to be updated. The scripts associated with </span><a class="rvts56" href="state1.html">-state update</a><span class="rvts6"> of the </span><a class="rvts55" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts168"> </span><span class="rvts88">data block are executed for each node after the geochemical calculations in each time step.&nbsp;</span></p>
 <p class="rvps29"><span class="rvts88"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps28">
@@ -279,14 +271,14 @@
    <p class="rvps29"><span class="rvts85">#statements to calculate scalingfactor</span></p>
    <p class="rvps29"><span class="rvts85">#...</span></p>
    <p class="rvps29"><span class="rvts85">#scalingfactor = ...</span></p>
-   <p class="rvps29"><a class="rvts93" href="change_sfcond.html">change_sfcond(</a><a class="rvts163" href="change_por0.html">scalingfactor</a><a class="rvts93" href="change_por0.html">)</a></p>
+   <p class="rvps29"><a class="rvts94" href="change_sfcond.html">change_sfcond(</a><a class="rvts165" href="change_por0.html">scalingfactor</a><a class="rvts94" href="change_por0.html">)</a></p>
    <p class="rvps4"><a class="rvts56" href="end.html">-end</a></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts166">Indicate evolving using updated transport properties in the flow and transport model</span></p>
+<p class="rvps4"><span class="rvts168">Indicate evolving using updated transport properties in the flow and transport model</span></p>
 <p class="rvps29"><span class="rvts88">To indicate that a changed porosity and scaling factor of the water content has to be used,</span><span class="rvts89"> </span><a class="rvts56" href="update.html">-update hp</a><span class="rvts88"> in </span><a class="rvts55" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts88"> is set true.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps28">
@@ -299,13 +291,13 @@
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts159">&nbsp;</span></p>
-<p class="rvps29"><span class="rvts88">Alternatively, the option for updating hydraulic parameters (check </span><span class="rvts59">Evolving Transport Properties</span><span class="rvts88">; check </span><span class="rvts59">Hydraulic Properties</span><span class="rvts88">) can be selected in the </span><a class="rvts168" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts88"> form of the </span><a class="rvts168" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts88">.</span></p>
+<p class="rvps31"><span class="rvts161">&nbsp;</span></p>
+<p class="rvps29"><span class="rvts88">Alternatively, the option for updating hydraulic parameters (check </span><span class="rvts59">Evolving Transport Properties</span><span class="rvts88">; check </span><span class="rvts59">Hydraulic Properties</span><span class="rvts88">) can be selected in the </span><a class="rvts170" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts88"> form of the </span><a class="rvts170" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts88">.</span></p>
 <p class="rvps29"><span class="rvts88"><br/></span></p>
-<p class="rvps2"><span class="rvts164">Important:</span><span class="rvts88"> The scaling factors of the hydraulic conductivity are only updated with the statements&nbsp;</span><span class="rvts111"> </span><a class="rvts93" href="change_sfcond.html">change_sfcond()</a><span class="rvts88">. The updated values are only used in the water flow and solute transport model with the identifier </span><a class="rvts56" href="update.html">-update hp </a><span class="rvts59">true</span><span class="rvts88">.</span></p>
+<p class="rvps2"><span class="rvts166">Important:</span><span class="rvts88"> The scaling factors of the hydraulic conductivity are only updated with the statements&nbsp;</span><span class="rvts112"> </span><a class="rvts94" href="change_sfcond.html">change_sfcond()</a><span class="rvts88">. The updated values are only used in the water flow and solute transport model with the identifier </span><a class="rvts56" href="update.html">-update hp </a><span class="rvts59">true</span><span class="rvts88">.</span></p>
 <h3 class="rvps22"><span class="rvts0"><span class="rvts52"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Free Qt Help documentation generator</a></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/produce-html-websites/">Revolutionize your documentation process with HelpNDoc's online capabilities</a></p>
 
             </div>
             
@@ -317,20 +309,20 @@
 
   </div>  <!-- /#main -->
 
-  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
   
   <!-- Modal -->
   <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -340,9 +332,8 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
   <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
@@ -351,29 +342,13 @@
   <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
-  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Personal Edition 9.3.0.281">
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -31,17 +31,9 @@
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="HPx" /> 
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
-
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
-      <script src="vendors/respond-1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
 
   <!-- JsTree styles -->
   <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
@@ -75,7 +67,7 @@
 
   <header class="headroom">
     <button class="hnd-toggle btn btn-default">
-      <span class="sr-only">Toggle navigation</span>
+      <span class="visually-hidden">Toggle navigation</span>
       <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
     </button>
     <h1>HPx</h1>
@@ -87,28 +79,28 @@
     <ul class="tab-tabs nav nav-tabs" role="tablist">
       <li id="nav-close" role="presentation"> 
         <button class="hnd-toggle btn btn-default" aria-label="close">
-          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          <span class="bi bi-x" aria-hidden="true"></span>
         </button>
       </li>
       
 	  
-        <li role="presentation" class="tab active">
-            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-list"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
                 Contents
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-asterisk"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
                 Index
             </a>
         </li>
       
-        <li role="presentation" class="tab">
-            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
-                <i class="glyphicon glyphicon-search"></i>
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
                 Search
             </a>
         </li>
@@ -145,7 +137,7 @@
                   <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="submit" aria-label="Search...">
-                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      <span class="bi bi-search" aria-hidden="true"></span>
                     </button>
                   </span>
                 </div>
@@ -177,7 +169,7 @@
                         <li><a href="HowTo.html">How To...</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="HowTo.html" title="How To..." role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HowTo.html" title="How To..." role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DUMP.html" title="DUMP" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="HowTo.html" title="How To..." role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HowTo.html" title="How To..." role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DUMP.html" title="DUMP" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -193,33 +185,33 @@
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts152">SOLUTION_MASTER_SPECIES</span><br/><span class="rvts72">Gc &nbsp; &nbsp; &nbsp;Gc &nbsp;-</span><span class="rvts124">1</span><span class="rvts72">.</span><span class="rvts124">0</span><span class="rvts72"> &nbsp; &nbsp;Gc &nbsp; &nbsp; &nbsp;</span><span class="rvts124">1</span><span class="rvts72">.</span><span class="rvts124">008</span><br/><span class="rvts152">SOLUTION_SPECIES</span><br/><span class="rvts72">Gc = Gc</span><br/><span class="rvts153">&nbsp; &nbsp; log_k&nbsp;</span><span class="rvts72"> &nbsp;</span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">0</span><span class="rvts72">&nbsp;</span><br/><span class="rvts153">&nbsp; &nbsp; -gamma&nbsp;</span><span class="rvts72"> </span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">0</span><span class="rvts72"> </span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">0</span><br/><span class="rvts152">PHASES</span><br/><span class="rvts72">Gc(g)</span><br/><span class="rvts72">&nbsp; &nbsp; Gc = Gc</span><br/><span class="rvts153">&nbsp; &nbsp; &nbsp; &nbsp; log_k&nbsp;</span><span class="rvts72"> &nbsp;-</span><span class="rvts124">1</span><span class="rvts72">.</span><span class="rvts124">46239800</span></p>
+   <p class="rvps4"><span class="rvts153">SOLUTION_MASTER_SPECIES</span><br/><span class="rvts72">Gc &nbsp; &nbsp; &nbsp;Gc &nbsp;-</span><span class="rvts125">1</span><span class="rvts72">.</span><span class="rvts125">0</span><span class="rvts72"> &nbsp; &nbsp;Gc &nbsp; &nbsp; &nbsp;</span><span class="rvts125">1</span><span class="rvts72">.</span><span class="rvts125">008</span><br/><span class="rvts153">SOLUTION_SPECIES</span><br/><span class="rvts72">Gc = Gc</span><br/><span class="rvts154">&nbsp; &nbsp; log_k&nbsp;</span><span class="rvts72"> &nbsp;</span><span class="rvts125">0</span><span class="rvts72">.</span><span class="rvts125">0</span><span class="rvts72">&nbsp;</span><br/><span class="rvts154">&nbsp; &nbsp; -gamma&nbsp;</span><span class="rvts72"> </span><span class="rvts125">0</span><span class="rvts72">.</span><span class="rvts125">0</span><span class="rvts72"> </span><span class="rvts125">0</span><span class="rvts72">.</span><span class="rvts125">0</span><br/><span class="rvts153">PHASES</span><br/><span class="rvts72">Gc(g)</span><br/><span class="rvts72">&nbsp; &nbsp; Gc = Gc</span><br/><span class="rvts154">&nbsp; &nbsp; &nbsp; &nbsp; log_k&nbsp;</span><span class="rvts72"> &nbsp;-</span><span class="rvts125">1</span><span class="rvts72">.</span><span class="rvts125">46239800</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts0"><span class="rvts52">Definitions of Solutions Compositions</span></span><br/><span class="rvts6"></span><br/><span class="rvts6">To define the partial pressure for the upper boundary (atmosphere), a </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> is defined. The number of the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> will be used in the </span><span class="rvts11">Solute Transport Boundary Condition</span><span class="rvts6"> dialogue window (see below).</span><br/><span class="rvts6">The definition of the composition of the gas phase for a boundary condition is similar to the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> definition in the PHREEQC manual with </span><a class="rvts56" href="boundary_layer.html">-boundary_layer</a><span class="rvts6"> as the only extra identifier. </span><a class="rvts56" href="boundary_layer.html">-boundary_layer</a><span class="rvts6"> is used to define the thickness of the stagnant boundary layer used for volatile (gaseous) components in HYDRUS (see HYDRUS manual). In this particular example, the thickness of the stagnant boundary layer is 1 cm.</span><br/><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6">Definitions of Solutions Compositions</span><br/><span class="rvts6"></span><br/><span class="rvts6">To define the partial pressure for the upper boundary (atmosphere), a </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> is defined. The number of the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> will be used in the </span><span class="rvts11">Solute Transport Boundary Condition</span><span class="rvts6"> dialogue window (see below).</span><br/><span class="rvts6">The definition of the composition of the gas phase for a boundary condition is similar to the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> definition in the PHREEQC manual with </span><a class="rvts56" href="boundary_layer.html">-boundary_layer</a><span class="rvts6"> as the only extra identifier. </span><a class="rvts56" href="boundary_layer.html">-boundary_layer</a><span class="rvts6"> is used to define the thickness of the stagnant boundary layer used for volatile (gaseous) components in HYDRUS (see HYDRUS manual). In this particular example, the thickness of the stagnant boundary layer is 1 cm.</span><br/><span class="rvts72"><br/></span></p>
 <div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts152">SOLUTION</span><span class="rvts72"> </span><span class="rvts124">1001</span><span class="rvts72"> initial condition mobile phase</span><br/><span class="rvts152">END</span><br/><span class="rvts152">SOLUTION</span><span class="rvts72"> </span><span class="rvts124">3001</span><span class="rvts72"> boundary condition</span><br/><span class="rvts152">END</span><br/><span class="rvts152">GAS_PHASE</span><span class="rvts72"> </span><span class="rvts124">3001</span><span class="rvts72"> boundary condition</span><br/><span class="rvts153">&nbsp;-temp </span><span class="rvts124">25</span><br/><span class="rvts153">&nbsp;-fixed_volume </span><span class="rvts124">1</span><br/><span class="rvts153">&nbsp;-boundary_layer </span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">01</span><span class="rvts72"> </span><span class="rvts123">m</span><br/><span class="rvts72">&nbsp;Gc(g) </span><span class="rvts124">5.424e-02</span><br/><span class="rvts152">END</span></p>
+   <p class="rvps4"><span class="rvts153">SOLUTION</span><span class="rvts72"> </span><span class="rvts125">1001</span><span class="rvts72"> initial condition mobile phase</span><br/><span class="rvts153">END</span><br/><span class="rvts153">SOLUTION</span><span class="rvts72"> </span><span class="rvts125">3001</span><span class="rvts72"> boundary condition</span><br/><span class="rvts153">END</span><br/><span class="rvts153">GAS_PHASE</span><span class="rvts72"> </span><span class="rvts125">3001</span><span class="rvts72"> boundary condition</span><br/><span class="rvts154">&nbsp;-temp </span><span class="rvts125">25</span><br/><span class="rvts154">&nbsp;-fixed_volume </span><span class="rvts125">1</span><br/><span class="rvts154">&nbsp;-boundary_layer </span><span class="rvts125">0</span><span class="rvts72">.</span><span class="rvts125">01</span><span class="rvts72"> </span><span class="rvts124">m</span><br/><span class="rvts72">&nbsp;Gc(g) </span><span class="rvts125">5.424e-02</span><br/><span class="rvts153">END</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts0"><span class="rvts52">Geochemical model</span></span><br/><span class="rvts6"></span><br/><span class="rvts6">To allow for diffusion in the gas phase, a data block </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">needs to be defined for each node. The most convenient way is define it for a range of nodes from node 1 to the last node using </span><a class="rvts21" href="Systeminlinevariables.html">the system inline variable</a><span class="rvts6"> </span><span class="rvts94">_NODES</span><span class="rvts6">. If you change the discretization, there is no need to update the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">block.</span><br/><span class="rvts6">For </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> data blocks that are linked to the transport volume, the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">should be defined as a fixed volume. When the transport simulation starts, the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> is automatically set to</span><span class="rvts94"> </span><span class="rvts89">-fixed_volume</span><span class="rvts6">. The initial volume is calculated automatically from the water initial water content (defined in the HYDRUS graphical user interface) and the porosity.&nbsp;</span><br/><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6">Geochemical model</span><br/><span class="rvts6"></span><br/><span class="rvts6">To allow for diffusion in the gas phase, a data block </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">needs to be defined for each node. The most convenient way is define it for a range of nodes from node 1 to the last node using </span><a class="rvts21" href="Systeminlinevariables.html">the system inline variable</a><span class="rvts6"> </span><span class="rvts95">_NODES</span><span class="rvts6">. If you change the discretization, there is no need to update the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">block.</span><br/><span class="rvts6">For </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> data blocks that are linked to the transport volume, the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase </a><span class="rvts6">should be defined as a fixed volume. When the transport simulation starts, the </span><a class="rvts55" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> is automatically set to</span><span class="rvts95"> </span><span class="rvts89">-fixed_volume</span><span class="rvts6">. The initial volume is calculated automatically from the water initial water content (defined in the HYDRUS graphical user interface) and the porosity.&nbsp;</span><br/><span class="rvts72"><br/></span></p>
 <div class="rvps28">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps4"><span class="rvts152">gas_phase</span><span class="rvts72"> </span><span class="rvts124">1</span><span class="rvts72">-</span><span class="rvts157">@_NODES</span><br/><span class="rvts153">-fixed_volume</span><br/><span class="rvts72">Gc(g) </span><span class="rvts124">0</span><span class="rvts72">.</span><span class="rvts124">0</span><br/><span class="rvts152">end</span></p>
+   <p class="rvps4"><span class="rvts153">gas_phase</span><span class="rvts72"> </span><span class="rvts125">1</span><span class="rvts72">-</span><span class="rvts158">@_NODES</span><br/><span class="rvts154">-fixed_volume</span><br/><span class="rvts72">Gc(g) </span><span class="rvts125">0</span><span class="rvts72">.</span><span class="rvts125">0</span><br/><span class="rvts153">end</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts0"><span class="rvts52">Transport Parameters</span></span><br/><span class="rvts6"></span><br/><span class="rvts6">The transport parameters are defined in the </span><span class="rvts11">Solute Transport - Transport Parameters </span><span class="rvts6">dialogue window in table for the solute specific parameters. The first column is to define the aqueous diffusion coefficients for the aqueous components (and should be 0 for the gaseous components); the second column contains the gaseous diffusion coefficients for the gaseous components (and should be 0 for the aqueous components).</span><br/><span class="rvts6"></span><br/><img alt="" style="padding : 1px;" src="lib/GasDiffusion%20-%20Diffusion%20coefficients.png"><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts0"><span class="rvts52">Note on advective gas transport</span></span><br/><span class="rvts6">The coupled water and air movement is not included in HYDRUS/HPx, but the air flux can be approximated using the assumptions described in section 5.1 of the </span><a class="rvts21" href="Extra%20Information/HYDRUS-1D%20Manual.pdf">HYDRUS-1D manual</a><span class="rvts6"> [</span><a class="rvts21" href="References.html#Simuneketal_2018">Simunek et al., 2018</a><span class="rvts6">]. To activate this option in HPx, use the identifier </span><a class="rvts56" href="stagnantgasphase.html">stagnantgasphase</a><span class="rvts6"> in </span><a class="rvts55" href="REACTIVE_TRANSPORT.html">Reactive_transport</a><span class="rvts6">.</span><br/><span class="rvts6"></span><br/><span class="rvts0"><span class="rvts52">Examples</span></span><br/><span class="rvts6"></span><br/><span class="rvts37">Verification</span><br/><span class="rvts6">Section </span><a class="rvts21" href="Kineticmineraldynamics.html">Kinetic mineral dynamics</a><br/><span class="rvts6"></span><a class="rvts21" href="Acidrockdrainage-pyriteoxidation.html">1D - Kinetic Mineral Dynamics - Acid Rock Drainage - pyrite oxidation</a><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><span class="rvts6"></span></p>
-<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/feature-tour/create-chm-help-files/">Maximize Your Productivity with HelpNDoc's CHM Help File Creation Features</a></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6">Transport Parameters</span><br/><span class="rvts6"></span><br/><span class="rvts6">The transport parameters are defined in the </span><span class="rvts11">Solute Transport - Transport Parameters </span><span class="rvts6">dialogue window in table for the solute specific parameters. The first column is to define the aqueous diffusion coefficients for the aqueous components (and should be 0 for the gaseous components); the second column contains the gaseous diffusion coefficients for the gaseous components (and should be 0 for the aqueous components).</span><br/><span class="rvts6"></span><br/><img alt="" style="padding : 1px;" src="lib/GasDiffusion%20-%20Diffusion%20coefficients.png"><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6">Note on advective gas transport</span><br/><span class="rvts6">The coupled water and air movement is not included in HYDRUS/HPx, but the air flux can be approximated using the assumptions described in section 5.1 of the </span><a class="rvts21" href="Extra%20Information/HYDRUS-1D%20Manual.pdf">HYDRUS-1D manual</a><span class="rvts6"> [</span><a class="rvts21" href="References.html#Simuneketal_2018">Simunek et al., 2018</a><span class="rvts6">]. To activate this option in HPx, use the identifier </span><a class="rvts56" href="stagnantgasphase.html">stagnantgasphase</a><span class="rvts6"> in </span><a class="rvts55" href="REACTIVE_TRANSPORT.html">Reactive_transport</a><span class="rvts6">.</span><br/><span class="rvts6"></span><br/><span class="rvts6">Examples</span><br/><span class="rvts6"></span><br/><span class="rvts37">Verification</span><br/><span class="rvts6">Section </span><a class="rvts21" href="Kineticmineraldynamics.html">Kinetic mineral dynamics</a><br/><span class="rvts6"></span><a class="rvts21" href="Acidrockdrainage-pyriteoxidation.html">1D - Kinetic Mineral Dynamics - Acid Rock Drainage - pyrite oxidation</a><span class="rvts6"></span><br/><span class="rvts6"></span><br/><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Free HTML Help documentation generator</a></p>
 
             </div>
             
@@ -231,20 +223,20 @@
 
   </div>  <!-- /#main -->
 
-  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
   
   <!-- Modal -->
   <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -254,9 +246,8 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
   <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
@@ -265,29 +256,13 @@
   <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
 
   <!-- HelpNDoc scripts -->
-  <script src="js/polyfill.object.min.js"></script>
   <script src="_translations.js"></script>
   <script src="js/hndsd.min.js"></script>
   <script src="js/hndse.min.js"></script>
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 
