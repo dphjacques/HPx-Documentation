@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Database Manager</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Database Manager,Database Manager,Database Manager,Database Group,Database,Database,Database Group,,Database Group,,Database,Database manager">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Database Manager">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Database Manager" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="DatabaseManager"
+		  data-hnd-context="183"
+		  data-hnd-title="Database Manager"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="GraphicalUserInterfacesHPGeochem.html">Graphical User Interfaces (HPGeochemistry and HYDRUS)</a></li><li><a href="Managers.html">Managers</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Managers.html" title="Managers" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Simulation-NewCopyImportEdit.html" title="Simulation - New/Copy/Import/Edit" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DatabaseGroup-NewGroup.html" title="Database Group - New Group" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Database Manager</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">The </span><span class="rvts11">Database Manager</span><span class="rvts6"> allows for organizing databases in database groups.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A database group can group:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">a number of databases that comes from the same origin. In the screenshot below, the database group </span><span class="rvts48">Phreeqc</span><span class="rvts6"> 3.6.2 groups all databases that are part from the </span><span class="rvts48">Phreeqc</span><span class="rvts6"> 3.6.2 installation file. Note that this particular database group (or newer versions) are always part of the of </span><span class="rvts48">HYDRUS </span><span class="rvts48">5.xx</span><span class="rvts6"> installation.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Different versions of a particular database. This allows for reproducibility and traceability. In some cases, it can contain the same databases but with a different activity correction model.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">When selecting a database group (bottom part), the databases in that group are shown in the upper part.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Managers%20-%20Database%20manager.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The toolstrip associated with the bottom part (Database group) has following commands:</span></p>
+<p class="rvps33"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<div class="rvps31">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 40px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Project%20-%20Add.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">Create a new database group.</span></p>
+   <p class="rvps4"><span class="rvts6">An empty </span><a class="rvts21" href="DatabaseGroup-NewGroup.html">Metadata form for database groups</a><span class="rvts6"> opens.</span></p>
+   <p class="rvps4"><span class="rvts6">The user adds basic information (name, description, folder) of the new project in the Definition group. Additional information can be added as well - see &nbsp;</span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> for general information.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 32px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Project%20-%20View.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">View and Edit an existing project.</span></p>
+   <p class="rvps4"><span class="rvts6">The </span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> of the project opens</span></p>
+   <p class="rvps4"><span class="rvts6">The user can change information - see </span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> for general information. </span><a class="rvts21" href="MetadataForm.html">.</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 40px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Project%20-%20Remove.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">Remove project from list.</span></p>
+   <p class="rvps4"><span class="rvts6">The project is removed from the list; however, simulation cases and files are not deleted from local or network hard drives.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The toolstrip associated with the upper part databases) has following commands:</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<div class="rvps31">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 40px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Case%20-%20Add.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">Open and add an existing database.</span></p>
+   <p class="rvps4"><span class="rvts6">First, the file browser opens with the folder associated with the database group as the default folder. The user select the database file.The user is not restricted to that particular folder and can browse to another folder.</span></p>
+   <p class="rvps4"><span class="rvts6">Next, the </span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> opens and the user can &nbsp;add informatio- see &nbsp;</span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> for general information. .</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 40px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Case%20-%20View.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">View and Edit an existing simulation case</span></p>
+   <p class="rvps4"><span class="rvts6">The </span><a class="rvts21" href="MetadataForm.html">Metadata form</a><span class="rvts6"> of the simulation case opens.</span></p>
+   <p class="rvps4"><span class="rvts6">The user can change information - see </span><a class="rvts21" href="MetadataForm.html">Metadata form.</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 100px;">
+   <p class="rvps2"><img alt="" style="width : 40px; height : 40px; padding : 1px;" src="lib/Manager%20-%20Case%20-%20Remove.svg"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 1057px;">
+   <p class="rvps4"><span class="rvts6">Remove the simulation cased from the project.</span></p>
+   <p class="rvps4"><span class="rvts6">The simulation case is removed from the project; however, the files and folder are not deleted from local or network hard drives.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The database manager can be activated at different locations:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps4 noindent"><span class="rvts11">Main menu</span><span class="rvts6"> - </span><span class="rvts6"></span><a class="rvts21" href="HPGeochemistry.html">See Database button</a><span class="rvts6"> </span><span class="rvts6"></span><span class="rvts6"> &nbsp;</span><span class="rvts6"></span><a class="rvts21" href="HPx-Inputfortransport.html">See Database button</a><span class="rvts6"> </span><span class="rvts6"></span><span class="rvts6"> </span><span class="rvts6"></span><a class="rvts21" href="HPx-Inputfortransport.html">See Database button</a><span class="rvts6"> </span><span class="rvts6"></span></li>
+ </ul>
+</ul>
+<p class="rvps30"><span class="rvts6">Adding, editing and deleting database groups and databases</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps33 noindent"><span class="rvts11">Setting default database</span><span class="rvts6"> - Via </span><a class="rvts21" href="SettingsPreferencesInfo.html">Settings and Preferences</a><span class="rvts6"> - </span><a class="rvts21" href="Database.html">Database</a></li>
+ </ul>
+</ul>
+<p class="rvps30"><span class="rvts6">Adding, editing and deleting database groups and databases</span></p>
+<p class="rvps30"><span class="rvts6">Select general default database</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps33 noindent"><span class="rvts11">Setting project default database</span><span class="rvts6"> - Via </span><a class="rvts21" href="Project-NewEdit.html">Metadata form for projects</a></li>
+ </ul>
+</ul>
+<p class="rvps30"><span class="rvts6">Adding, editing and deleting database groups and databases</span></p>
+<p class="rvps30"><span class="rvts6">Select project default database</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps33 noindent"><span class="rvts11">Setting case database</span><span class="rvts6"> - Via </span><a class="rvts21" href="Panel-Database.html">Database Panel in Input Work Space</a></li>
+ </ul>
+</ul>
+<p class="rvps30"><span class="rvts6">Adding, editing and deleting database groups and databases</span></p>
+<p class="rvps30"><span class="rvts6">Select case database</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<p class="rvps30"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpauthoringsoftware.com">Revolutionize Your Documentation Output with a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

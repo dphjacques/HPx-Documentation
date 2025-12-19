@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Add Aqueous Components</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Add via form">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Add Aqueous Components">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Add Aqueous Components" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="AddAqueousComponents"
+		  data-hnd-context="267"
+		  data-hnd-title="Add Aqueous Components"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="GraphicalUserInterfacesHPGeochem.html">Graphical User Interfaces (HPGeochemistry and HYDRUS)</a></li><li><a href="WorkSpaces.html">Work Spaces</a></li><li><a href="Input2.html">Input</a></li><li><a href="Panel-Database.html">Panel - Database</a></li><li><a href="AddDatabaseInformation.html">Add Database Information</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="AddDatabaseInformation.html" title="Add Database Information" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Import.html" title="Import" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="AddAqueousSpecies.html" title="Add Aqueous Species" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Add Aqueous Components</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">The form below is used to define new aqueous components. It replaces the </span><a class="rvts57" href="SOLUTION_MASTER_SPECIES1.html">solution_master_species</a><span class="rvts6"> definition in the text input files.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="width : 764px; height : 188px; padding : 1px;" src="lib/Work%20Space%20-%20Input%20-%20Database%20-%20Thermodynamic%20Data%20-%20Aq%20Comp.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps31">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Element Name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">An element name or an element name followed by a valence state in parentheses.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">Two forms are allowed:</span></p>
+   <p class="rvps4"><span class="rvts90">(1) First letter is capital, followed by one or more lower case letters or underscore; or</span></p>
+   <p class="rvps4"><span class="rvts90">(2) Between squared brackets [], with different alphanumeric values in between.</span></p>
+   <p class="rvps4"><span class="rvts90"><br/></span></p>
+   <p class="rvps4"><span class="rvts90">When the element name contains (</span><span class="rvts92">&lt;:int:Valence State:&gt;</span><span class="rvts90">), the corresponding Master Species is a secondary master species.</span></p>
+   <p class="rvps4"><span class="rvts90">Otherwise it is a primary master species</span><span class="rvts22">.&nbsp;</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">When the element name is filled in correctly, the other fields are enabled.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Master Species</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">Formula for the master species, including its charge.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">When the element name contains parentheses with the valence state, it is a secondary master species.</span></p>
+   <p class="rvps4"><span class="rvts6">When there are no parentheses in the element name, it is a primary master species.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Alkalinity</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">Alkalinity contribution of the master species (eq)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Chemical formula</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts84">Primary master species</span></p>
+   <p class="rvps4"><span class="rvts6">Information used to calculate gram formula weight, which is used to convert input data from mass units to mole units:</span></p>
+   <p class="rvps4"><span class="rvts6">If "</span><span class="rvts61">Use chemical formula</span><span class="rvts6">" is checked, a chemical formula is required.</span></p>
+   <p class="rvps4"><span class="rvts6">If "</span><span class="rvts61">Use chemical formula</span><span class="rvts6">" is unchecked, the gram formula weight is required:</span></p>
+   <p class="rvps31"><span class="rvts6">If "</span><span class="rvts61">Gram formula weight equal to weight of element</span><span class="rvts6">"</span></p>
+   <p class="rvps33"><span class="rvts6">is checked: Disabled, the weight in the box "</span><span class="rvts61">Gram formula weight of pure element</span><span class="rvts6">" is used</span></p>
+   <p class="rvps33"><span class="rvts6">is unchecked: Enabled, numerical value required.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts84">Secondary master species</span></p>
+   <p class="rvps4"><span class="rvts6">Chemical formula used to calculate gram formula weight, which is used to convert input data from mass units to mole units</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Gram formula weight of pure element</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts84">Primary master species</span></p>
+   <p class="rvps4"><span class="rvts6">The gram formula weight for the pure element (g/mol).</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">This field is required (enabled) only for primary master species.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts84">Secondary master species - </span><span class="rvts6">Label changes to "</span><span class="rvts61">Gram formula weight</span><span class="rvts6">".</span></p>
+   <p class="rvps4"><span class="rvts6">Default value used to convert input data in mass units to mole units for the element or element valence</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">This field is required (enabled) for a secondary master species when "</span><span class="rvts61">Use chemical formula</span><span class="rvts6">" is unchecked.</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Use chemical formula</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">To indicate if a chemical formula is used to calculate the gram formula weight to convert input data in mass units to mole units for the element or element valence.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Gram formula weight equal to weight of element</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">For primary master species and when gram formula weight is given instead of a formula to calculate the gram formula weight</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">If checked, the "</span><span class="rvts61">Gram formula weight of pure element</span><span class="rvts6">" is used as the gram formula weight.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 220px;">
+   <p class="rvps4"><span class="rvts11">Include default identity reaction</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 848px;">
+   <p class="rvps4"><span class="rvts6">If checked, the identity reaction for primary master species is included in the data block </span><a class="rvts57" href="SOLUTION_SPECIES1.html">solution_species </a><span class="rvts6">data block:</span></p>
+   <p class="rvps4"><span class="rvts6">If unchecked, the identity reactions should be included in the text files or via the form for defining </span><a class="rvts21" href="AddAqueousSpecies.html">Aqueous species</a><span class="rvts6">.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">If </span><span class="rvts61">Master Species</span><span class="rvts6"> is </span><span class="rvts61">Ms+</span></p>
+   <p class="rvps4"><span class="rvts6">then following reaction is included under </span><a class="rvts57" href="SOLUTION_SPECIES1.html">solution_species</a><span class="rvts6">:</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps31"><span class="rvts61">Ms+ = Ms+</span></p>
+   <p class="rvps31"><span class="rvts91">-log_k</span><span class="rvts61"> 0.0</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">This check box is only available for primary master species.</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts6">If other information should be included (e.g., species volume, activity model), this box should be unchecked, and the user should include the information using the </span><a class="rvts21" href="AddAqueousSpecies.html">Aqueous species</a><span class="rvts6"> form or in the text file under </span><a class="rvts57" href="SOLUTION_SPECIES1.html">solution_species.&nbsp;</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6">If the form is correctly filled in, the PHREEQC input is shown when the mouse if over the label "</span><span class="rvts61">Solution Master Species Input</span><span class="rvts6">".</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com">Easy CHM and documentation editor</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

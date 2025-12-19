@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Edit Graph Tool</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Edit Graph Tool,Edit Graph Tool,Tool Strip Plot Generation,Tool Strip Plot Generation,Plot Generation Tool Strip,Tool Strip Edit Graph Panel Selection,Edit Graph Panel Selection Tool Strip,Tool Strip Edit Graph Panel Selection,Scripting Panel,Edit Graph Panels,Scripting Panel,Edit Curves Panel,Edit Curves Panel,Graph Layout Panel,Graph Layout Panel,Plot Script Panel,Plot Script Panel,Gnuplot Plot Script File">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Edit Graph Tool">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Edit Graph Tool" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="EditGraphTool"
+		  data-hnd-context="340"
+		  data-hnd-title="Edit Graph Tool"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="GraphicalUserInterfacesHPGeochem.html">Graphical User Interfaces (HPGeochemistry and HYDRUS)</a></li><li><a href="WorkSpaces.html">Work Spaces</a></li><li><a href="Output2.html">Output</a></li><li><a href="Graphworkspace.html">Graph workspace</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Graphworkspace.html" title="Graph workspace" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="SingleGraphPanel.html" title="Single Graph Panel" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="EditCurvesPanel.html" title="Edit Curves Panel" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Edit Graph Tool</h2>
+
+            <div class="main-content">
+                
+<p class="rvps31"><span class="rvts6">The </span><span class="rvts49">Edit Graph Tool</span><span class="rvts6"> is accessible via two (mutually exclusive) ways by clicking the </span><span class="rvts49">Edit Graph Tool Icon</span><span class="rvts6"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"><span class="rvts6">:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">When only one graph is displayed in the </span><a class="rvts95" href="GraphNavigationPanel.html">Graph Navigation Panel</a><span class="rvts6"> - Select the </span><span class="rvts49">Edit Graph Tool Icon</span><span class="rvts6"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"><span class="rvts6"> at the top.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">When the </span><a class="rvts95" href="GraphNavigationPanel.html">Graph Navigation Panel</a><span class="rvts6"> is active, select the </span><span class="rvts49">Edit Graph Tool Icon</span><span class="rvts6"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"><span class="rvts6"> in the</span><span class="rvts49"> </span><a class="rvts95" href="SingleGraphPanel.html">Single Graph Panel</a><span class="rvts6">.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The </span><span class="rvts49">Edit Graph Tool</span><span class="rvts6"> has:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">A tool strip for </span><a class="rvts21" href="EditGraphTool.html#ToolStripPlotGeneration">plot generation</a></li>
+ <li class="rvps2 noindent"><span class="rvts6">A tool strip to </span><a class="rvts21" href="EditGraphTool.html#ToolStripEditGraphPanelSelection">select a Edit Graph Panel</a></li>
+ <li class="rvps2 noindent"><span class="rvts6">An area that display the selected </span><span class="rvts49">Edit Graph Pa</span><span class="rvts6">nel</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="width : 826px; height : 382px; padding : 1px;" src="lib/Work%20Space%20-%20Output-%20Graph%20-%20Edit%20Graph%20Tool%20-%20General.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="ToolStripPlotGeneration"></a><span class="rvts49">Tool Strip Plot Generation</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Plot%20Generation%20Tool%20Strip.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<div class="rvps31">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="ToolStripEditGraphPanelSelection"></a><span class="rvts49">Tool Strip Edit Graph Panel Selection</span><span class="rvts11">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Panel%20Section%20Toolstrip.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><a name="GnuplotPlotScriptFile"></a><span class="rvts6"><br/></span></p>
+<div class="rvps31">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><img alt="" style="width : 26px; height : 26px; padding : 1px;" src="lib/Edit%20Graph%20Tool%20Commands%20Icon.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6">Select the</span><span class="rvts53"> </span><span class="rvts49">Scripting Panel</span><span class="rvts6">. It consists of a text field to include Gnuplot commands - most of the Gnuplot commands will work. The commands that are defined in this panel are included in the Gnuplot Plot Script File just before export and plot definitions in the script file.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><img alt="" style="width : 26px; height : 26px; padding : 1px;" src="lib/Edit%20Graph%20Tool%20Curves%20Icon.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6">Select</span><span class="rvts49"> </span><a class="rvts95" href="EditCurvesPanel.html">Edit Curves Panel</a><span class="rvts6"> to edit properties of individual curves in the plot. The panel gives also information on the data for the individual curves.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><img alt="" style="width : 26px; height : 26px; padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6">Select </span><a class="rvts95" href="GraphLayoutPanel.html">Graph Layout Panel</a><span class="rvts6"> to edit properties of the plot. Only a limited amount of gnuplot options are provided in this panel. Additional properties can be changed via the </span><span class="rvts49">Scripting Panel</span><span class="rvts6">.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 98px;">
+   <p class="rvps4"><img alt="" style="width : 26px; height : 26px; padding : 1px;" src="lib/Edit%20Graph%20Tool%20All%20Commands%20Icon.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 868px;">
+   <p class="rvps4"><span class="rvts6">Select </span><span class="rvts49">Plot Script Panel</span><span class="rvts6">. It contains a read-only transcript of the script to generate the plot via Gnuplot.</span></p>
+   <p class="rvps4"><span class="rvts6">The script consists of:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+     <li class="rvps31 noindent"><span class="rvts6">Default settings&nbsp;</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Line style and line type definitions defined via</span><span class="rvts94"> ...</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Instruction defined in the Graph Layout Panel</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">A list of global variables and their value obtained after running HPx. Note that ".", ":", "::" in the naming etc. are replaced by an underscore.&nbsp;</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Instructions defined in the input by </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6">. First, the general definitions are printed (commands between</span><span class="rvts91"> -start</span><span class="rvts6"> and</span><span class="rvts91"> -end</span><span class="rvts6">) &nbsp;followed by the graph specific definitions (commands between</span><span class="rvts91"> -fig_start</span><span class="rvts6"> and </span><span class="rvts91">-fig_end</span><span class="rvts6">).</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Instructions from the Scripting Panel</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Instructions for exporting the the plot (</span><span class="rvts61">set terminal</span><span class="rvts6"> and </span><span class="rvts61">set output</span><span class="rvts6"> Gnuplot commands)</span></li>
+     <li class="rvps31 noindent"><span class="rvts6">Instructions for plotting (</span><span class="rvts61">plot</span><span class="rvts6"> or </span><span class="rvts61">splot</span><span class="rvts6"> Gnuplot commands, inline data for plotting data files or data selections not following the Gnuplot template)</span></li>
+    </ul>
+   </ul>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps33"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">5 Reasons Why a Help Authoring Tool is Better than Microsoft Word for Documentation</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

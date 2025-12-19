@@ -1,0 +1,545 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Atmospheric boundary conditions 01</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Atmospheric boundary conditions 01">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Atmospheric boundary conditions 01" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Atmosphericboundaryconditions01"
+		  data-hnd-context="238"
+		  data-hnd-title="Atmospheric boundary conditions 01"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Verification.html">Verification</a></li><li><a href="HYDRUS-1D.html">HYDRUS - 1D</a></li><li><a href="ConservativeTransport.html">Conservative Transport</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="ConservativeTransport.html" title="Conservative Transport" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Atmospheric boundary conditions 01</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Time</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Precip</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; Evaporation</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp;[days] &nbsp; [cm/days] &nbsp;[cm/days]</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 7 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 9 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;10 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;11 &nbsp; &nbsp; &nbsp; &nbsp;0.72 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;13 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;14 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;15 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;18 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;19 &nbsp; &nbsp; &nbsp; &nbsp;0.43 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;20 &nbsp; &nbsp; &nbsp; &nbsp;0.72 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;21 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;22 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;23 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;24 &nbsp; &nbsp; &nbsp; &nbsp;0.64 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;25 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;26 &nbsp; &nbsp; &nbsp; &nbsp;0.83 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;27 &nbsp; &nbsp; &nbsp; &nbsp;0.42 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;28 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;29 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;30 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;31 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;32 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;33 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;34 &nbsp; &nbsp; &nbsp; &nbsp;0.57 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;35 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;36 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;37 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;38 &nbsp; &nbsp; &nbsp; &nbsp;0.56 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;39 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;40 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;41 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;42 &nbsp; &nbsp; &nbsp; &nbsp;0.52 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;43 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;44 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;45 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;46 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;47 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;48 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;49 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;50 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;51 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;52 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;53 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;54 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;55 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;56 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;57 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;58 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;59 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;60 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;61 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;62 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;63 &nbsp; &nbsp; &nbsp; &nbsp;0.36 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;64 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;65 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;66 &nbsp; &nbsp; &nbsp; &nbsp;0.52 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;67 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;68 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;69 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;70 &nbsp; &nbsp; &nbsp; &nbsp;1.02 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;71 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;72 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;73 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;74 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;75 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;76 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;77 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;79 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.15 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;80 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;81 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;82 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.15 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;83 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;84 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;85 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;86 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;87 &nbsp; &nbsp; &nbsp; &nbsp;2.13 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;88 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;89 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;90 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;91 &nbsp; &nbsp; &nbsp; &nbsp;0.38 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;92 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;93 &nbsp; &nbsp; &nbsp; &nbsp;0.53 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;94 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;95 &nbsp; &nbsp; &nbsp; &nbsp;0.62 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;96 &nbsp; &nbsp; &nbsp; &nbsp;0.64 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;97 &nbsp; &nbsp; &nbsp; &nbsp;1.42 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;98 &nbsp; &nbsp; &nbsp; &nbsp; 0.9 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;99 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 100 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 101 &nbsp; &nbsp; &nbsp; &nbsp;0.42 &nbsp; &nbsp; &nbsp; &nbsp;0.15 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 102 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 103 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 104 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 105 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 106 &nbsp; &nbsp; &nbsp; &nbsp;0.38 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 107 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 108 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 109 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 110 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 111 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 112 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 113 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 114 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 115 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 116 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 117 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 118 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 119 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 120 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 121 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 122 &nbsp; &nbsp; &nbsp; &nbsp;0.52 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 123 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.3 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 124 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 125 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 126 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 127 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 128 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 129 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.32 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 130 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 131 &nbsp; &nbsp; &nbsp; &nbsp;0.94 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 132 &nbsp; &nbsp; &nbsp; &nbsp;0.53 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 133 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 134 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 135 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 136 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 137 &nbsp; &nbsp; &nbsp; &nbsp;1.64 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 138 &nbsp; &nbsp; &nbsp; &nbsp;0.48 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 139 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 140 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 141 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 142 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 143 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 144 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.35 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 145 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 146 &nbsp; &nbsp; &nbsp; &nbsp;0.34 &nbsp; &nbsp; &nbsp; &nbsp;0.38 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 147 &nbsp; &nbsp; &nbsp; &nbsp;0.93 &nbsp; &nbsp; &nbsp; &nbsp;0.46 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 148 &nbsp; &nbsp; &nbsp; &nbsp;2.43 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 149 &nbsp; &nbsp; &nbsp; &nbsp;0.53 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 150 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.32 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 151 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.35 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 152 &nbsp; &nbsp; &nbsp; &nbsp;0.63 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 153 &nbsp; &nbsp; &nbsp; &nbsp;0.77 &nbsp; &nbsp; &nbsp; &nbsp;0.15 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 154 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 155 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 156 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 157 &nbsp; &nbsp; &nbsp; &nbsp;1.13 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 158 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 159 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 160 &nbsp; &nbsp; &nbsp; &nbsp;0.34 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 161 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 162 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 163 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp; &nbsp; &nbsp; 0.3 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 164 &nbsp; &nbsp; &nbsp; &nbsp;0.41 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 165 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 166 &nbsp; &nbsp; &nbsp; &nbsp; 0.3 &nbsp; &nbsp; &nbsp; &nbsp; 0.3 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 167 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.36 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 168 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 169 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 170 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 171 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 172 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 173 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 174 &nbsp; &nbsp; &nbsp; &nbsp;1.78 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 175 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 176 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 177 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 178 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.38 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 179 &nbsp; &nbsp; &nbsp; &nbsp;0.92 &nbsp; &nbsp; &nbsp; &nbsp;0.34 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 180 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.35 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 181 &nbsp; &nbsp; &nbsp; &nbsp;0.68 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 182 &nbsp; &nbsp; &nbsp; &nbsp;1.44 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 183 &nbsp; &nbsp; &nbsp; &nbsp;0.32 &nbsp; &nbsp; &nbsp; &nbsp;0.14 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 184 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 185 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 186 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 187 &nbsp; &nbsp; &nbsp; &nbsp;3.33 &nbsp; &nbsp; &nbsp; &nbsp;0.41 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 188 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp; &nbsp; &nbsp;0.39 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 189 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp; &nbsp; &nbsp; 0.4 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 190 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp; &nbsp; &nbsp;0.28 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 191 &nbsp; &nbsp; &nbsp; &nbsp;2.52 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 192 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 193 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 194 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.38 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 195 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.47 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 196 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.5 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 197 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.53 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 198 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.44 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 199 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 200 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.3 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 201 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.55 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 202 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp; &nbsp; &nbsp;0.48 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 203 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.44 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 204 &nbsp; &nbsp; &nbsp; &nbsp;0.79 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 205 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 206 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 207 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 208 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 209 &nbsp; &nbsp; &nbsp; &nbsp;2.12 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 210 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 211 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 212 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 213 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 214 &nbsp; &nbsp; &nbsp; &nbsp; 0.4 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 215 &nbsp; &nbsp; &nbsp; &nbsp;0.91 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 216 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 217 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.25 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 218 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 219 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 220 &nbsp; &nbsp; &nbsp; &nbsp;1.38 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 221 &nbsp; &nbsp; &nbsp; &nbsp;0.53 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 222 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 223 &nbsp; &nbsp; &nbsp; &nbsp;0.44 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 224 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.4 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 225 &nbsp; &nbsp; &nbsp; &nbsp;0.23 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 226 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 227 &nbsp; &nbsp; &nbsp; &nbsp;0.83 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 228 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 229 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp; &nbsp; &nbsp;0.21 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 230 &nbsp; &nbsp; &nbsp; &nbsp;0.65 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 231 &nbsp; &nbsp; &nbsp; &nbsp;1.78 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 232 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 233 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp; &nbsp; &nbsp;0.24 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 234 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 235 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 236 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 237 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 238 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.2 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 239 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 240 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.22 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 241 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.29 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 242 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 243 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.32 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 244 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 245 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.31 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 246 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.19 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 247 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 248 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 249 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.26 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 250 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 251 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp; &nbsp; &nbsp;0.16 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 252 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.15 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 253 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 254 &nbsp; &nbsp; &nbsp; &nbsp;0.92 &nbsp; &nbsp; &nbsp; &nbsp;0.18 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 255 &nbsp; &nbsp; &nbsp; &nbsp;1.73 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 256 &nbsp; &nbsp; &nbsp; &nbsp;0.37 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 257 &nbsp; &nbsp; &nbsp; &nbsp;0.42 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 258 &nbsp; &nbsp; &nbsp; &nbsp;0.27 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 259 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 260 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 261 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 262 &nbsp; &nbsp; &nbsp; &nbsp;0.87 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 263 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 264 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 265 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 266 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 267 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 268 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 269 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 270 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 271 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 272 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 273 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 274 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 275 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 276 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 277 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.13 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 278 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 279 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 280 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.11 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 281 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.06 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 282 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 283 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 284 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 285 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 286 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.12 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 287 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 288 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 289 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.07 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 290 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 291 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 292 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp; 0.1 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 293 &nbsp; &nbsp; &nbsp; &nbsp;0.17 &nbsp; &nbsp; &nbsp; &nbsp;0.09 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 294 &nbsp; &nbsp; &nbsp; &nbsp;0.82 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 295 &nbsp; &nbsp; &nbsp; &nbsp;0.33 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 296 &nbsp; &nbsp; &nbsp; &nbsp;0.43 &nbsp; &nbsp; &nbsp; &nbsp;0.02 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 297 &nbsp; &nbsp; &nbsp; 0.005 &nbsp; &nbsp; &nbsp; &nbsp;0.03 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 298 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.05 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 299 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 &nbsp; &nbsp; &nbsp; &nbsp;0.04 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; 300 &nbsp; &nbsp; &nbsp; &nbsp;0.08 &nbsp; &nbsp; &nbsp; &nbsp;0.01 &nbsp; &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/news-and-articles/2022-09-27-why-use-a-help-authoring-tool-instead-of-microsoft-word-to-produce-high-quality-documentation/">Streamline Your Documentation Process with a Help Authoring Tool</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

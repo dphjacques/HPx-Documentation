@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>1D - Boundary value problem during steady-state flow conditions</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="1D - Boundary value problem during steady-state flow conditions">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="1D - Boundary value problem during steady-state flow conditions" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="1D-Boundaryvalueproblemduringste"
+		  data-hnd-context="200"
+		  data-hnd-title="1D - Boundary value problem during steady-state flow conditions"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Verification.html">Verification</a></li><li><a href="HYDRUS-1D.html">HYDRUS - 1D</a></li><li><a href="GasTransport.html">Gas Transport</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GasTransport.html" title="Gas Transport" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="GasTransport.html" title="Gas Transport" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Kineticmineraldynamics.html" title="Kinetic mineral dynamics" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>1D - Boundary value problem during steady-state flow conditions</h2>
+
+            <div class="main-content">
+                
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69"><br/></span></span></h1>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Problem definition</span></span></h1>
+<p class="rvps2"><span class="rvts6">This verification problem considers diffusion of a gaseous component into a profile with a zero concentration of the component. During diffusion, there is equilibrium between the gaseous and the liquid phase. There is no water flow and a constant partial pressure of the gas component at the surface.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Acronym</span><span class="rvts6"> GAS-SS-IN</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This verification problem is used in the section </span><a class="rvts21" href="GasDiffusion.html">How To... Gas Diffusion</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Geometry</span></span></h1>
+<p class="rvps2"><span class="rvts6">The profile has a length of 100 cm and consists of a single material.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Processes and Equations</span></span></h1>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<div class="rvps32">
+<table style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 181px; height: 11px;">
+   <p class="rvps2"><span class="rvts6">Water flow equation</span></p>
+  </td>
+  <td style="padding: 1px; width: 268px; height: 11px;">
+   <p class="rvps2"><a class="rvts21" href="WaterFlowEquation.html#Richards_singleppr">Richards' equation</a></p>
+  </td>
+  <td style="padding: 1px; width: 309px; height: 11px;">
+   <p class="rvps2"><span class="rvts6">vertical flow (</span><span class="rvts148">α</span><span class="rvts6">=1), no water sink (</span><span class="rvts84">S</span><span class="rvts6">=0)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 181px;">
+   <p class="rvps2"><span class="rvts6">Solute transport</span></p>
+  </td>
+  <td style="padding: 1px; width: 268px;">
+   <p class="rvps2"><a class="rvts21" href="SoluteTransportEquation.html#ADR%20gas%20equilibrium">Advection-dispersion equation with equilibrium gas exchange</a></p>
+  </td>
+  <td style="padding: 1px; width: 309px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Initial and boundary conditions</span></span></h1>
+<p class="rvps2"><span class="rvts6">The initial and boundary conditions are illustrated in </span><a class="rvts21" href="1D-Boundaryvalueproblemduringste.html#Figure1">Figure 1</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="Figure1"></a><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Slide1.PNG"></p>
+<p class="rvps34"><span class="rvts93">Figure 1 - Schematic representation of initial and boundary conditions for water flow (left) and solute transport (right)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The upper boundary constant head value is -100 cm.</span></p>
+<p class="rvps2"><span class="rvts6">The concentration in the atmosphere is 2.217 mol/m</span><span class="rvts123">3 </span><span class="rvts6">or a partial pressure of 5.424 10</span><span class="rvts123">-2</span><span class="rvts6">. A stagnant boundary layer of 0.01 m is assumed.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Material Parameters</span></span></h1>
+<p class="rvps2"><span class="rvts147"><br/></span></p>
+<p class="rvps53"><span class="rvts147">&nbsp;</span></p>
+<p class="rvps53"><span class="rvts6">The hydraulic properties are described with the </span><a class="rvts21" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten - Mualem</a><span class="rvts6"> model with </span><span class="rvts84">m</span><span class="rvts6">=1-1/</span><span class="rvts84">n</span><span class="rvts6">. Parameter values are in </span><a class="rvts21" href="1D-Tracertransportdualporositydu.html#Table%201%20hydraulic%20parameters">Table 1</a><span class="rvts6">.</span></p>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><a name="Table 1 hydraulic parameters"></a><span class="rvts93">Table 1 - Parameters of the moisture retention curve and the unsaturated hydraulic conductivity as described with the model of </span><a class="rvts149" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten -Mualem</a></p>
+<div class="rvps54">
+<table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px;">
+   <p class="rvps2"><span class="rvts148">θ</span><span class="rvts83">s</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px;">
+   <p class="rvps2"><span class="rvts6">0.43</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px;">
+   <p class="rvps2"><span class="rvts148">θ</span><span class="rvts83">r</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px;">
+   <p class="rvps2"><span class="rvts6">0.078</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px; height: 8px;">
+   <p class="rvps2"><span class="rvts148">α</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px; height: 8px;">
+   <p class="rvps2"><span class="rvts6">0.036 /cm</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px;">
+   <p class="rvps2"><span class="rvts84">n</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px;">
+   <p class="rvps2"><span class="rvts6">1.56</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px;">
+   <p class="rvps2"><span class="rvts84">K</span><span class="rvts83">s</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px;">
+   <p class="rvps2"><span class="rvts6">24.96 cm/days</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 32px;">
+   <p class="rvps2"><span class="rvts84">l</span></p>
+  </td>
+  <td style="padding: 1px; width: 108px;">
+   <p class="rvps2"><span class="rvts6">0.5</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts84"><br/></span></p>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<p class="rvps53"><span class="rvts6">The parameters of the solute transport equation and dispersion are given in </span><span class="rvts21">Table 2</span><span class="rvts6">.</span></p>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><a name="Table 2 (solute parameter)"></a><span class="rvts93">Table 2 - Parameters of the solute transport equation (</span><a class="rvts149" href="SoluteTransportEquation.html#ADR%20gas%20equilibrium">advection-dispersion equation with gas equilibrium</a><span class="rvts93">).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps54">
+<table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px; height: 20px;">
+   <p class="rvps2"><span class="rvts84">D</span><span class="rvts83">L</span></p>
+  </td>
+  <td style="padding: 1px; width: 152px; height: 20px;">
+   <p class="rvps2"><span class="rvts6">10 cm</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px;">
+   <p class="rvps2"><span class="rvts84">D</span><span class="rvts83">w</span></p>
+  </td>
+  <td style="padding: 1px; width: 152px;">
+   <p class="rvps2"><span class="rvts6">2 cm</span><span class="rvts123">2</span><span class="rvts6">/day</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px;">
+   <p class="rvps2"><span class="rvts84">D</span><span class="rvts83">g</span></p>
+  </td>
+  <td style="padding: 1px; width: 152px;">
+   <p class="rvps2"><span class="rvts6">20000 cm</span><span class="rvts123">2</span><span class="rvts6">/day</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px;">
+   <p class="rvps2"><a class="rvts153" href="GasExchange.html#Single%20Gas%20Component%20-%20equivalence%20with%20hydrus">k</a><a class="rvts154" href="GasExchange.html#Single%20Gas%20Component%20-%20equivalence%20with%20hydrus">g</a></p>
+  </td>
+  <td style="padding: 1px; width: 152px;">
+   <p class="rvps2"><span class="rvts6">1.18594</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px;">
+   <p class="rvps2"><span class="rvts117">τ</span></p>
+  </td>
+  <td style="padding: 1px; width: 152px;">
+   <p class="rvps2"><a class="rvts21" href="Dispersioncoefficient.html#MillingtonQuirk">Millington &amp; Quirk</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 122px;">
+   <p class="rvps2"><span class="rvts6">Thickness of stagnatn layer</span></p>
+  </td>
+  <td style="padding: 1px; width: 152px;">
+   <p class="rvps2"><span class="rvts6">1 cm</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps54"><span class="rvts6"><br/></span></p>
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The equilibrium constant between the gaseous and aqueous field as defined in HYDRUS-1D (</span><span class="rvts84">k</span><span class="rvts83">g</span><span class="rvts6">) should be transformed to the thermodynamic constant for HPx (see </span><a class="rvts21" href="GasExchange.html#Single%20Gas%20Component%20-%20equivalence%20with%20hydrus">Equivalence between parameter in HP and HYDRUS</a><span class="rvts6">). The value is 10</span><span class="rvts123">-1.462398</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Evaluation method</span></span></h1>
+<p class="rvps53"><span class="rvts6">HPx simulations are compared with the calculations results of HYDRUS-1D. The output variables are:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps55 noindent"><span class="rvts6">Time series of aqueous concentrations of the component Gc at depths of 5, 10, 20, 40, 75 and 100 cm, and</span></li>
+ <li class="rvps55 noindent"><span class="rvts6">Cumulative influx of gaseous Gc at the surface</span></li>
+</ul>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Numerical Settings</span></span></h1>
+<p class="rvps2"><span class="rvts6">The profile is discretized in 100 elements with 101 equally-spaced nodes.</span></p>
+<p class="rvps2"><span class="rvts6">The minimum and maximum time steps are 10</span><span class="rvts123">-7</span><span class="rvts6"> and 0.01 days, respectively.</span></p>
+<p class="rvps2"><span class="rvts6">The Crank-Nicholson scheme for time weighting and the Galarkin finite element scheme for space weighting are used with a stability criterion (PeCr) equal to 0.1.</span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Results</span></span></h1>
+<p class="rvps2"><a class="rvts21" href="1D-Boundaryvalueproblemduringste.html#FigureTimeSeriesAqConc">Figure 2</a><span class="rvts6"> shows an excellent agreement between the time series of aqueous concentration of Gc obtained with HYDRUS-1D and HPx at selected depths.</span></p>
+<p class="rvps2"><a class="rvts21" href="1D-Boundaryvalueproblemduringste.html#FigureCumulatieInflux">Figure 3 </a><span class="rvts6">shows an excellent agreement between the cumulative influx of gaseous Gc at the surface obtained with HYDRUS-1D and HPx.</span></p>
+<p class="rvps2"><a name="FigureTimeSeriesAqConc"></a><span class="rvts6">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/GAS-SS-IN%2001.png"></p>
+<p class="rvps34"><span class="rvts93">Figure 2 - Time series of aqueous concentrations of Gc for diffusive transport via the gas phase without any water transport (initial Gc free profile, constant partial pressure of Gc at the top boundary). Comparison between HPx and HYDRUS-1D.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="FigureCumulatieInflux"></a><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/GAS-SS-IN%2002.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><span class="rvts93">Figure 32 - Time series of cumulative influx of Gc at the top boundary for diffusive transport via the gas phase without any water transport (initial Gc free profile, constant partial pressure of Gc at the top boundary). Comparison between HPx and HYDRUS-1D.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><span class="rvts0"><span class="rvts56">Project HYDRUS 5.x</span></span></h4>
+<p class="rvps2"><a class="rvts21" href="Deposit/HPx/1D/Verification/0230%20-%20Gas/GAS-SS-IN.zip">GAS-SS-IN.zip</a></p>
+<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts6">HPx - </span><a class="rvts21" href="Deposit/HYDRUS/HYDRUS%20-%201D%20-%20GAS%20-%20SS%20-%20IN%20-%20HPx.hyd5">HYDRUS - 1D - GAS - SS - IN</a><a class="rvts21" href="Deposit/HYDRUS/HYDRUS%20-%201D%20-%20GAS%20-%20SS%20-%20IN%20-%20HPx.hyd5"> - HPx.hyd5</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts21"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-generate-an-encrypted-password-protected-pdf-document/">Don't Let Unauthorized Users View Your PDFs: Learn How to Set Passwords</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

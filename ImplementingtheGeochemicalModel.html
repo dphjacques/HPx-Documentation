@@ -1,0 +1,381 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Personal Edition 10.0.0.105">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Implementing the Geochemical Model</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Implementing the Geochemical Model">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Implementing the Geochemical Model" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ImplementingtheGeochemicalModel"
+		  data-hnd-context="311"
+		  data-hnd-title="Implementing the Geochemical Model"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="HPGeochemistryHYDRUS-Stepbystep.html">HPGeochemistry &amp; HYDRUS - Step by step</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="HPGeochemistryHYDRUS-Stepbystep.html" title="HPGeochemistry &amp; HYDRUS - Step by step" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="ManagedProjects1.html" title="Managed Projects" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="RunningaSimulation.html" title="Running a Simulation" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Implementing the Geochemical Model</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">The different panels in the </span><a class="rvts51" href="Input2.html">Input Workspace</a><span class="rvts6"> present different steps in implementing the geochemical models. This information is assembled in the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file for the simulation. Hereafter, some general guidelines are given; however the user has some flexibility in deciding which input is given in the individual tabs. The flexibility increases when the user understands the structure of the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><span class="rvts0"><span class="rvts56">Database Panel</span></span></h4>
+<p class="rvps2"><span class="rvts6">The </span><a class="rvts51" href="Panel-Database.html">Database panel</a><span class="rvts6"> allows to select the thermodynamic database:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">In many cases, a default database is already filled in (see </span><a class="rvts21" href="Databases.html">Databases</a><span class="rvts6">).</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">An alternative database can be selected via the </span><a class="rvts51" href="DatabaseManager.html">Database Manager</a><span class="rvts6">.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">In a </span><a class="rvts55" href="ManagedProjects1.html">Managed Project</a><span class="rvts6">, a drop-down list is available with thermodynamic databases already included in the project</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">In </span><span class="rvts48">hpgeochemistry</span><span class="rvts6">, the relevant components for the simulation can be selected. This does not mean other components cannot be used in this particular simulation. The selection just serves for the input towards the </span><a class="rvts51" href="HelpTrees.html">Help Trees</a><span class="rvts6"> and autocompletion in the</span><a class="rvts21" href="InputTextEditor.html"> </a><a class="rvts51" href="InputTextEditor.html">Input Text Editors</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The last action in this panel is adding new thermodynamic or kinetic information. When information is added via the </span><a class="rvts51" href="Panel-Database.html">Database panel</a><span class="rvts6">, then:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">the information is dynamically included in the other panels of the </span><a class="rvts51" href="Input2.html">Input Workspace</a><span class="rvts6">,</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">the information can be exported to be imported in other simulations.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><span class="rvts0"><span class="rvts56">Reactive Transport Panel</span></span></h4>
+<p class="rvps2"><span class="rvts6">In the </span><a class="rvts51" href="Panel-ReactiveTransport.html">Reactive Transport Panel </a><span class="rvts6">(only in </span><span class="rvts48">HYDRUS</span><span class="rvts6">), the user selects the </span><span class="rvts53">components</span><span class="rvts6"> to be transported and activates some </span><span class="rvts53">options</span><span class="rvts6"> specifically for reactive transport calculations.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For reactive transport simulations, definition of the </span><span class="rvts53">components</span><span class="rvts6"> is obliged. In Selection of Components, the user selects the different components by:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2 noindent"><span class="rvts6">Checking the aqueous and gaseous components available in the selected database,</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Components defined in the added thermodynamic data in the </span><a class="rvts51" href="Panel-Database.html">Database panel</a></li>
+ <li class="rvps2 noindent"><span class="rvts6">Components defined in </span><a class="rvts21" href="ImplementingtheGeochemicalModel.html#DefaultInputTextEditors">default input text editors</a><span class="rvts6"> or the </span><a class="rvts21" href="ImplementingtheGeochemicalModel.html#AdditionalInputFiles">additional input files</a><span class="rvts6">.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Other options are related to the model (e.g. evolving transport properties) and parallel computing.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><a name="GlobalVariables"></a><span class="rvts0"><span class="rvts56">Global Definitions Panel</span></span></h4>
+<p class="rvps2"><span class="rvts6">The </span><a class="rvts51" href="Panel-GlobalDefinitions.html">Global Definition Panel</a><span class="rvts6"> allows for some advanced features that are implemented in HPGeochemistry and HYDRUS. This panel is optionally and its use depends on the complexity of the problem and the expertise of the user.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<div class="rvps26">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><a class="rvts51" href="GlobalVariables1.html">Global Variables</a></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">A </span><span class="rvts48">GUI</span><span class="rvts6"> for defining </span><a class="rvts55" href="Inlinevariables1.html">inline variables</a><span class="rvts6"> which will be dynamically included &nbsp;in the other panels. The information is inserted in the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file via the command </span><a class="rvts57" href="GLOBAL_VARIABLE.html">GLOBAL_VARIABLE</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><a class="rvts51" href="Datablock1.html">DataBlock</a></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">A </span><span class="rvts48">GUI</span><span class="rvts6"> for defining data blocks which is a vector or matrix implementation for defining </span><a class="rvts55" href="Inlinevariables1.html">inline variables</a><span class="rvts6">. Information will be dynamically included in the other panels. The information is inserted in the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file via the command </span><a class="rvts57" href="DATABLOCK.html">DATABLOCK</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><a class="rvts51" href="Transformation.html">Transformation</a></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">A </span><span class="rvts48">GUI</span><span class="rvts6"> to define scripts for pre-processing input definitions and variables. The &nbsp;information is inserted in the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file via the command </span><a class="rvts57" href="GLOBAL_VARIABLE.html">GLOBAL_VARIABLE</a><span class="rvts6"> or </span><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts6"> (</span><a class="rvts58" href="state1.html">-state</a><span class="rvts6"> </span><a class="rvts59" href="state1.html#Definition">definition</a><span class="rvts6">).&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px; height: 63px;">
+   <p class="rvps2"><a class="rvts51" href="Counter1.html">Counter</a></p>
+  </td>
+  <td style="padding: 1px; width: 666px; height: 63px;">
+   <p class="rvps2"><span class="rvts6">A </span><span class="rvts60">GUI</span><span class="rvts6"> to define the special inline variable </span><a class="rvts57" href="COUNTER.html">COUNTER</a><span class="rvts6"> (value of the inline variable changes when it is used). This can be used for automatic numbering of entities, or for reaction path modelling. The &nbsp;information is inserted in the </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> file via the command </span><a class="rvts57" href="COUNTER.html">COUNTER</a><span class="rvts6"> and </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><a class="rvts51" href="Includefiles.html">Include Files</a></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">A </span><span class="rvts48">GUI</span><span class="rvts6"> to define input files that should be included in the file </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> via the command </span><a class="rvts57" href="INCLUDE.html">INCLUDE$</a><span class="rvts6">. The user can specify where to include the specific file.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps26"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><a name="DefaultInputTextEditors"></a><span class="rvts0"><span class="rvts56">Default Input Text Editors</span></span></h4>
+<p class="rvps2"><span class="rvts6">The </span><a class="rvts51" href="Input2.html">Input Workspace</a><span class="rvts6"> has two or four (in respectively, </span><span class="rvts48">hpgeochemistry</span><span class="rvts6"> and </span><span class="rvts48">hydrus</span><span class="rvts6">) </span><a class="rvts55" href="InputTextEditor.html">input text editors</a><span class="rvts6"> to define the geochemical model using the </span><span class="rvts48">PHREEQC</span><span class="rvts6"> input format. The content of these text editors are included in </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6"> the at specific locations. Following the guidelines hereafter will produce logic input files for either </span><span class="rvts48">hpgeochemistry</span><span class="rvts6"> or </span><span class="rvts48">hydrus</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">&nbsp;</span></p>
+<div class="rvps4">
+<table width="100%" style="border-width: 0px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><span class="rvts53">Additions to the database</span></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">The original aim of this panel was to add additional information such are thermodynamic data or some general definitions. In the current </span><span class="rvts48">GUI</span><span class="rvts6">, much of that information can be defined via the graphical forms mentioned above. Nevertheless, as the content of this panel is put before the content of the other panels in </span><a class="rvts21" href="PHREEQCIN1.html">phreeqc.in</a><span class="rvts6">, it still can be used to add general definitions.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><span class="rvts53">Solution Definitions</span></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">(only in </span><span class="rvts48">hydrus</span><span class="rvts6">). This panel is used to define the geochemical compositions of initial and boundary solutions (</span><span class="rvts48">Phreeqc</span><span class="rvts6"> command </span><a class="rvts57" href="SOLUTION.html">solution</a><span class="rvts6">). The solution numbers are linked to the numbers that are defined in the </span><span class="rvts48">HYDRUS GUI</span><span class="rvts6"> for defining the initial and boundary conditions.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">In case diffusion in the gas phase, the composition of the gas phase of a boundary condition is defined here as well with the </span><span class="rvts48">phreeqc</span><span class="rvts6"> command </span><a class="rvts57" href="GAS_PHASE.html">gas_phase</a><span class="rvts6"> (see example </span><a class="rvts21" href="GasDiffusion.html">Gas Diffusion</a><span class="rvts6">).</span></p>
+   <p class="rvps2"><span class="rvts53">IMPORTANT</span><span class="rvts6">: it is good practice to avoid that solution numbers are less than the number of computational nodes in the geometrical domain in </span><span class="rvts48">HYDRUS</span><span class="rvts6">. If they are smaller, one could have strange and unexpected initial conditions and/or simulation results.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><span class="rvts53">Geochemistry</span></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6">In </span><span class="rvts48">HPGeochemistry</span><span class="rvts6">, this panel is used to input the geochemical simulation and commands related to output.</span></p>
+   <p class="rvps2"><span class="rvts6">In </span><span class="rvts48">HYDRUS</span><span class="rvts6">, the panel typically contains the nodal information about the geochemical entities </span><a class="rvts57" href="EXCHANGE.html">EXCHANGE</a><span class="rvts6">, </span><a class="rvts57" href="EQUILIBRIUM_PHASES.html">equilibrium_phases</a><span class="rvts6">, </span><a class="rvts57" href="KINETICS.html">kinetics</a><span class="rvts6">, </span><a class="rvts57" href="SOLID_SOLUTIONS.html">solid_solution</a><span class="rvts6"> and </span><a class="rvts57" href="SURFACE.html">surface</a><span class="rvts6">. In case of diffusion in the gas phase, also the gas phase composition is defined (</span><a class="rvts57" href="GAS_PHASE.html">gas_phase</a><span class="rvts6">). Linkage to the geometrical domain is done by:</span></p>
+   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+    <li class="rvps2 noindent"><span class="rvts6">Set the entity number equal to the node number, or</span></li>
+    <li class="rvps2 noindent"><span class="rvts6">Link the entity to a material type using </span><a class="rvts58" href="material.html">-material</a><span class="rvts6"> identifier. </span><span class="rvts53">IMPORTANT</span><span class="rvts6">: it is good practice to avoid that entity numbers are less than the number of computational nodes in the geometrical domain in </span><span class="rvts48">HYDRUS</span><span class="rvts6">. If they are smaller, one could have strange and unexpected initial conditions and/or simulation results.&nbsp;</span></li>
+   </ul>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px; height: 63px;">
+   <p class="rvps2"><span class="rvts53">Output</span></p>
+  </td>
+  <td style="padding: 1px; width: 666px; height: 63px;">
+   <p class="rvps2"><span class="rvts6">The user defines here which variables must be written to the output files using </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6"> and </span><a class="rvts57" href="USER_PUNCH.html">user_punch</a><span class="rvts6">.</span></p>
+   <p class="rvps2"><span class="rvts6">In the</span><span class="rvts48"> HYDRUS GUI</span><span class="rvts6">, only the spatial distribution plots for 2D simulations can be viewed. Other output needs to be visualized in </span><span class="rvts48">HPOUTPUT</span><span class="rvts6"> (see </span><a class="rvts21" href="CheckingtheSimulationResults.html">Checking the Simulation Results</a><span class="rvts6">).</span></p>
+   <p class="rvps2"><span class="rvts6">By default, spatial distributions at selected print times (defined in the </span><span class="rvts48">HYDRUS GUI</span><span class="rvts6"> </span><span class="rvts49">Output Information</span><span class="rvts6"> dialogue window) and time series at selected observation nodes (defined in the </span><span class="rvts48">HYDRUS GUI</span><span class="rvts6"> &nbsp;</span><span class="rvts49">Domain Properties -&gt; Observation nodes</span><span class="rvts6"> menu) are saved. For 2D, also geochemical information over mesh-lines (defined in the </span><span class="rvts48">HYDRUS GUI</span><span class="rvts6"> </span><span class="rvts49">Auxiliary Objects - Mesh-Lines</span><span class="rvts6"> menu) are saved.</span></p>
+   <p class="rvps2"><span class="rvts6">Additional type of output information can be requested, such as integrated (summed) variable over a domain (</span><a class="rvts58" href="horizon.html">-horizon</a><span class="rvts6">, </span><a class="rvts58" href="layer.html">-layer</a><span class="rvts6">, </span><a class="rvts58" href="node.html">-node</a><span class="rvts6">, </span><a class="rvts58" href="depth.html">-depth</a><span class="rvts6">), cross-sections (2D, </span><a class="rvts58" href="lineprobe.html">-crosssection</a><span class="rvts6">), and 2D domains (</span><a class="rvts58" href="contour.html">-contour</a><span class="rvts6">). With </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6">, figures with combination of different variables can be defined.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="padding: 1px; width: 190px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+  <td style="padding: 1px; width: 666px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h4 class="rvps25"><a name="AdditionalInputFiles"></a><span class="rvts0"><span class="rvts56">Additional input files</span></span></h4>
+<p class="rvps2"><span class="rvts6">Additional input files can be made by opening </span><a class="rvts55" href="InputTextEditor.html">input text editors </a><span class="rvts6">with the toolstrip </span><a class="rvts21" href="Toolstrip-AddingSavingandClosing.html">Adding, Saving and Closing Input Tabs</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts11">Important</span><span class="rvts6">: Open additional input files are not automatically included in the input file. The user needs to have the </span><span class="rvts48">phreeqc</span><span class="rvts6"> </span><a class="rvts57" href="INCLUDE.html">INCLUDE$</a><span class="rvts6"> command in one of two (</span><span class="rvts48">hpgeochemistry</span><span class="rvts6">) or four (</span><span class="rvts48">hydrus</span><span class="rvts6">) default input text editors defined above. Reversely, files hat will be included via the </span><span class="rvts48">phreeqc</span><span class="rvts6"> </span><a class="rvts57" href="INCLUDE.html">INCLUDE$</a><span class="rvts6"> command does not have to be opened in an additional input text editor.</span><span class="rvts6"></span></p>
+<p class="rvps5" style="clear: both;"><span class="rvts12">Created with the Personal Edition of HelpNDoc: </span><a class="rvts13" href="https://www.helpndoc.com/step-by-step-guides/how-to-convert-a-word-docx-file-to-an-epub-or-kindle-ebook/">Transform Your Word Document into a Professional eBook with HelpNDoc</a></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+
