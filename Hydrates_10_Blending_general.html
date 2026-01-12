@@ -1,0 +1,770 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 10.2.0.196">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Hydrates_10_Blending_general</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hydrates_10_Blending_general">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Hydrates_10_Blending_general" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Hydrates_10_Blending_general"
+		  data-hnd-context="68"
+		  data-hnd-title="Hydrates_10_Blending_general"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ModuleBlocks.html">Module Blocks</a></li><li><a href="Templates.html">Templates</a></li><li><a href="Thermodynamicmodellingcementhydr.html">Thermodynamic modelling cement hydrates</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Thermodynamicmodellingcementhydr.html" title="Thermodynamic modelling cement hydrates" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Hydrates_00_General.html" title="Hydrates_00_General" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Processes.html" title="Processes" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Hydrates_10_Blending_general</h2>
+
+            <div class="main-content">
+                
+<div class="rvps2">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 154px;">
+   <p class="rvps2"><span class="rvts19">Name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 732px;">
+   <p class="rvps2"><span class="rvts6">Hydrates_10_Blending_general</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 154px;">
+   <p class="rvps2"><span class="rvts19">Description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 732px;">
+   <p class="rvps2"><span class="rvts6">Blending OPC with supplementary materials</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 154px;">
+   <p class="rvps2"><span class="rvts19">Template definition file</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 732px;">
+   <p class="rvps2"><a class="rvts16" href="Templatefile2.html">Hydrates_10_Blending_General.xml</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts19">&nbsp;</span></p>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Scope</span></span></h6>
+<p class="rvps2"><span class="rvts6">The template facilitates reaction path modelling of blended cement types where parametric studies on the numerical variables in the </span><span class="rvts6">Cement Recipe</span><span class="rvts6"> of the template can be performed. A basic use is e.g. to simulate blending of OPC with one or more SCMs as illustrated in the tutorial </span><a class="rvts16" href="Tutorial-Calculatethecementhydr1.html">Blending OPC and GBFS along a reaction path</a><span class="rvts6">. However, many other reaction path models are possible including temperature, reacted amount, amongst others. Calculation of ternary diagrams for e.g. ternary cement systems starts also from this template (e.g., tutorial </span><a class="rvts16" href="Tutorial-BlendingofOPCwithGBFSan.html">Blending of OPC with GFBS and SF in variable amounts(ternary)</a><span class="rvts6">).</span></p>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Implementation</span></span></h6>
+<p class="rvps7"><span class="rvts21">Tables with Global Variables</span></p>
+<div class="rvps18">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 67px;">
+   <p class="rvps2"><span class="rvts6">Tab 1</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 160px;">
+   <p class="rvps2"><span class="rvts6">Cement Model</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 624px;">
+   <p class="rvps2"><a class="rvts16" href="ModuleCement_Input_01_ModelSyste.html">ModuleCement_Input_01_ModelSystem</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 67px;">
+   <p class="rvps2"><span class="rvts6">Tab 2</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 160px;">
+   <p class="rvps2"><span class="rvts6">Cement Recipe</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 624px;">
+   <p class="rvps2"><a class="rvts16" href="ModuleCement_Input_02_Recipe.html">ModuleCement_Input_02_Recipe</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 67px;">
+   <p class="rvps2"><span class="rvts6">Tab 3</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 160px;">
+   <p class="rvps2"><span class="rvts6">Output</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 624px;">
+   <p class="rvps2"><a class="rvts16" href="ModuleCement_Output_01_General.html">ModuleCement_Output_01_General</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts21">Data blocks</span></p>
+<div class="rvps18">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="OPC.html">OPC</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of Ordinary Portland Cement</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="GBFS.html">GBFS</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of granulated blast furnace slag</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="SF.html">SF</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of silica fume</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="FA.html">FA</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of fly-ash</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="LS.html">LS</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of limestone</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 109px;">
+   <p class="rvps2"><a class="rvts16" href="MK.html">MK</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 730px;">
+   <p class="rvps2"><span class="rvts6">Chemical composition (oxides) of metakaolin</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Intermediate Input files</span></span></h6>
+<p class="rvps18"><span class="rvts14">x, y </span><span class="rvts6">indicate integers (Default: 1001)</span></p>
+<div class="rvps18">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 237px;">
+   <p class="rvps2"><span class="rvts35">CementModelx._in</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 428px;">
+   <p class="rvps2"><span class="rvts6">This file contains the PHREEQC commands for the </span><a class="rvts16" href="CementModels.html">cement model.</a><span class="rvts6">&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 237px;">
+   <p class="rvps2"><span class="rvts35">CementReactionx._in</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 428px;">
+   <p class="rvps2"><span class="rvts6">This file contains the Reaction command with the amounts of the different oxides. Note that during the reaction path calculation, this file is re-written at each step.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 237px;">
+   <p class="rvps2"><span class="rvts35">Cementx_y.in</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 428px;">
+   <p class="rvps2"><span class="rvts6">This file contains a series of PHREEQC commands to calculate the equlibrated phases and solution taken input from entities with numbers </span><span class="rvts14">x</span><span class="rvts6"> and saving a solution, equilibrium_phases and solid_solution entitiy with numbers </span><span class="rvts14">y</span><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Output files</span></span></h6>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps17"><span class="rvts6">Cement_Hydration_x.out</span></p>
+<p class="rvps17"><span class="rvts14">Description: </span><span class="rvts6">Text file containing the cement recipe, reaction details and reaction products. </span><span class="rvts14">x </span><span class="rvts6">is an integer (default: 1001).</span></p>
+<p class="rvps17"><span class="rvts6">This file gives information for the initial values in the table, i.e. before the reaction path calculation.</span></p>
+<p class="rvps17"><span class="rvts14">Content: See </span><a class="rvts57" href="Hydrates_00_General.html#Output">Hydrates_00_General</a></p>
+<p class="rvps17"><span class="rvts14"><br/></span></p>
+<p class="rvps17"><span class="rvts14">CementHydrationResults.out</span></p>
+<p class="rvps17"><span class="rvts14">Description: </span><span class="rvts6">Tab-delimited data file containing geochemical information of each step in the reaction paht (including cement recipe and details, hydration products, concentrations, etc.)</span></p>
+<p class="rvps17"><span class="rvts14">Content: </span><span class="rvts6">Columns</span></p>
+<div class="rvps20">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts35">Amount</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Amount of cement (g). From &nbsp;</span><span class="rvts35">Cement::Recipe::Amount</span><span class="rvts6"> in in </span><a class="rvts16" href="Group-Recipe1.html">Recipe</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">OPC&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of OPC in cement mixture (%). From </span><span class="rvts35">Cement::Clinker::Amount</span><span class="rvts6"> in &nbsp;in </span><a class="rvts16" href="Group-OPCClinker1.html">OPC Clinker</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">GBFS</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of GBFS in cement mixture (%). From </span><span class="rvts35">GBFS::Amount</span><span class="rvts6"> in &nbsp;</span><a class="rvts16" href="Group-GBFS.html">GBFS::Amount</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">SF</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of SF in cement mixture (%). From </span><span class="rvts35">SF::Amount</span><span class="rvts6"> in &nbsp;</span><a class="rvts16" href="Group-SF.html">SF</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">FA</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of FA in cement mixture (%). From </span><span class="rvts35">SF::Amount</span><span class="rvts6"> in &nbsp;</span><a class="rvts16" href="Group-FA.html">FA</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">LS</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of FA in cement mixture (%). From </span><span class="rvts35">LS::Amount</span><span class="rvts6"> in &nbsp;</span><a class="rvts16" href="Group-LS.html">LS</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">MK</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Weight percentage of MK in cement mixture (%). From &nbsp;</span><span class="rvts35">MK::Amount</span><span class="rvts6"> in </span><a class="rvts16" href="Group-MK.html">MK</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">wc</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Water to binder ratio. From </span><span class="rvts35">Cement::Recipe::w_c</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Recipe1.html">Recipe</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">CaO, SiO2, Al2O3, Fe2O3, SO3, MgO, CO2, Na2O, K2O, Cl_t, ...</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Calculated total amount of reactive oxides (mole). Only the oxides relevant to the selected model system are printed (</span><span class="rvts35">Cement::Model::System$</span><span class="rvts6"> in </span><a class="rvts16" href="Group-CementSystem.html">Cement System</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">Lead</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Value corresponding to the variable defined as a lead of the reaction path (</span><span class="rvts6">Cement::Figures::Lead$</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Figures-General.html">Figures - General</a><span class="rvts6">)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">water</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Free water after hydration (L)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">T</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Input - Temperature (°C). &nbsp;From </span><span class="rvts35">Cement::Recipe::T</span><span class="rvts6"> &nbsp;in </span><a class="rvts16" href="Group-Recipe1.html">Recipe</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">mu</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Ionic strength</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">Ca, Si, Al, Fe, S, Mg, C, Na, K, Cl, ...</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Aqueous concentrations of elements (M). Only the elements relevant to the selected model system &nbsp;are printed (</span><span class="rvts35">Cement::Model::System$</span><span class="rvts6"> in </span><a class="rvts16" href="Group-CementSystem.html">Cement System</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts14">Pure_phases</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Amount of pure phases (mole). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Moles</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts14">End_members</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Amount of the end members in solid-solutions (mole). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Moles</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts14">Solid_Solutions</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Amount of the solid*solutions (mole). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Moles</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">v</span><span class="rvts14">Pure_phase</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of pure phases (cm³). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Volumes</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">v</span><span class="rvts14">End_members</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the end members in solid-solutions (cm³). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Volumes</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">v</span><span class="rvts14">Solid_Solutions</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the solid-solutions (cm³). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Volumes</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">w</span><span class="rvts14">Pure_phase</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Weight of pure phases (g). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Weights</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">w</span><span class="rvts14">End_members</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Weight of end members in solid-solutions (g). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Weights</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">w</span><span class="rvts14">Solid_Solutions</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Weight of solid-solutions (g). Printed when </span><span class="rvts35">Cement::Output::Hydrates::Weights</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">si</span><span class="rvts14">Pure_phase</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Saturation index of pure phases. &nbsp;Printed when </span><span class="rvts35">Cement::Output::Hydrates::SaturationIndex</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Values.html">Output - Values</a><span class="rvts6"> is selected.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">CSH_Ca</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Total Ca in C-S-H (mole).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">CSH_Si</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Total Si in C-S-H (mole).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">GelPores</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of gel pores (cm³) calculated according the selected C-S-H model. </span><span class="rvts14">See&nbsp;</span><span class="rvts6"> - </span><a class="rvts16" href="Porosityofgelpores.html">Porosity of gel pores</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">AggVol</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the aggregates (cm³).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">IniCemVol</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the dry cement prior to hydration (cm³) calculated using the amounts of OPC and SCM and their bulk densities (bulk densities are defined in the corresponding data blocks, e.g. in </span><a class="rvts16" href="OPC.html">OPC</a><span class="rvts6">)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">CemVol</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the unhydrated OPC clinkers and SCMs (cm³).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">HydratesVol</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of the hydrates (cm³)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 246px;">
+   <p class="rvps2"><span class="rvts6">ChemShrink</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 442px;">
+   <p class="rvps2"><span class="rvts6">Volume of chemical shrinkage (cm³) calculated according to </span><span class="rvts14">See </span><a class="rvts16" href="Chemicalshrinkage.html">Chemical Shrinkage</a><span class="rvts6">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Graphs</span></span></h6>
+<p class="rvps18"><span class="rvts6">Graphs are generated if </span><span class="rvts35">Cement::Figures</span><span class="rvts6"> in </span><a class="rvts16" href="Group-Figures-General.html">Figures - General</a><span class="rvts6"> is checked.&nbsp;</span></p>
+<div class="rvps18">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px; height: 19px;">
+   <p class="rvps2"><span class="rvts19">name</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px; height: 19px;">
+   <p class="rvps2"><span class="rvts19">Description</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px; height: 19px;">
+   <p class="rvps2"><span class="rvts19">Template specific variants</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">pH</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">pH as a function of hydration time. Created if&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">Elements - moles</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Aqueous concentration of elements in M as a function of the lead variable.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - variant in mmol/l</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">Elements - mg</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Aqueous concentration of elements in mg/L as a function of the lead variable.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - variant in g/l</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">SolidsMoles</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Amount of solid phases in mole as a function of the lead variable.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - Normalized to 100 g binder</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">SolidsGrams</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Weight of solid phases in grams as a function of the lead variable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - Normalized to 100 g binder</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">SolidsVolumes</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Volume of solid phases in cm³ as a function of &nbsp;the lead variable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - Normalized to 100 g binder</span></p>
+   <p class="rvps2"><span class="rvts6">Y-axis - Expressed as volume fraction</span></p>
+   <p class="rvps2"><span class="rvts6">Y-axis - Expressed as volume fraction percentage.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 279px;">
+   <p class="rvps2"><span class="rvts35">Volumes</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Summary graphs with volumes of clinkers/SCMs, hydrates, capillary water, gel water and Chemical Shrinkage as a function of the lead variable.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 505px;">
+   <p class="rvps2"><span class="rvts6">Y-axis - Normalized to 100 g binder</span></p>
+   <p class="rvps2"><span class="rvts6">Y-axis - Expressed as volume fraction</span></p>
+   <p class="rvps2"><span class="rvts6">Y-axis - Expressed as volume fraction percentage.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<h6 class="rvps5"><span class="rvts0"><span class="rvts17">Examples</span></span></h6>
+<p class="rvps7"><span class="rvts21">Tutorials</span></p>
+<p class="rvps18"><a class="rvts16" href="Tutorial-BlendingOPCandGBFSalong.html">Blending OPC and GBFS along a reaction path</a></p>
+<p class="rvps7"><span class="rvts21">Benchmarks</span></p>
+<p class="rvps18"><span class="rvts16"><br/></span></p>
+<p class="rvps18"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span></p>
+<p class="rvps18"><span class="rvts6"></span><span class="rvts6"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

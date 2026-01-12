@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 10.2.0.196">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Tutorial - Blending OPC and GBFS along a reaction path (binary)</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="Blending,Binary cement mixtures,Hydrates_10_Blending_General,Hydrates_10_Blending_General,Chemical shrinkage">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tutorial - Blending OPC and GBFS along a reaction path (binary)">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Tutorial - Blending OPC and GBFS along a reaction path (binary)" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Tutorial-BlendingOPCandGBFSalong"
+		  data-hnd-context="67"
+		  data-hnd-title="Tutorial - Blending OPC and GBFS along a reaction path (binary)"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="ThermodynamicModellingofCementHy.html">Thermodynamic Modelling of Cement Hydrates</a></li><li><a href="Modellingblendingbinaryandternar.html">Modelling blending binary and ternary cement systems</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Modellingblendingbinaryandternar.html" title="Modelling blending binary and ternary cement systems" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Modellingblendingbinaryandternar.html" title="Modelling blending binary and ternary cement systems" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Tutorial-BlendingofOPCwithGBFSan.html" title="Tutorial - Blending of OPC with GBFS and SF  in variable amounts (ternary)" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Tutorial - Blending OPC and GBFS along a reaction path (binary)</h2>
+
+            <div class="main-content">
+                
+<p class="rvps11"><span class="rvts30">Tutorial - </span><span class="rvts30">Blending OPC and GBFS along a reaction path</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps10"><span class="rvts29">Description</span></p>
+<p class="rvps10"><span class="rvts28">Calculate the hydrates assemblage and pore water composition of the hydration of 100 g CEM-I with a water/cement ratio of 0.5 and at a temperature of 25°C when OPC is replace by GBFS up to 60%. The CEM I oxide composition is taken from the </span><a class="rvts34" href="References.html#LOT2006">Lothenbach and Winnefeld (2006)</a><span class="rvts28"> (their table 1); the GBFS oxide composition from </span><a class="rvts34" href="References.html#ADU201">Adu-Amankwah et al. (2017)</a><span class="rvts28">. Calculations are done in the Ca-Si-Al/Fe-S-Mg-C-Na-K system.</span></p>
+<p class="rvps10"><span class="rvts28"><br/></span></p>
+<p class="rvps10"><span class="rvts29">You will learn to</span></p>
+<p class="rvps10"><span class="rvts28">Include a </span><a class="rvts34" href="Glossary.html#Parametric">parametric study</a></p>
+<p class="rvps10"><span class="rvts29"><br/></span></p>
+<p class="rvps10"><span class="rvts29">Template</span><span class="rvts28"> - </span><a class="rvts34" href="Hydrates_10_Blending_general.html">Hydrates_10_Blending_general</a></p>
+<p class="rvps10"><span class="rvts29"><br/></span></p>
+<p class="rvps10"><span class="rvts29">Depends on</span></p>
+<p class="rvps10"><span class="rvts28">Tutorial - </span><a class="rvts34" href="Tutorial-CreateManagedProjectwit.html">Create Managed Project with Cement Module</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps8"><span class="rvts25">Step 1 – Create the simulation from the template to blend materials</span></p>
+<p class="rvps9"><span class="rvts26">Go to </span><span class="rvts31">Project Manager</span><span class="rvts26"> </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Project%20Manager.png"></p>
+<p class="rvps9"><span class="rvts26">Select the project in the bottom panel</span></p>
+<p class="rvps9"><span class="rvts26">Go to </span><span class="rvts31">Templates</span><span class="rvts26"> tab in the top panel</span></p>
+<p class="rvps9"><span class="rvts26">Select the template “</span><span class="rvts31">Hydrates_10_Blending_general</span><span class="rvts26">”</span></p>
+<p class="rvps9"><span class="rvts26">Click the “</span><span class="rvts31">Create new from template</span><span class="rvts26">” button </span><img alt="" style="padding : 1px;" src="lib/Manager%20-%20Project%20-%20CreateFromTemplate.png"></p>
+<p class="rvps9"><span class="rvts26">The </span><span class="rvts31">Metadata</span><span class="rvts26"> dialogue window opens.</span></p>
+<p class="rvps9"><span class="rvts26">Define the name of the simulation (Blending)</span></p>
+<p class="rvps9"><span class="rvts26">Click </span><span class="rvts31">OK</span></p>
+<p class="rvps9"><span class="rvts26">The Project Manager is active again.&nbsp;</span></p>
+<p class="rvps9"><span class="rvts26">Select the simulation (Blending) and click </span><span class="rvts31">Select</span></p>
+<p class="rvps8"><span class="rvts25">Step 2 – Create the reaction path of blending</span></p>
+<p class="rvps9"><span class="rvts26">Go to</span><span class="rvts31"> Global Definitions</span></p>
+<p class="rvps9"><span class="rvts26">Go to</span><span class="rvts31"> Global Variables</span></p>
+<p class="rvps9"><span class="rvts26">Add a case</span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26">Give the case a name (</span><span class="rvts31">BlendingGBFS</span><span class="rvts26">)</span></p>
+<p class="rvps9"><span class="rvts26">Select the </span><span class="rvts31">Parametric</span><span class="rvts26"> Mode</span></p>
+<p class="rvps9"><span class="rvts26">Click on </span><span class="rvts31">Select Mode</span><span class="rvts26"> (</span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20Edit%20Mode.png"><span class="rvts26">) icon</span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26"><br/></span></p>
+<p class="rvps15"><span class="rvts51">At the right side, the panel to define a parametric study is now visible (</span><span class="rvts52">See </span><a class="rvts53" href="https://dphjacques.github.io/HPx-Documentation/ParametricStudies.html" target="_blank">Parametric Studies</a><span class="rvts51"> in </span><a class="rvts53" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts51">). There are three panels:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps14 noindent"><span class="rvts35">Parameters</span></li>
+  <li class="rvps14 noindent"><span class="rvts35">Values</span></li>
+  <li class="rvps14 noindent"><span class="rvts35">Input Model</span></li>
+ </ul>
+</ul>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts26">Select the </span><span class="rvts31">Parameters</span><span class="rvts26"> panel</span></p>
+<p class="rvps9"><span class="rvts26">&nbsp;</span></p>
+<p class="rvps15"><span class="rvts51">The first panel </span><span class="rvts54">Parameters</span><span class="rvts51"> serves to select the variables included in the parametric study. It consists of all numerical variables in the global input table. Only selections at the third level are relevant.</span></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">Cement::Clinker::Amount</span></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">GBFS::Amount</span></p>
+<p class="rvps9"><span class="rvts26">Select the </span><span class="rvts31">Values</span><span class="rvts26"> panel</span></p>
+<p class="rvps12"><span class="rvts6">In this panel, the method (to obtain different parameter values) and the options relevant to the method are available.</span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts50">Vector</span><span class="rvts26"> in </span><span class="rvts31">Method</span><span class="rvts26"> box (</span><span class="rvts32">See</span><span class="rvts26"> </span><a class="rvts37" href="https://dphjacques.github.io/HPx-Documentation/Vector.html" target="_blank">Vector</a><span class="rvts26"> in </span><a class="rvts37" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts26">)</span></p>
+<p class="rvps15"><span class="rvts51">In the Vector method, one defines the start and end point of the vector (or the start point and the increment), the number of increments, and the corresponding numerical values. The vectors with variable values are calculated equally between the start and end point</span></p>
+<p class="rvps12"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts26">Set Number of Steps to 25</span></p>
+<p class="rvps9"><span class="rvts26">Set the starting and end point of:</span></p>
+<p class="rvps9"><span class="rvts26"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts31">Cement::Clinker::Amount</span><span class="rvts26"> to, respectively 100 and 40</span></p>
+<p class="rvps9"><span class="rvts26"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts31">GBFS::Amount</span><span class="rvts31">&nbsp;</span><span class="rvts26"> to, respectively 0 and 60</span></p>
+<p class="rvps9"><span class="rvts26">Select the </span><span class="rvts31">Input Model</span><span class="rvts26"> panel</span></p>
+<p class="rvps15"><span class="rvts51">The third panel identifies the part of the code that needs to be executed with different parameter values. One option is to run the complete input file – PHREEQC will be restarted every time. Output files will be overwritten. A better way is to put the relevant code in a separate file.</span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">Specific File</span></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">Modules</span><span class="rvts26"> from the drop down box </span><span class="rvts31">Folder</span></p>
+<p class="rvps9"><span class="rvts26">Check </span><span class="rvts31">Relative Path</span></p>
+<p class="rvps9"><span class="rvts26">Click </span><span class="rvts31">…</span></p>
+<p class="rvps9"><span class="rvts26">Go to </span><span class="rvts31">ModuleCementParametric</span><span class="rvts26"> Folder</span></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">Parametric_10_Hydrates.hps</span></p>
+<p class="rvps9"><span class="rvts26">Click </span><span class="rvts31">Open</span></p>
+<p class="rvps8"><span class="rvts25">Step 3 – Set Model and Output Options</span></p>
+<p class="rvps9"><span class="rvts26">Go to the input table via the icon </span><img alt="" style="padding : 1px;" src="lib/Global%20Variable%20Table%20-%20View%20Mode.png"></p>
+<p class="rvps9"><span class="rvts26">Choose model 17-Ca Si Al/fe S Mg C Na K Cl in the </span><span class="rvts31">Cement System</span><span class="rvts26"> group of the </span><span class="rvts31">Cement Model</span><span class="rvts26"> tab</span></p>
+<p class="rvps9"><span class="rvts26">Go to the </span><span class="rvts31">Output</span><span class="rvts26"> Tab</span></p>
+<p class="rvps15"><span class="rvts51">For details on the different input records - </span><span class="rvts52">See </span><a class="rvts53" href="ModuleCement_Output_01_General.html">ModuleCement_Output_01_General</a></p>
+<p class="rvps9"><span class="rvts26">Type "</span><span class="rvts31">GBFS::Amount</span><span class="rvts26">" in </span><span class="rvts31">Cement::Figures::Lead$</span><span class="rvts26"> in the </span><span class="rvts31">Figures - General</span><span class="rvts26"> group</span></p>
+<p class="rvps15"><span class="rvts51">The record </span><span class="rvts54">GBFS::Amount</span><span class="rvts51"> defines the output variable used for the X-axis in the plots. This can be one of the (numerical) variables in the global input table. If </span><span class="rvts54">_null_</span><span class="rvts51">, integer values corresponding to the reaction step will be used.</span></p>
+<p class="rvps9"><span class="rvts26">Type "</span><span class="rvts31">GBFS [%]</span><span class="rvts26">" in </span><span class="rvts31">Cement::Figures::X::Title$</span></p>
+<p class="rvps15"><span class="rvts51">The record </span><span class="rvts54">Cement::Figures::X::Title$</span><span class="rvts51"> defines the label of the X-axis.</span></p>
+<p class="rvps9"><span class="rvts26">Run </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Run.png"></p>
+<p class="rvps8"><span class="rvts25">Step 4 – Check Log and Plots</span></p>
+<p class="rvps9"><span class="rvts26">Go to the Graph Workspace </span><img alt="" style="padding : 1px;" src="lib/Main%20-%20Menu%20-%20Graph.png"></p>
+<p class="rvps15"><a name="GraphType"></a><span class="rvts51">Available default plots are listed here. The </span><span class="rvts54">Graph Workspace</span><span class="rvts51"> allows for editing the plots - </span><span class="rvts52">See</span><span class="rvts51"> </span><a class="rvts53" href="https://dphjacques.github.io/HPx-Documentation/Graphworkspace.html" target="_blank">Graph Workspace</a><span class="rvts51"> in the </span><a class="rvts53" href="https://dphjacques.github.io/HPx-Documentation/Introduction.html" target="_blank">online HPx manual</a><span class="rvts51">. In this tutorial, we will illustrate how to make a stacked plot with volume fraction of the hydrates and of the major phases (hydrates, water, chemical shrinkage).</span></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">SolidsVolume</span><span class="rvts26"> in the list of figures.</span></p>
+<p class="rvps15"><span class="rvts51">A plot is generated</span></p>
+<p class="rvps9"><span class="rvts26">Right click &nbsp;</span><span class="rvts31">SolidsVolume</span><span class="rvts26"> and go to </span><span class="rvts31">Values Transformation</span><span class="rvts26"> -&gt; </span><span class="rvts31">Y</span><span class="rvts26"> -&gt; </span><span class="rvts31">Fraction %</span></p>
+<p class="rvps9"></p>
+<p class="rvps15"><span class="rvts51">A plot is generated</span></p>
+<p class="rvps9"><span class="rvts26">Right click </span><span class="rvts31">SolidsVolume</span><span class="rvts26"> and go to </span><span class="rvts31">Graph Types</span><span class="rvts26"> -&gt; </span><span class="rvts31">Stacked - Filled Lines</span></p>
+<p class="rvps9"></p>
+<p class="rvps15"><span class="rvts51">The final plot is generated. Note that the remaining fraction (between the maximum plotted value and 100 %) represents chemical shrinkage.</span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26">Select </span><span class="rvts31">Volumes</span><span class="rvts26"> in the list of figures.</span></p>
+<p class="rvps15"><span class="rvts51">A plot is generated</span></p>
+<p class="rvps9"><span class="rvts26">Right click </span><span class="rvts31">Volumes</span><span class="rvts26"> and go to </span><span class="rvts31">Graph Types</span><span class="rvts26"> -&gt; </span><span class="rvts31">Stacked - Filled Lines</span></p>
+<p class="rvps15"><span class="rvts51">A plot is generated</span></p>
+<p class="rvps9"><span class="rvts26">Click the </span><span class="rvts31">Edit Graph Tool</span><span class="rvts26"> icon </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Icon.png"></p>
+<p class="rvps15"><span class="rvts51">A new plot is automatically generated every time something is changed in the Edit Graph Tool. If several changes have to be made, one can disable the automatic tool generation for this specific graph.</span></p>
+<p class="rvps9"><span class="rvts26">Click the </span><span class="rvts31">Disabling Automatic Graph Update</span><span class="rvts26"> icon </span><img alt="" style="padding : 1px;" src="lib/Graph%20-%20Automatic%20generation%20-%20Enabled.png"><span class="rvts26"> (icon change to </span><img alt="" style="padding : 1px;" src="lib/Graph%20-%20Automatic%20generation%20-%20Disabled.png"><span class="rvts26">)</span></p>
+<p class="rvps9"><a name="UnselectingCurves"></a><span class="rvts26">In the </span><span class="rvts31">Edit Curve Panel</span><span class="rvts26"> </span><img alt="" style="padding : 1px;" src="lib/Edit%20Graph%20Tool%20Curves%20Icon.png"><span class="rvts26">, deselect the unnecessary graphs as in the Figure below (</span><span class="rvts31">Aggregates</span><span class="rvts26">, </span><span class="rvts31">Initial Volume Cement</span><span class="rvts26">, </span><span class="rvts31">Initial Volume Water</span><span class="rvts26">, and </span><span class="rvts31">Initial Volume</span><span class="rvts26">)</span></p>
+<p class="rvps9"></p>
+<p class="rvps9"><span class="rvts26">Click the </span><span class="rvts31">Update the plot icon </span><img alt="" style="padding : 1px;" src="lib/Graph%20-%20Automatic%20generation%20-%20Redo.png"></p>
+<p class="rvps15"><span class="rvts51">The plot shows the change in volume fractions of the hydrate, capillair pores, the gel pores and the chemical shrinkage as function of percentage of GBFS replacement.</span></p>
+<p class="rvps9"></p>
+<p class="rvps11"><span class="rvts30">END </span><span class="rvts30">Blending OPC and GBFS along a reaction path</span><span class="rvts30"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+
