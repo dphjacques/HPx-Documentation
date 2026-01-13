@@ -280,9 +280,8 @@ a.rvts51, span.rvts51
 }
 span.rvts52
 {
- font-size: 14pt;
- font-style: italic;
- font-weight: bold;
+ font-size: 11pt;
+ color: #117dbb;
 }
 span.rvts53
 {
@@ -378,8 +377,9 @@ a.rvts68, span.rvts68
 }
 span.rvts69
 {
- font-size: 16pt;
+ font-size: 12pt;
  font-weight: bold;
+ color: #ffffff;
 }
 span.rvts70
 {
@@ -598,8 +598,9 @@ a.rvts102:hover
 }
 span.rvts103
 {
- font-size: 16pt;
+ font-size: 12pt;
  font-weight: bold;
+ color: #ffffff;
 }
 span.rvts104
 {
@@ -1121,6 +1122,7 @@ span.rvts193
 span.rvts194
 {
  font-weight: bold;
+ color: #ffffff;
 }
 a.rvts195, span.rvts195
 {
@@ -1134,8 +1136,9 @@ a.rvts196, span.rvts196
 }
 span.rvts197
 {
- font-size: 16pt;
+ font-size: 12pt;
  font-weight: bold;
+ color: #ffffff;
 }
 span.rvts198
 {
@@ -1161,6 +1164,7 @@ span.rvts201
 }
 span.rvts202
 {
+ color: #117dbb;
 }
 a.rvts203, span.rvts203
 {
@@ -1174,8 +1178,9 @@ span.rvts204
 }
 span.rvts205
 {
- font-size: 16pt;
+ font-size: 12pt;
  font-weight: bold;
+ color: #ffffff;
 }
 /* ========== Para Styles ========== */
 p,ul,ol /* Paragraph Style */
@@ -1309,6 +1314,8 @@ p,ul,ol /* Paragraph Style */
  text-align: left;
  text-indent: 0px;
  break-after: avoid;
+ background: #00d2ff;
+ background-color: rgba(0,210,255,0.5);
  padding: 0px 0px 0px 0px;
  margin: 20px 0px 25px 0px;
 }
@@ -1341,6 +1348,8 @@ p,ul,ol /* Paragraph Style */
  text-align: left;
  text-indent: 0px;
  break-after: avoid;
+ background: #3749c8;
+ background-color: rgba(55,73,200,0.5);
  padding: 0px 0px 0px 0px;
  margin: 20px 0px 5px 0px;
 }
