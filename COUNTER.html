@@ -13,7 +13,7 @@
 
   <title>COUNTER</title>
   <meta name="description" content="" /> 
-  <meta name="keywords" content="COUNTER,COUNTER 1">
+  <meta name="keywords" content="COUNTER,,COUNTER">
 
 
 
@@ -160,7 +160,7 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="COUNTER"
-		  data-hnd-context="107"
+		  data-hnd-context="10"
 		  data-hnd-title="COUNTER"
 		>
             
@@ -180,94 +180,94 @@
 
             <div class="main-content">
                 
-<p class="rvps23"><span class="rvts103">COUNTER</span><span class="rvts59"> defines a special kind of inline variable. When used in the input files, the value of the inline variable is adapted after replacement depending on the type, incremental value (see </span><a class="rvts100" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts59">) and the action (see </span><a class="rvts68" href="Inlinevariables1.html">Inline Variable</a><span class="rvts59">),&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts97">Counter defined as a variable</span></p>
-<p class="rvps23"><span class="rvts59">The primary use of </span><span class="rvts103">counter</span><span class="rvts59"> is to define the name of the start value and its initial value. When used as an inline variable in the input file (@ followed by the name of the </span><span class="rvts103">counter</span><span class="rvts59">), the current value of the </span><span class="rvts103">counter</span><span class="rvts59"> is included, and the value is changed by an incremental value (default is adding a value of 1, the value can be redefined by </span><a class="rvts100" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts59">, the operand by the symbol following @ (</span><a class="rvts68" href="Inlinevariables1.html">Inline Variable</a><span class="rvts59">)).</span></p>
-<p class="rvps23"><span class="rvts103">COUNTER</span><span class="rvts59"> also resets the value back to its start value when the name starts with &amp;.</span></p>
-<p class="rvps23"><span class="rvts59">Optionally, the end value of a counter can be defined as well. This value can be used to create plots when </span><a class="rvts100" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts59"> is used.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><a name="Datablock"></a><span class="rvts97">Counter linked to a datablock or to a file</span></p>
-<p class="rvps23"><span class="rvts59">When </span><span class="rvts103">counter</span><span class="rvts59"> is followed with </span><span class="rvts131">datablock</span><span class="rvts59"> or </span><span class="rvts131">file</span><span class="rvts59">, the counter is linked to either a </span><a class="rvts100" href="DATABLOCK.html">datablock</a><span class="rvts59"> or a file containing a table. The counter is an integer corresponding to the row in the </span><a class="rvts100" href="DATABLOCK.html">datablock</a><span class="rvts59">, or the row in the table. After replacement, the counter is increased by a value of 1, but by using an equal sign, the counter remains the same. The counter can be reset to the starting value (Default: 0 if a start_value is not defined) as well.&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59">The inline variable (@) refers to the name of the counter and the column heading name as:</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts136">@&lt;:txt:Counter Name&gt;:&lt;:txt:Column Heading Name&gt;&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">where both </span><span class="rvts104">Counter Name</span><span class="rvts59"> and </span><span class="rvts104">Column Heading Name</span><span class="rvts59"> are case sensitive.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">For the </span><span class="rvts131">datablock</span><span class="rvts59"> option, the corresponding </span><a class="rvts100" href="DATABLOCK.html">datablock</a><span class="rvts59"> can be defined further in the input file. However, when the inline variable is used in the input file, both the counter and the </span><a class="rvts100" href="DATABLOCK.html">datablock</a><span class="rvts59"> should be defined. Note that the counter should have the same name as the datablock.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">For the </span><span class="rvts131">file</span><span class="rvts59"> option, the corresponding file can be generated at later times during the execution. However, when the inline variable is used in the input file, both the </span><span class="rvts103">counter</span><span class="rvts59"> should be defined and the file should be present. The file name can be a full path, a file in or relative to the simulation directory or in or relative to any other path defined by </span><a class="rvts100" href="COUNTER.html">INCLUDEPATH</a><span class="rvts59">. &nbsp;The first line of the file contains the (case-sensitive) headings of the different columns in the table, the next lines contains the values. The file can be space, tab, comma or semi-colon separated (or any mixture of these delimiters). The first time the inline variable refers to the </span><span class="rvts103">counter</span><span class="rvts59">, the file is read by the program and interpreted as a </span><a class="rvts100" href="DATABLOCK.html">datablock</a><span class="rvts59">.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">The inline variable can also retrieve the number of records by using </span><span class="rvts104">:nrrec:</span><span class="rvts59"> instead of the </span><span class="rvts104">Column Heading Name</span><span class="rvts59">:</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts136">@&lt;:txt:Counter Name&gt;:nrrec</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">In that case, the counter keeps its actual value (no increment by the value of 1).</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Definition</span></span></h3>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts127">#Define a counter by a variable name - it can be linked to a COUNTERINCR statement to define the incremental value.</span></p>
-<p class="rvps23"><span class="rvts103">counteR </span><span class="rvts132">&lt;:txt:name&gt; &lt;flt:start_value&gt; [&lt;flt:end_value&gt;]</span></p>
-<p class="rvps23"><span class="rvts103">counteR </span><span class="rvts132">&lt;:txt:name&gt; = &lt;exp:start_value_exp&gt;&nbsp;</span></p>
-<p class="rvps23"><span class="rvts103">counteR </span><span class="rvts104">&amp;</span><span class="rvts132">&lt;:txt:name&gt;&nbsp;</span></p>
-<p class="rvps23"><span class="rvts132"><br/></span></p>
-<p class="rvps23"><span class="rvts127">#Define a counter linked to a datablock or to a file</span></p>
-<p class="rvps23"><span class="rvts103">counter</span><span class="rvts132"> </span><span class="rvts131">datablock</span><span class="rvts132"> &lt;:txt:datablock name&gt; [&lt;int:start_value&gt;]</span></p>
-<p class="rvps23"><span class="rvts103">COUNTER</span><span class="rvts132"> </span><span class="rvts131">file</span><span class="rvts132"> &lt;txt:file name&gt; &lt;:str:file&gt;&nbsp;</span><span class="rvts132"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts132">[&lt;int:start_value&gt;]</span></p>
-<p class="rvps24"><span class="rvts59"><br/></span></p>
-<p class="rvps24"><span class="rvts59"><br/></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Explanation</span></span></h3>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps24">
+<p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts6"> defines a special kind of inline variable. When used in the input files, the value of the inline variable is adapted after replacement depending on the type, incremental value (see </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">) and the action (see </span><a class="rvts21" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">),&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts38">Counter defined as a variable</span></p>
+<p class="rvps2"><span class="rvts6">The primary use of </span><span class="rvts60">counter</span><span class="rvts6"> is to define the name of the start value and its initial value. When used as an inline variable in the input file (@ followed by the name of the </span><span class="rvts60">counter</span><span class="rvts6">), the current value of the </span><span class="rvts60">counter</span><span class="rvts6"> is included, and the value is changed by an incremental value (default is adding a value of 1, the value can be redefined by </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">, the operand by the symbol following @ (</span><a class="rvts21" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">)).</span></p>
+<p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts6"> also resets the value back to its start value when the name starts with &amp;.</span></p>
+<p class="rvps2"><span class="rvts6">Optionally, the end value of a counter can be defined as well. This value can be used to create plots when </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6"> is used.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="Datablock"></a><span class="rvts38">Counter linked to a datablock or to a file</span></p>
+<p class="rvps2"><span class="rvts6">When </span><span class="rvts60">counter</span><span class="rvts6"> is followed with </span><span class="rvts91">datablock</span><span class="rvts6"> or </span><span class="rvts91">file</span><span class="rvts6">, the counter is linked to either a </span><a class="rvts57" href="DATABLOCK.html">datablock</a><span class="rvts6"> or a file containing a table. The counter is an integer corresponding to the row in the </span><a class="rvts57" href="DATABLOCK.html">datablock</a><span class="rvts6">, or the row in the table. After replacement, the counter is increased by a value of 1, but by using an equal sign, the counter remains the same. The counter can be reset to the starting value (Default: 0 if a start_value is not defined) as well.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">The inline variable (@) refers to the name of the counter and the column heading name as:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts97">@&lt;:txt:Counter Name&gt;:&lt;:txt:Column Heading Name&gt;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">where both </span><span class="rvts61">Counter Name</span><span class="rvts6"> and </span><span class="rvts61">Column Heading Name</span><span class="rvts6"> are case sensitive.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For the </span><span class="rvts91">datablock</span><span class="rvts6"> option, the corresponding </span><a class="rvts57" href="DATABLOCK.html">datablock</a><span class="rvts6"> can be defined further in the input file. However, when the inline variable is used in the input file, both the counter and the </span><a class="rvts57" href="DATABLOCK.html">datablock</a><span class="rvts6"> should be defined. Note that the counter should have the same name as the datablock.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For the </span><span class="rvts91">file</span><span class="rvts6"> option, the corresponding file can be generated at later times during the execution. However, when the inline variable is used in the input file, both the </span><span class="rvts60">counter</span><span class="rvts6"> should be defined and the file should be present. The file name can be a full path, a file in or relative to the simulation directory or in or relative to any other path defined by </span><a class="rvts57" href="COUNTER.html">INCLUDEPATH</a><span class="rvts6">. &nbsp;The first line of the file contains the (case-sensitive) headings of the different columns in the table, the next lines contains the values. The file can be space, tab, comma or semi-colon separated (or any mixture of these delimiters). The first time the inline variable refers to the </span><span class="rvts60">counter</span><span class="rvts6">, the file is read by the program and interpreted as a </span><a class="rvts57" href="DATABLOCK.html">datablock</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The inline variable can also retrieve the number of records by using </span><span class="rvts61">:nrrec:</span><span class="rvts6"> instead of the </span><span class="rvts61">Column Heading Name</span><span class="rvts6">:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts97">@&lt;:txt:Counter Name&gt;:nrrec</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">In that case, the counter keeps its actual value (no increment by the value of 1).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Definition</span></span></h3>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts87">#Define a counter by a variable name - it can be linked to a COUNTERINCR statement to define the incremental value.</span></p>
+<p class="rvps2"><span class="rvts60">counteR </span><span class="rvts92">&lt;:txt:name&gt; &lt;flt:start_value&gt; [&lt;flt:end_value&gt;]</span></p>
+<p class="rvps2"><span class="rvts60">counteR </span><span class="rvts92">&lt;:txt:name&gt; = &lt;exp:start_value_exp&gt;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts60">counteR </span><span class="rvts61">&amp;</span><span class="rvts92">&lt;:txt:name&gt;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts92"><br/></span></p>
+<p class="rvps2"><span class="rvts87">#Define a counter linked to a datablock or to a file</span></p>
+<p class="rvps2"><span class="rvts60">counter</span><span class="rvts92"> </span><span class="rvts91">datablock</span><span class="rvts92"> &lt;:txt:datablock name&gt; [&lt;int:start_value&gt;]</span></p>
+<p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts92"> </span><span class="rvts91">file</span><span class="rvts92"> &lt;txt:file name&gt; &lt;:str:file&gt;&nbsp;</span><span class="rvts92"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts92">[&lt;int:start_value&gt;]</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Explanation</span></span></h3>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps4">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps23"><span class="rvts59">name</span></p>
+   <p class="rvps2"><span class="rvts6">name</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps23"><span class="rvts59">txt</span></p>
+   <p class="rvps2"><span class="rvts6">txt</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px;">
-   <p class="rvps23"><span class="rvts59">Name of the counter (inline variable).</span></p>
-   <p class="rvps23"><span class="rvts59">When the counter is not defined yet, it is initialized with a start value of 1 and an incremental value of 1.</span></p>
-   <p class="rvps23"><span class="rvts59">When the name is followed by an equal sign "=", an inline expression is used to calculate the start value.</span></p>
-   <p class="rvps23"><span class="rvts59">When the name is preceded with the &amp; symbol, the actual value of the inline variable is reset to its previously defined start value.</span></p>
+   <p class="rvps2"><span class="rvts6">Name of the counter (inline variable).</span></p>
+   <p class="rvps2"><span class="rvts6">When the counter is not defined yet, it is initialized with a start value of 1 and an incremental value of 1.</span></p>
+   <p class="rvps2"><span class="rvts6">When the name is followed by an equal sign "=", an inline expression is used to calculate the start value.</span></p>
+   <p class="rvps2"><span class="rvts6">When the name is preceded with the &amp; symbol, the actual value of the inline variable is reset to its previously defined start value.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps23"><span class="rvts59">start_value</span></p>
+   <p class="rvps2"><span class="rvts6">start_value</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps23"><span class="rvts59">flt</span></p>
+   <p class="rvps2"><span class="rvts6">flt</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px;">
-   <p class="rvps23"><span class="rvts59">Start value of the counter.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">Start value of the counter.&nbsp;</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px; height: 66px;">
-   <p class="rvps23"><span class="rvts59">end_value</span></p>
+   <p class="rvps2"><span class="rvts6">end_value</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px; height: 66px;">
-   <p class="rvps23"><span class="rvts59">flt</span></p>
+   <p class="rvps2"><span class="rvts6">flt</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px; height: 66px;">
-   <p class="rvps23"><span class="rvts59">(optional) End value of the counter. The end value can only be defined when the equal sign is not used. The end value does not have any effect on the behaviour of the counter. It is only used to link output blocks to counter values in </span><a class="rvts100" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts59">.</span></p>
+   <p class="rvps2"><span class="rvts6">(optional) End value of the counter. The end value can only be defined when the equal sign is not used. The end value does not have any effect on the behaviour of the counter. It is only used to link output blocks to counter values in </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps23"><span class="rvts59">start_value_exp</span></p>
+   <p class="rvps2"><span class="rvts6">start_value_exp</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps23"><span class="rvts59">exp</span></p>
+   <p class="rvps2"><span class="rvts6">exp</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px;">
-   <p class="rvps23"><span class="rvts59">Inline expression for calculating the start value - see "</span><span class="rvts68">Definition of inline variables</span><span class="rvts59">" and "</span><a class="rvts68" href="Examplesofinlinedefinitionanduse.html">Examples of inline definition and use</a><span class="rvts59">"</span></p>
+   <p class="rvps2"><span class="rvts6">Inline expression for calculating the start value - see "</span><span class="rvts21">Definition of inline variables</span><span class="rvts6">" and "</span><a class="rvts21" href="Examplesofinlinedefinitionanduse.html">Examples of inline definition and use</a><span class="rvts6">"</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -283,13 +283,13 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 141px;">
-   <p class="rvps23"><span class="rvts59">File Name</span></p>
+   <p class="rvps2"><span class="rvts6">File Name</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps23"><span class="rvts59">txt</span></p>
+   <p class="rvps2"><span class="rvts6">txt</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px;">
-   <p class="rvps23"><span class="rvts59">the name of the counter. When a name is defined for the </span><span class="rvts131">file</span><span class="rvts59"> case, the name cannot be in use as a previously defined counter based on </span><span class="rvts131">file</span><span class="rvts59"> or as a name for a </span><span class="rvts103">datablock</span><span class="rvts59">.</span></p>
+   <p class="rvps2"><span class="rvts6">the name of the counter. When a name is defined for the </span><span class="rvts91">file</span><span class="rvts6"> case, the name cannot be in use as a previously defined counter based on </span><span class="rvts91">file</span><span class="rvts6"> or as a name for a </span><span class="rvts60">datablock</span><span class="rvts6">.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -305,17 +305,12 @@
  </tr>
 </table>
 </div>
-<p class="rvps24"><span class="rvts59"><br/></span></p>
-<p class="rvps24"><span class="rvts59"></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Example</span></span></h3>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts68" href="Examplesofinlinedefinitionanduse.html#Counter_LT_File">Counter linked to file</a></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"></span><span class="rvts6"></span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 

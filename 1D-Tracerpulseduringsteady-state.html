@@ -160,7 +160,7 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="1D-Tracerpulseduringsteady-state"
-		  data-hnd-context="401"
+		  data-hnd-context="30"
 		  data-hnd-title="1D - Tracer pulse during steady-state flow conditions"
 		>
             
@@ -180,176 +180,176 @@
 
             <div class="main-content">
                 
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Problem Definition</span></span></h3>
-<p class="rvps23"><span class="rvts59">This example describes the transport of a tracer under steady-state flow conditions in a one-dimensional profile. The aim is to verify the coupling of HYDRUS-1D and a given geochemical solver.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts60">Acronym: </span><span class="rvts59">ADR-T-SS</span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Geometry</span></span></h3>
-<p class="rvps23"><span class="rvts59">The profile has a length of 100 cm and consists of a single material.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Processes and Equations</span></span></h3>
-<p class="rvps78"><span class="rvts59"><br/></span></p>
-<div class="rvps55">
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Problem Definition</span></span></h3>
+<p class="rvps2"><span class="rvts6">This example describes the transport of a tracer under steady-state flow conditions in a one-dimensional profile. The aim is to verify the coupling of HYDRUS-1D and a given geochemical solver.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Acronym: </span><span class="rvts6">ADR-T-SS</span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Geometry</span></span></h3>
+<p class="rvps2"><span class="rvts6">The profile has a length of 100 cm and consists of a single material.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Processes and Equations</span></span></h3>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<div class="rvps32">
 <table style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 181px; height: 11px;">
-   <p class="rvps23"><span class="rvts59">Water flow equation</span></p>
+   <p class="rvps2"><span class="rvts6">Water flow equation</span></p>
   </td>
   <td style="padding: 1px; width: 268px; height: 11px;">
-   <p class="rvps23"><a class="rvts68" href="WaterFlowEquation.html#Richards_singleppr">Richards' equation</a></p>
+   <p class="rvps2"><a class="rvts21" href="WaterFlowEquation.html#Richards_singleppr">Richards' equation</a></p>
   </td>
   <td style="padding: 1px; width: 309px; height: 11px;">
-   <p class="rvps23"><span class="rvts59">vertical flow (</span><span class="rvts190">α</span><span class="rvts59">=1), no water sink (</span><span class="rvts124">S</span><span class="rvts59">=0)</span></p>
+   <p class="rvps2"><span class="rvts6">vertical flow (</span><span class="rvts148">α</span><span class="rvts6">=1), no water sink (</span><span class="rvts84">S</span><span class="rvts6">=0)</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 181px;">
-   <p class="rvps23"><span class="rvts59">Solute transport</span></p>
+   <p class="rvps2"><span class="rvts6">Solute transport</span></p>
   </td>
   <td style="padding: 1px; width: 268px;">
-   <p class="rvps23"><a class="rvts68" href="SoluteTransportEquation.html#Advection-Disperion%20equation">Advection-dispersion equation</a></p>
+   <p class="rvps2"><a class="rvts21" href="SoluteTransportEquation.html#Advection-Disperion%20equation">Advection-dispersion equation</a></p>
   </td>
   <td style="padding: 1px; width: 309px;">
-   <p class="rvps23"><span class="rvts59"><br/></span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps55"><span class="rvts59"><br/></span></p>
-<h1 class="rvps51"><span class="rvts0"><span class="rvts20">Initial and boundary conditions</span></span></h1>
-<p class="rvps23"><span class="rvts59">The initial and boundary conditions are illustrated in </span><a class="rvts68" href="1D-Tracerpulseduringsteady-state.html#Figure1_IandB">Figure 1</a><span class="rvts59">.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><img alt="" style="padding : 1px;" src="lib/ADR-T-SS-Initial%20&amp;%20boundary%20conditions.PNG"></p>
-<p class="rvps58"><a name="Figure1_IandB"></a><span class="rvts56">Figure 1 - Schematic representation of initial and boundary conditions for water flow (left) and solute transport (right)</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">The upper boundary condition for mass transport is a time-variable flux boundary condition with&nbsp;</span></p>
-<p class="rvps54"><span class="rvts124">c</span><span class="rvts123">0</span><span class="rvts59"> = 0.1 mol/kgw for 0 ≤ t ≤ 50d</span></p>
-<p class="rvps54"><span class="rvts124">c</span><span class="rvts123">0</span><span class="rvts59"> = 0.0 mol/kgw for 50 ≤ t ≤ 300d</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h1 class="rvps51"><span class="rvts0"><span class="rvts20">Material Parameters</span></span></h1>
-<p class="rvps78"><span class="rvts59">The hydraulic properties are described with the </span><a class="rvts68" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten - Mualem</a><span class="rvts59"> model with </span><span class="rvts124">m</span><span class="rvts59">=1-1/</span><span class="rvts124">n</span><span class="rvts59">. Parameter values are in </span><a class="rvts68" href="1D-Boundaryvalueproblemduringnof.html#Table%201%20hydraulic%20parameters">Table 1</a><span class="rvts59">.</span></p>
-<p class="rvps78"><span class="rvts59"><br/></span></p>
-<p class="rvps58"><a name="Table 1 hydraulic parameters"></a><span class="rvts56">Table 1 - Parameters of the moisture retention curve and the unsaturated hydraulic conductivity as described with the model of </span><a class="rvts191" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten -Mualem</a><span class="rvts56">.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps79">
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Initial and boundary conditions</span></span></h1>
+<p class="rvps2"><span class="rvts6">The initial and boundary conditions are illustrated in </span><a class="rvts21" href="1D-Tracerpulseduringsteady-state.html#Figure1_IandB">Figure 1</a><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/ADR-T-SS-Initial%20&amp;%20boundary%20conditions.PNG"></p>
+<p class="rvps34"><a name="Figure1_IandB"></a><span class="rvts93">Figure 1 - Schematic representation of initial and boundary conditions for water flow (left) and solute transport (right)</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The upper boundary condition for mass transport is a time-variable flux boundary condition with&nbsp;</span></p>
+<p class="rvps31"><span class="rvts84">c</span><span class="rvts83">0</span><span class="rvts6"> = 0.1 mol/kgw for 0 ≤ t ≤ 50d</span></p>
+<p class="rvps31"><span class="rvts84">c</span><span class="rvts83">0</span><span class="rvts6"> = 0.0 mol/kgw for 50 ≤ t ≤ 300d</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Material Parameters</span></span></h1>
+<p class="rvps53"><span class="rvts6">The hydraulic properties are described with the </span><a class="rvts21" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten - Mualem</a><span class="rvts6"> model with </span><span class="rvts84">m</span><span class="rvts6">=1-1/</span><span class="rvts84">n</span><span class="rvts6">. Parameter values are in </span><a class="rvts21" href="1D-Boundaryvalueproblemduringnof.html#Table%201%20hydraulic%20parameters">Table 1</a><span class="rvts6">.</span></p>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><a name="Table 1 hydraulic parameters"></a><span class="rvts93">Table 1 - Parameters of the moisture retention curve and the unsaturated hydraulic conductivity as described with the model of </span><a class="rvts149" href="Hydraulicfunctions.html#vanGenuchtenMualemModel">van Genuchten -Mualem</a><span class="rvts93">.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps54">
 <table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps23"><span class="rvts190">θ</span><span class="rvts123">s</span></p>
+   <p class="rvps2"><span class="rvts148">θ</span><span class="rvts83">s</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
-   <p class="rvps23"><span class="rvts59">0.43</span></p>
+   <p class="rvps2"><span class="rvts6">0.43</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps23"><span class="rvts190">θ</span><span class="rvts123">r</span></p>
+   <p class="rvps2"><span class="rvts148">θ</span><span class="rvts83">r</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
-   <p class="rvps23"><span class="rvts59">0.078</span></p>
+   <p class="rvps2"><span class="rvts6">0.078</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px; height: 8px;">
-   <p class="rvps23"><span class="rvts190">α</span></p>
+   <p class="rvps2"><span class="rvts148">α</span></p>
   </td>
   <td style="padding: 1px; width: 108px; height: 8px;">
-   <p class="rvps23"><span class="rvts59">0.036 /cm</span></p>
+   <p class="rvps2"><span class="rvts6">0.036 /cm</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps23"><span class="rvts124">n</span></p>
+   <p class="rvps2"><span class="rvts84">n</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
-   <p class="rvps23"><span class="rvts59">1.56</span></p>
+   <p class="rvps2"><span class="rvts6">1.56</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps23"><span class="rvts124">K</span><span class="rvts123">s</span></p>
+   <p class="rvps2"><span class="rvts84">K</span><span class="rvts83">s</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
-   <p class="rvps23"><span class="rvts59">24.96 cm/days</span></p>
+   <p class="rvps2"><span class="rvts6">24.96 cm/days</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 32px;">
-   <p class="rvps23"><span class="rvts124">l</span></p>
+   <p class="rvps2"><span class="rvts84">l</span></p>
   </td>
   <td style="padding: 1px; width: 108px;">
-   <p class="rvps23"><span class="rvts59">0.5</span></p>
+   <p class="rvps2"><span class="rvts6">0.5</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps23"><span class="rvts124"><br/></span></p>
-<p class="rvps78"><span class="rvts59">The parameters of the solute transport equation and dispersion are given in </span><a class="rvts68" href="1D-Tracertransportdualporositydu.html#Table%202%20(solute%20parameter)">Table 2</a><span class="rvts59">.</span></p>
-<p class="rvps78"><span class="rvts59"><br/></span></p>
-<p class="rvps58"><a name="Table 2 (solute parameter)"></a><span class="rvts56">Table 2 - Parameters of the solute transport equation (</span><a class="rvts191" href="SoluteTransportEquation.html#Advection-Disperion%20equation">advection-dispersion equation</a><span class="rvts56">)&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps79">
+<p class="rvps2"><span class="rvts84"><br/></span></p>
+<p class="rvps53"><span class="rvts6">The parameters of the solute transport equation and dispersion are given in </span><a class="rvts21" href="1D-Tracertransportdualporositydu.html#Table%202%20(solute%20parameter)">Table 2</a><span class="rvts6">.</span></p>
+<p class="rvps53"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><a name="Table 2 (solute parameter)"></a><span class="rvts93">Table 2 - Parameters of the solute transport equation (</span><a class="rvts149" href="SoluteTransportEquation.html#Advection-Disperion%20equation">advection-dispersion equation</a><span class="rvts93">)&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps54">
 <table style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px; border-right: none; border-left: none;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 122px; height: 20px;">
-   <p class="rvps23"><span class="rvts124">D</span><span class="rvts123">L</span></p>
+   <p class="rvps2"><span class="rvts84">D</span><span class="rvts83">L</span></p>
   </td>
   <td style="padding: 1px; width: 152px; height: 20px;">
-   <p class="rvps23"><span class="rvts59">8 cm</span></p>
+   <p class="rvps2"><span class="rvts6">8 cm</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 122px;">
-   <p class="rvps23"><span class="rvts124">D</span><span class="rvts123">w</span></p>
+   <p class="rvps2"><span class="rvts84">D</span><span class="rvts83">w</span></p>
   </td>
   <td style="padding: 1px; width: 152px;">
-   <p class="rvps23"><span class="rvts59">0 cm</span><span class="rvts162">2</span><span class="rvts59">/day</span></p>
+   <p class="rvps2"><span class="rvts6">0 cm</span><span class="rvts123">2</span><span class="rvts6">/day</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 122px;">
-   <p class="rvps23"><span class="rvts156">τ</span></p>
+   <p class="rvps2"><span class="rvts117">τ</span></p>
   </td>
   <td style="padding: 1px; width: 152px;">
-   <p class="rvps23"><a class="rvts68" href="Dispersioncoefficient.html#MillingtonQuirk">Millington &amp; Quirk</a></p>
+   <p class="rvps2"><a class="rvts21" href="Dispersioncoefficient.html#MillingtonQuirk">Millington &amp; Quirk</a></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps79"><span class="rvts59"><br/></span></p>
-<p class="rvps55"><span class="rvts59"><br/></span></p>
-<h1 class="rvps51"><span class="rvts0"><span class="rvts20">Evaluation method</span></span></h1>
-<p class="rvps78"><span class="rvts59">HPx simulations are compared with the calculations results of HYDRUS-1D. The output variables are:</span></p>
+<p class="rvps54"><span class="rvts6"><br/></span></p>
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Evaluation method</span></span></h1>
+<p class="rvps53"><span class="rvts6">HPx simulations are compared with the calculations results of HYDRUS-1D. The output variables are:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps80 noindent"><span class="rvts59">Time series of concentrations at depths of 3, 25, 50, 75 and 100 cm, and</span></li>
- <li class="rvps80 noindent"><span class="rvts59">Concentration profiles at times 10, 20, 50, 100, 200 and 300 days.</span></li>
+ <li class="rvps55 noindent"><span class="rvts6">Time series of concentrations at depths of 3, 25, 50, 75 and 100 cm, and</span></li>
+ <li class="rvps55 noindent"><span class="rvts6">Concentration profiles at times 10, 20, 50, 100, 200 and 300 days.</span></li>
 </ul>
-<h1 class="rvps51"><span class="rvts0"><span class="rvts20">Numerical Settings</span></span></h1>
-<p class="rvps23"><span class="rvts59">The profile is discretized in 100 elements with 101 equally-spaced nodes.</span></p>
-<p class="rvps23"><span class="rvts59">The minimum and maximum time steps are 10</span><span class="rvts162">-5</span><span class="rvts59"> and 5 days, respectively (the latter being limited by the 0.5 day time step of output).</span></p>
-<p class="rvps23"><span class="rvts59">The Crank-Nicholson scheme for time weighting and the Galarkin finite element scheme for space weighting are used with a stability criterion (PeCr) equal to 2.</span></p>
-<h1 class="rvps51"><span class="rvts0"><span class="rvts20">Results</span></span></h1>
-<p class="rvps23"><a class="rvts68" href="1D-Tracerpulseduringsteady-state.html#Figure2_ts">Figure 2</a><span class="rvts59"> shows an excellent agreement between the tracer breakthrough curves obtained with HP1 and HYDRUS-1D for the evolution to the tracer concentration at selected depths.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><a name="Figure2_ts"></a><span class="rvts59"><br/></span></p>
-<p class="rvps23"><img alt="" style="padding : 1px;" src="lib/h_1210_01_ADR-T-SS%2001.png"></p>
-<p class="rvps58"><span class="rvts56">Figure 2 - Time series of tracer concentrations at selected depths during pulse application under steady-state flow conditions. Comparison between HPx and HYDRUS-1D.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><a class="rvts68" href="1D-Tracerpulseduringsteady-state.html#Figure3_pf">Figure 3</a><span class="rvts59"> shows an excellent agreement of tracer profiles at selected times obtained with HP1 and HYDRUS-1D.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><a name="Figure3_pf"></a><span class="rvts59"><br/></span></p>
-<p class="rvps23"><img alt="" style="padding : 1px;" src="lib/h_1210_01_ADR-T-SS%2002.png"></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps58"><span class="rvts56">Figure 3 - Profiles of tracer concentrations at selected times during pulse application under steady-state flow conditions. Comparison between HPx and HYDRUS-1D.&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h4 class="rvps48"><span class="rvts0"><span class="rvts99">HP1 Project</span></span></h4>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"></span><span class="rvts6"></span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Numerical Settings</span></span></h1>
+<p class="rvps2"><span class="rvts6">The profile is discretized in 100 elements with 101 equally-spaced nodes.</span></p>
+<p class="rvps2"><span class="rvts6">The minimum and maximum time steps are 10</span><span class="rvts123">-5</span><span class="rvts6"> and 5 days, respectively (the latter being limited by the 0.5 day time step of output).</span></p>
+<p class="rvps2"><span class="rvts6">The Crank-Nicholson scheme for time weighting and the Galarkin finite element scheme for space weighting are used with a stability criterion (PeCr) equal to 2.</span></p>
+<h1 class="rvps28"><span class="rvts0"><span class="rvts69">Results</span></span></h1>
+<p class="rvps2"><a class="rvts21" href="1D-Tracerpulseduringsteady-state.html#Figure2_ts">Figure 2</a><span class="rvts6"> shows an excellent agreement between the tracer breakthrough curves obtained with HP1 and HYDRUS-1D for the evolution to the tracer concentration at selected depths.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="Figure2_ts"></a><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/h_1210_01_ADR-T-SS%2001.png"></p>
+<p class="rvps34"><span class="rvts93">Figure 2 - Time series of tracer concentrations at selected depths during pulse application under steady-state flow conditions. Comparison between HPx and HYDRUS-1D.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a class="rvts21" href="1D-Tracerpulseduringsteady-state.html#Figure3_pf">Figure 3</a><span class="rvts6"> shows an excellent agreement of tracer profiles at selected times obtained with HP1 and HYDRUS-1D.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><a name="Figure3_pf"></a><span class="rvts6"><br/></span></p>
+<p class="rvps2"><img alt="" style="padding : 1px;" src="lib/h_1210_01_ADR-T-SS%2002.png"></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><span class="rvts93">Figure 3 - Profiles of tracer concentrations at selected times during pulse application under steady-state flow conditions. Comparison between HPx and HYDRUS-1D.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><span class="rvts0"><span class="rvts56">HP1 Project</span></span></h4>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 

@@ -160,7 +160,7 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="Plottingmultipledatasets"
-		  data-hnd-context="389"
+		  data-hnd-context="107"
 		  data-hnd-title="Plotting multiple datasets"
 		>
             
@@ -180,33 +180,33 @@
 
             <div class="main-content">
                 
-<p class="rvps23"><span class="rvts59">The prerequisite for plotting multiple datasets from a output file created with selected_output is that the different datasets are separated according the format of gnuplot, i.e. datasets are separated by two blank lines. Other separation of datasets within a file cannot be handled via the selected_graph statements and should be treated via post-processing.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">To add the gnuplot format between datasets, the following statement can be used (see </span><a class="rvts100" href="PUNCH.html">punch</a><span class="rvts59">):</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps59"><span class="rvts103">punch</span><span class="rvts59"> </span><span class="rvts132">&lt;:int:Selected Output Number&gt; </span><span class="rvts131">gnuplot </span><span class="rvts132">[&lt;:str:dataset label&gt;]</span><span class="rvts59">&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">The number of datasets and the default keys for the different curves are defined based on the options given in the Plot Line Options.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h4 class="rvps48"><span class="rvts0"><span class="rvts99">Definition of labels of different data sets</span></span></h4>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">The number of datasets and the keys are defined by the number of indexes that are defined for the selected_output. Indexes are assigned to the selected_output by the statements (see </span><a class="rvts100" href="PUNCH.html">punch</a><span class="rvts59">):</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps59"><span class="rvts103">punch</span><span class="rvts59"> </span><span class="rvts132">&lt;:int:Selected Output Number&gt; </span><span class="rvts131">gnuplot </span><span class="rvts132">[&lt;:str:dataset label&gt;]</span><span class="rvts59">&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">or</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps59"><span class="rvts103">punch</span><span class="rvts59"> </span><span class="rvts132">&lt;:int:Selected Output Number&gt; </span><span class="rvts131">index </span><span class="rvts132">[&lt;:str:dataset label&gt;]&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59">If no</span><span class="rvts104"> dataset label</span><span class="rvts59"> is defined, the default label "Dataset i" (with </span><span class="rvts124">i</span><span class="rvts59"> the </span><span class="rvts124">i</span><span class="rvts59">th index) is assigned.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts6">The prerequisite for plotting multiple datasets from a output file created with selected_output is that the different datasets are separated according the format of gnuplot, i.e. datasets are separated by two blank lines. Other separation of datasets within a file cannot be handled via the selected_graph statements and should be treated via post-processing.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">To add the gnuplot format between datasets, the following statement can be used (see </span><a class="rvts57" href="PUNCH.html">punch</a><span class="rvts6">):</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts60">punch</span><span class="rvts6"> </span><span class="rvts92">&lt;:int:Selected Output Number&gt; </span><span class="rvts91">gnuplot </span><span class="rvts92">[&lt;:str:dataset label&gt;]</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The number of datasets and the default keys for the different curves are defined based on the options given in the Plot Line Options.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h4 class="rvps25"><span class="rvts0"><span class="rvts56">Definition of labels of different data sets</span></span></h4>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The number of datasets and the keys are defined by the number of indexes that are defined for the selected_output. Indexes are assigned to the selected_output by the statements (see </span><a class="rvts57" href="PUNCH.html">punch</a><span class="rvts6">):</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts60">punch</span><span class="rvts6"> </span><span class="rvts92">&lt;:int:Selected Output Number&gt; </span><span class="rvts91">gnuplot </span><span class="rvts92">[&lt;:str:dataset label&gt;]</span><span class="rvts6">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">or</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps35"><span class="rvts60">punch</span><span class="rvts6"> </span><span class="rvts92">&lt;:int:Selected Output Number&gt; </span><span class="rvts91">index </span><span class="rvts92">[&lt;:str:dataset label&gt;]&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If no</span><span class="rvts61"> dataset label</span><span class="rvts6"> is defined, the default label "Dataset i" (with </span><span class="rvts84">i</span><span class="rvts6"> the </span><span class="rvts84">i</span><span class="rvts6">th index) is assigned.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 

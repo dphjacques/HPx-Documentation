@@ -160,7 +160,7 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="Solubilityofamineralasfunctionof"
-		  data-hnd-context="434"
+		  data-hnd-context="74"
 		  data-hnd-title="Solubility of a mineral as function of pH"
 		>
             
@@ -180,72 +180,72 @@
 
             <div class="main-content">
                 
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts60">External Script File "ReactionDefinition.in"</span></p>
-<p class="rvps23"><a class="rvts68" href="USE.htm"><br/></a></p>
-<p class="rvps23"><a class="rvts68" href="USE.htm">USE</a><span class="rvts59"> solution 1</span></p>
-<p class="rvps23"><a class="rvts68" href="EQUILIBRUIM_PHASES.htm">EQUILIBRIUM_PHASES</a><span class="rvts59"> 1</span></p>
-<p class="rvps23"><span class="rvts59">Fix_H+ -@pHIterator NaOH 10</span></p>
-<p class="rvps23"><a class="rvts68" href="force_equality.htm">-force_equality</a><span class="rvts59"> true</span></p>
-<p class="rvps23"><span class="rvts59">O2(g) -0.677</span></p>
-<p class="rvps23"><span class="rvts59">Fe(OH)3(a) 0 0</span></p>
-<p class="rvps23"><a class="rvts68" href="END.htm">end</a></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps23"><span class="rvts60">Input</span></p>
-<p class="rvps23"><a class="rvts68" href="PHASES.htm"><br/></a></p>
-<p class="rvps23"><a class="rvts68" href="PHASES.htm">PHASES</a></p>
-<p class="rvps23"><span class="rvts59">Fix_H+; H+ = H+; </span><a class="rvts68" href="log_k.htm">log_k</a><span class="rvts59"> 0</span></p>
-<p class="rvps23"><a class="rvts68" href="GLOBAL_VARIABLE.htm"><br/></a></p>
-<p class="rvps23"><a class="rvts68" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts59"> pHStart 2</span></p>
-<p class="rvps23"><a class="rvts68" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts59"> pHEnd 12</span></p>
-<p class="rvps23"><a class="rvts68" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts59"> pHSteps 100</span></p>
-<p class="rvps23"><a class="rvts68" href="COUNTER.htm">COUNTER</a><span class="rvts59"> pHIterator @pHStart&nbsp;</span></p>
-<p class="rvps23"><a class="rvts68" href="COUNTERINCR.htm">COUNTERINCR</a><span class="rvts59"> pHIterator = (@pHEnd-@pHStart)/@pHSteps</span></p>
-<p class="rvps23"><a class="rvts68" href="REPEAT.htm">REPEAT</a><span class="rvts59"> include "ReactionDefinition.in" "solubility.in" @pHSteps</span></p>
-<p class="rvps23"><a class="rvts68" href="END.htm">end</a></p>
-<p class="rvps23"><a class="rvts68" href="SELECTED_OUTPUT.htm"><br/></a></p>
-<p class="rvps23"><a class="rvts68" href="SELECTED_OUTPUT.htm">Selected_output</a><span class="rvts59"> 1000</span></p>
-<p class="rvps23"><span class="rvts59">-file Fe(OH)3 solubility.out&nbsp;</span></p>
-<p class="rvps23"><span class="rvts59">-pH true</span></p>
-<p class="rvps23"><a class="rvts68" href="USER_PUNCH.htm">user_punch</a><span class="rvts59"> 1000</span></p>
-<p class="rvps23"><a class="rvts68" href="headings.htm">-headings</a><span class="rvts59"> logFe</span></p>
-<p class="rvps23"><span class="rvts59">-start</span></p>
-<p class="rvps23"><span class="rvts59">10 punch log10(TOT("Fe"))</span></p>
-<p class="rvps23"><span class="rvts59">-end</span></p>
-<p class="rvps23"><a class="rvts68" href="SELECTED_GRAPH.htm">selected_graph</a><span class="rvts59"> 1000</span></p>
-<p class="rvps23"><a class="rvts68" href="fig_nr.htm">-fig_nr</a><span class="rvts59"> 1</span></p>
-<p class="rvps23"><a class="rvts68" href="fig_x.htm">-fig_x</a><span class="rvts59"> pH</span></p>
-<p class="rvps23"><a class="rvts68" href="fig_y.htm">-fig_y</a><span class="rvts59"> logFe &lt; vk false ls 1 &gt;</span></p>
-<p class="rvps23"><span class="rvts59">-fig_xt "pH"</span></p>
-<p class="rvps23"><span class="rvts59">-fig_yt "log_{10} Fe_T (mol/kgw)"</span></p>
-<p class="rvps23"><span class="rvts59">-fig_group "Custom"</span></p>
-<p class="rvps23"><span class="rvts59">-fig_variabletype "Solubility"</span></p>
-<p class="rvps23"><span class="rvts59">-fig_name "Fe3(OH)a"</span></p>
-<p class="rvps23"><span class="rvts59">-start</span></p>
-<p class="rvps23"><span class="rvts59">set xrange [2:12]</span></p>
-<p class="rvps23"><span class="rvts59">set yrange [-8:0]</span></p>
-<p class="rvps23"><span class="rvts59">set ytics 2</span></p>
-<p class="rvps23"><span class="rvts59">set title "Solubility of Fe(OH)_3"</span></p>
-<p class="rvps23"><span class="rvts59">set style line 1 linetype 1 lc "blue" lw 3</span></p>
-<p class="rvps23"><span class="rvts59">-end</span></p>
-<p class="rvps23"><a class="rvts68" href="END.htm">end</a></p>
-<p class="rvps23"><a class="rvts68" href="SOLUTION.htm"><br/></a></p>
-<p class="rvps23"><a class="rvts68" href="SOLUTION.htm">SOLUTION</a><span class="rvts59"> 1</span></p>
-<p class="rvps23"><span class="rvts59">pH 1.8</span></p>
-<p class="rvps23"><span class="rvts59">units mol/kgw</span></p>
-<p class="rvps23"><span class="rvts59">Fe(3) 1e-1</span></p>
-<p class="rvps23"><span class="rvts59">Na 1e-1</span></p>
-<p class="rvps23"><span class="rvts59">F 1e-1</span></p>
-<p class="rvps23"><a class="rvts68" href="END.htm">end</a></p>
-<p class="rvps23"><a class="rvts68" href="INCLUDE.htm">include$</a><span class="rvts59"> solubility.in</span></p>
-<p class="rvps23"><a class="rvts68" href="END.htm">end</a></p>
-<p class="rvps23"><span class="rvts59"></span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">External Script File "ReactionDefinition.in"</span></p>
+<p class="rvps2"><a class="rvts21" href="USE.htm"><br/></a></p>
+<p class="rvps2"><a class="rvts21" href="USE.htm">USE</a><span class="rvts6"> solution 1</span></p>
+<p class="rvps2"><a class="rvts21" href="EQUILIBRUIM_PHASES.htm">EQUILIBRIUM_PHASES</a><span class="rvts6"> 1</span></p>
+<p class="rvps2"><span class="rvts6">Fix_H+ -@pHIterator NaOH 10</span></p>
+<p class="rvps2"><a class="rvts21" href="force_equality.htm">-force_equality</a><span class="rvts6"> true</span></p>
+<p class="rvps2"><span class="rvts6">O2(g) -0.677</span></p>
+<p class="rvps2"><span class="rvts6">Fe(OH)3(a) 0 0</span></p>
+<p class="rvps2"><a class="rvts21" href="END.htm">end</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Input</span></p>
+<p class="rvps2"><a class="rvts21" href="PHASES.htm"><br/></a></p>
+<p class="rvps2"><a class="rvts21" href="PHASES.htm">PHASES</a></p>
+<p class="rvps2"><span class="rvts6">Fix_H+; H+ = H+; </span><a class="rvts21" href="log_k.htm">log_k</a><span class="rvts6"> 0</span></p>
+<p class="rvps2"><a class="rvts21" href="GLOBAL_VARIABLE.htm"><br/></a></p>
+<p class="rvps2"><a class="rvts21" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts6"> pHStart 2</span></p>
+<p class="rvps2"><a class="rvts21" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts6"> pHEnd 12</span></p>
+<p class="rvps2"><a class="rvts21" href="GLOBAL_VARIABLE.htm">GLOBAL_VARIABLE</a><span class="rvts6"> pHSteps 100</span></p>
+<p class="rvps2"><a class="rvts21" href="COUNTER.htm">COUNTER</a><span class="rvts6"> pHIterator @pHStart&nbsp;</span></p>
+<p class="rvps2"><a class="rvts21" href="COUNTERINCR.htm">COUNTERINCR</a><span class="rvts6"> pHIterator = (@pHEnd-@pHStart)/@pHSteps</span></p>
+<p class="rvps2"><a class="rvts21" href="REPEAT.htm">REPEAT</a><span class="rvts6"> include "ReactionDefinition.in" "solubility.in" @pHSteps</span></p>
+<p class="rvps2"><a class="rvts21" href="END.htm">end</a></p>
+<p class="rvps2"><a class="rvts21" href="SELECTED_OUTPUT.htm"><br/></a></p>
+<p class="rvps2"><a class="rvts21" href="SELECTED_OUTPUT.htm">Selected_output</a><span class="rvts6"> 1000</span></p>
+<p class="rvps2"><span class="rvts6">-file Fe(OH)3 solubility.out&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">-pH true</span></p>
+<p class="rvps2"><a class="rvts21" href="USER_PUNCH.htm">user_punch</a><span class="rvts6"> 1000</span></p>
+<p class="rvps2"><a class="rvts21" href="headings.htm">-headings</a><span class="rvts6"> logFe</span></p>
+<p class="rvps2"><span class="rvts6">-start</span></p>
+<p class="rvps2"><span class="rvts6">10 punch log10(TOT("Fe"))</span></p>
+<p class="rvps2"><span class="rvts6">-end</span></p>
+<p class="rvps2"><a class="rvts21" href="SELECTED_GRAPH.htm">selected_graph</a><span class="rvts6"> 1000</span></p>
+<p class="rvps2"><a class="rvts21" href="fig_nr.htm">-fig_nr</a><span class="rvts6"> 1</span></p>
+<p class="rvps2"><a class="rvts21" href="fig_x.htm">-fig_x</a><span class="rvts6"> pH</span></p>
+<p class="rvps2"><a class="rvts21" href="fig_y.htm">-fig_y</a><span class="rvts6"> logFe &lt; vk false ls 1 &gt;</span></p>
+<p class="rvps2"><span class="rvts6">-fig_xt "pH"</span></p>
+<p class="rvps2"><span class="rvts6">-fig_yt "log_{10} Fe_T (mol/kgw)"</span></p>
+<p class="rvps2"><span class="rvts6">-fig_group "Custom"</span></p>
+<p class="rvps2"><span class="rvts6">-fig_variabletype "Solubility"</span></p>
+<p class="rvps2"><span class="rvts6">-fig_name "Fe3(OH)a"</span></p>
+<p class="rvps2"><span class="rvts6">-start</span></p>
+<p class="rvps2"><span class="rvts6">set xrange [2:12]</span></p>
+<p class="rvps2"><span class="rvts6">set yrange [-8:0]</span></p>
+<p class="rvps2"><span class="rvts6">set ytics 2</span></p>
+<p class="rvps2"><span class="rvts6">set title "Solubility of Fe(OH)_3"</span></p>
+<p class="rvps2"><span class="rvts6">set style line 1 linetype 1 lc "blue" lw 3</span></p>
+<p class="rvps2"><span class="rvts6">-end</span></p>
+<p class="rvps2"><a class="rvts21" href="END.htm">end</a></p>
+<p class="rvps2"><a class="rvts21" href="SOLUTION.htm"><br/></a></p>
+<p class="rvps2"><a class="rvts21" href="SOLUTION.htm">SOLUTION</a><span class="rvts6"> 1</span></p>
+<p class="rvps2"><span class="rvts6">pH 1.8</span></p>
+<p class="rvps2"><span class="rvts6">units mol/kgw</span></p>
+<p class="rvps2"><span class="rvts6">Fe(3) 1e-1</span></p>
+<p class="rvps2"><span class="rvts6">Na 1e-1</span></p>
+<p class="rvps2"><span class="rvts6">F 1e-1</span></p>
+<p class="rvps2"><a class="rvts21" href="END.htm">end</a></p>
+<p class="rvps2"><a class="rvts21" href="INCLUDE.htm">include$</a><span class="rvts6"> solubility.in</span></p>
+<p class="rvps2"><a class="rvts21" href="END.htm">end</a></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 

@@ -160,13 +160,13 @@
     <article>
         <div id="topic-content" class="container-fluid" 
 		  data-hnd-id="Hydraulicconductivityscalingfact"
-		  data-hnd-context="426"
+		  data-hnd-context="130"
 		  data-hnd-title="Hydraulic conductivity (scaling factor of the hydraulic conductivity)"
 		>
             
                 <div class="navigation">
                     <ol class="breadcrumb">
-                        <li><a href="HowTo1.html">How To...</a></li><li><a href="Changetransportproperties.html">Change transport properties</a></li>
+                        <li><a href="HowTo.html">How To...</a></li><li><a href="Changetransportproperties.html">Change transport properties</a></li>
                     </ol>
                     <div class="nav-arrows">
                         <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Changetransportproperties.html" title="Change transport properties" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Porosityscalingfactorofwatercont.html" title="Porosity (scaling factor of water content)" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Tortuosityaqueousphase.html" title="Tortuosity aqueous phase" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
@@ -180,101 +180,127 @@
 
             <div class="main-content">
                 
-<p class="rvps23"><span class="rvts130">On this page, we illustrate how:</span></p>
+<p class="rvps2"><span class="rvts90">On this page, we illustrate how:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps24 noindent"><span class="rvts130">you define the scaling factors of the hydraulic conductivity at the initial time</span></li>
-  <li class="rvps24 noindent"><span class="rvts130">you account for evolving scaling factors with time in the water flow and solute transport model</span></li>
+  <li class="rvps4 noindent"><span class="rvts90">you define the scaling factors of the hydraulic conductivity at the initial time</span></li>
+  <li class="rvps4 noindent"><span class="rvts90">you account for evolving scaling factors with time in the water flow and solute transport model</span></li>
  </ul>
 </ul>
-<p class="rvps24"><span class="rvts130"><br/></span></p>
-<p class="rvps53"><span class="rvts104"><br/></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Setting the scaling factor for the hydraulic conductivity at the initial time</span></span></h3>
-<p class="rvps23"><span class="rvts204"><br/></span></p>
-<p class="rvps23"><span class="rvts130">The initial values of the scaling factor of the hydraulic conductivity can be set in following ways:</span></p>
-<p class="rvps23"><span class="rvts130"></span><span class="rvts59"></span></p>
-<p class="rvps84"><span class="rvts207"></span><span class="rvts59"></span></p>
-<p class="rvps84"><span class="rvts207"><br/></span></p>
-<p class="rvps24"><span class="rvts211">Initial calculations using </span><a class="rvts100" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts211"> in geochemistry input</span></p>
-<p class="rvps24"><span class="rvts207"><br/></span></p>
-<p class="rvps54"><a name="change_por0"></a><span class="rvts130">With</span><span class="rvts131"> </span><a class="rvts101" href="state1.html">-state initial</a><span class="rvts130">, the script is executed once at the beginning for the transport simulations for each node. This option can be used to calculate the values of the scaling factor of the hydraulic conductivity at initial time. The script functions </span><a class="rvts135" href="change_sfcond.html">change_sfcond()</a><span class="rvts130"> and </span><a class="rvts135" href="change_sfcond0.html">change_sfcond0() </a><span class="rvts130">are used to change the value of the scaling factor of the hydraulic conductivity and the scaling factor of the hydrauilc conductivity at the initial time (to keep the initial value).</span></p>
-<p class="rvps54"><span class="rvts130"><br/></span></p>
-<p class="rvps54"><span class="rvts130">The example below illustrates how to set the values for the scaling factor for the hydraulic conductivity assuming that the it has been calculated and stored as the variable porosity.</span></p>
-<p class="rvps54"><span class="rvts204"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps53">
+<p class="rvps4"><span class="rvts90"><br/></span></p>
+<p class="rvps30"><span class="rvts61"><br/></span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Setting the scaling factor for the hydraulic conductivity at the initial time</span></span></h3>
+<p class="rvps2"><span class="rvts163"><br/></span></p>
+<p class="rvps2"><span class="rvts90">The initial values of the scaling factor of the hydraulic conductivity can be set in following ways:</span></p>
+<p class="rvps2"><span class="rvts90"><br/></span></p>
+<p class="rvps4"><span class="rvts6"></span><span class="rvts170">The </span><span class="rvts169">Soil Profile - Graphical Editor</span><span class="rvts170"> or </span><span class="rvts169">Soil Profile - Summary </span><span class="rvts170">pre-processing dialogue windows of the HYDRUS graphical user interface</span></p>
+<p class="rvps4"><span class="rvts170"><br/></span></p>
+<p class="rvps31"><span class="rvts90">Via the </span><span class="rvts168">Soil Profile - Graphical Editor</span><span class="rvts169">, </span><span class="rvts90">use following commands:</span></p>
+<p class="rvps31"><span class="rvts90"><br/></span></p>
+<p class="rvps30"><span class="rvts90">Conditions -&gt; Scaling Factor -&gt; Hydraulic conductivity</span></p>
+<p class="rvps30"><span class="rvts90">Click Edit condition (see figure below)</span></p>
+<p class="rvps30"><span class="rvts90">Select nodes and set the values for selected top and bottom node</span></p>
+<p class="rvps33"><span class="rvts90">or</span></p>
+<p class="rvps30"><span class="rvts90">Select "scaling factors" from toolbar (see figure below)</span></p>
+<p class="rvps30"><span class="rvts90">Select "hydraulic conductivity" &nbsp;(see figure below)</span></p>
+<p class="rvps30"><span class="rvts90">Click Edit condition (see figure below)</span></p>
+<p class="rvps30"><span class="rvts90">Select nodes and set the values for selected top and bottom node</span></p>
+<p class="rvps33"><span class="rvts163"><br/></span></p>
+<p class="rvps33"><span class="rvts163"><br/></span></p>
+<p class="rvps59"><img alt="" style="width : 485px; height : 83px; padding : 1px;" src="lib/HYDRUS%20-%20Profile%20Editor%20-%20Tool%20bar%20-%20Scaling%20factor.png"></p>
+<p class="rvps59"><img alt="" style="padding : 1px;" src="lib/HYDRUS%20-%20Profile%20Editor%20-%20Scaling%20factor%20-%20Select%20quantity%20K.png"></p>
+<p class="rvps4"><span class="rvts166"><br/></span></p>
+<p class="rvps4"><span class="rvts166"><br/></span></p>
+<p class="rvps31"><span class="rvts90">Via the </span><span class="rvts168">Soil Profile - Graphical Summary</span><span class="rvts90">:</span></p>
+<p class="rvps33"><span class="rvts90">Nodal values for the scaling factor of the hydraulic conductivity at the initial time are defined in the column with heading Bxz (see figure below)</span></p>
+<p class="rvps33"><span class="rvts163"><br/></span></p>
+<p class="rvps33"><span class="rvts163"><br/></span></p>
+<p class="rvps59"><img alt="" style="width : 617px; height : 395px; padding : 1px;" src="lib/HYDRUS%20-%20Pre-processing%20-%20Soil%20Profile%20Summary%20-%20Dxz.png"><span class="rvts6"></span></p>
+<p class="rvps59"><span class="rvts166"><br/></span></p>
+<p class="rvps4"><span class="rvts6"></span><span class="rvts170">The </span><span class="rvts169">Project Navigator</span><span class="rvts170">&nbsp;</span></p>
+<p class="rvps31"><span class="rvts90">Via Domain Properties -&gt; SF - Hydraulic Conductivity (see figure below)</span></p>
+<p class="rvps59"><img alt="" style="padding : 1px;" src="lib/HYDRUS2D%20-%20Project%20Navigator%20-%20Domain%20Properties%20-%20SF%20-%20Hydraulic%20conductivity.png"><span class="rvts6"></span></p>
+<p class="rvps59"><span class="rvts166"><br/></span></p>
+<p class="rvps4"><span class="rvts170">Initial calculations using </span><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts170"> in geochemistry input</span></p>
+<p class="rvps4"><span class="rvts166"><br/></span></p>
+<p class="rvps31"><a name="change_por0"></a><span class="rvts90">With</span><span class="rvts91"> </span><a class="rvts58" href="state1.html">-state initial</a><span class="rvts90">, the script is executed once at the beginning for the transport simulations for each node. This option can be used to calculate the values of the scaling factor of the hydraulic conductivity at initial time. The script functions </span><a class="rvts96" href="change_sfcond.html">change_sfcond()</a><span class="rvts90"> and </span><a class="rvts96" href="change_sfcond0.html">change_sfcond0() </a><span class="rvts90">are used to change the value of the scaling factor of the hydraulic conductivity and the scaling factor of the hydrauilc conductivity at the initial time (to keep the initial value).</span></p>
+<p class="rvps31"><span class="rvts90"><br/></span></p>
+<p class="rvps31"><span class="rvts90">The example below illustrates how to set the values for the scaling factor for the hydraulic conductivity assuming that the it has been calculated and stored as the variable porosity.</span></p>
+<p class="rvps31"><span class="rvts163"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps30">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; height: 13px;">
-   <p class="rvps24"><a class="rvts100" href="CALCULATE_VALUES.html">calculated_values</a></p>
-   <p class="rvps24"><a class="rvts101" href="state1.html">-state</a><span class="rvts131"> initial</span></p>
-   <p class="rvps24"><a class="rvts101" href="mybasic.html">-mybasic</a></p>
-   <p class="rvps24"><a class="rvts101" href="start.html">-start</a></p>
-   <p class="rvps54"><span class="rvts127">#statements to calculate scalingfactor</span></p>
-   <p class="rvps54"><span class="rvts127">#...</span></p>
-   <p class="rvps54"><span class="rvts127">#scalingfactor = ...</span></p>
-   <p class="rvps54"><a class="rvts135" href="change_sfcond0.html">change_sfcond0(</a><a class="rvts208" href="change_sfcond0.html">scalingfactor</a><a class="rvts135" href="change_por0.html">)</a></p>
-   <p class="rvps54"><a class="rvts135" href="change_sfcond.html">change_sfcond(</a><a class="rvts208" href="change_sfcond0.html">scalingfactor</a><a class="rvts135" href="update_sfwater.html">)</a></p>
-   <p class="rvps24"><a class="rvts101" href="end.html">-end</a></p>
+   <p class="rvps4"><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a></p>
+   <p class="rvps4"><a class="rvts58" href="state1.html">-state</a><span class="rvts91"> initial</span></p>
+   <p class="rvps4"><a class="rvts58" href="mybasic.html">-mybasic</a></p>
+   <p class="rvps4"><a class="rvts58" href="start.html">-start</a></p>
+   <p class="rvps31"><span class="rvts87">#statements to calculate scalingfactor</span></p>
+   <p class="rvps31"><span class="rvts87">#...</span></p>
+   <p class="rvps31"><span class="rvts87">#scalingfactor = ...</span></p>
+   <p class="rvps31"><a class="rvts96" href="change_sfcond0.html">change_sfcond0(</a><a class="rvts167" href="change_sfcond0.html">scalingfactor</a><a class="rvts96" href="change_por0.html">)</a></p>
+   <p class="rvps31"><a class="rvts96" href="change_sfcond.html">change_sfcond(</a><a class="rvts167" href="change_sfcond0.html">scalingfactor</a><a class="rvts96" href="update_sfwater.html">)</a></p>
+   <p class="rvps4"><a class="rvts58" href="end.html">-end</a></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96">Changing porosity and scaling factor for water content with time</span></span></h3>
-<p class="rvps23"><span class="rvts59">To use the updated scaling factor of the hydraulic conductivity in the water flow and solute transport model, one needs to:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Changing porosity and scaling factor for water content with time</span></span></h3>
+<p class="rvps2"><span class="rvts6">To use the updated scaling factor of the hydraulic conductivity in the water flow and solute transport model, one needs to:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps24 noindent"><span class="rvts59">calculate and update the scaling factor</span></li>
-  <li class="rvps24 noindent"><span class="rvts59">indicate that the scaling factor of the hydraulic conductivity changes during the flow and transport simulation</span></li>
+  <li class="rvps4 noindent"><span class="rvts6">calculate and update the scaling factor</span></li>
+  <li class="rvps4 noindent"><span class="rvts6">indicate that the scaling factor of the hydraulic conductivity changes during the flow and transport simulation</span></li>
  </ul>
 </ul>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps24"><span class="rvts124">Calculate and update the scaling factor</span></p>
-<p class="rvps54"><span class="rvts59">After the geochemical calculations in each time step and for each node, the scaling factor needs to be updated. The scripts associated with </span><a class="rvts101" href="state1.html">-state update</a><span class="rvts59"> of the </span><a class="rvts100" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts211"> </span><span class="rvts130">data block are executed for each node after the geochemical calculations in each time step.&nbsp;</span></p>
-<p class="rvps54"><span class="rvts130"><br/></span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps53">
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts84">Calculate and update the scaling factor</span></p>
+<p class="rvps31"><span class="rvts6">After the geochemical calculations in each time step and for each node, the scaling factor needs to be updated. The scripts associated with </span><a class="rvts58" href="state1.html">-state update</a><span class="rvts6"> of the </span><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts170"> </span><span class="rvts90">data block are executed for each node after the geochemical calculations in each time step.&nbsp;</span></p>
+<p class="rvps31"><span class="rvts90"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps30">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps24"><a class="rvts100" href="CALCULATE_VALUES.html">calculated_values</a></p>
-   <p class="rvps24"><a class="rvts101" href="state1.html">-state</a><span class="rvts131"> update</span></p>
-   <p class="rvps24"><a class="rvts101" href="mybasic.html">-mybasic</a></p>
-   <p class="rvps24"><a class="rvts101" href="start.html">-start</a></p>
-   <p class="rvps54"><span class="rvts127">#statements to calculate scalingfactor</span></p>
-   <p class="rvps54"><span class="rvts127">#...</span></p>
-   <p class="rvps54"><span class="rvts127">#scalingfactor = ...</span></p>
-   <p class="rvps54"><a class="rvts135" href="change_sfcond.html">change_sfcond(</a><a class="rvts208" href="change_por0.html">scalingfactor</a><a class="rvts135" href="change_por0.html">)</a></p>
-   <p class="rvps24"><a class="rvts101" href="end.html">-end</a></p>
+   <p class="rvps4"><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a></p>
+   <p class="rvps4"><a class="rvts58" href="state1.html">-state</a><span class="rvts91"> update</span></p>
+   <p class="rvps4"><a class="rvts58" href="mybasic.html">-mybasic</a></p>
+   <p class="rvps4"><a class="rvts58" href="start.html">-start</a></p>
+   <p class="rvps31"><span class="rvts87">#statements to calculate scalingfactor</span></p>
+   <p class="rvps31"><span class="rvts87">#...</span></p>
+   <p class="rvps31"><span class="rvts87">#scalingfactor = ...</span></p>
+   <p class="rvps31"><a class="rvts96" href="change_sfcond.html">change_sfcond(</a><a class="rvts167" href="change_por0.html">scalingfactor</a><a class="rvts96" href="change_por0.html">)</a></p>
+   <p class="rvps4"><a class="rvts58" href="end.html">-end</a></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<p class="rvps24"><span class="rvts211">Indicate evolving using updated transport properties in the flow and transport model</span></p>
-<p class="rvps54"><span class="rvts130">To indicate that a changed porosity and scaling factor of the water content has to be used,</span><span class="rvts131"> </span><a class="rvts101" href="update.html">-update hp</a><span class="rvts130"> in </span><a class="rvts100" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts130"> is set true.</span></p>
-<p class="rvps23"><span class="rvts59"><br/></span></p>
-<div class="rvps53">
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts170">Indicate evolving using updated transport properties in the flow and transport model</span></p>
+<p class="rvps31"><span class="rvts90">To indicate that a changed porosity and scaling factor of the water content has to be used,</span><span class="rvts91"> </span><a class="rvts58" href="update.html">-update hp</a><span class="rvts90"> in </span><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts90"> is set true.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<div class="rvps30">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps24"><a class="rvts100" href="REACTIVE_TRANSPORT.html">reactive_transport</a></p>
-   <p class="rvps24"><a class="rvts101" href="update.html">-update hp </a><span class="rvts104">true</span></p>
+   <p class="rvps4"><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a></p>
+   <p class="rvps4"><a class="rvts58" href="update.html">-update hp </a><span class="rvts61">true</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps57"><span class="rvts204">&nbsp;</span></p>
-<p class="rvps54"><span class="rvts130">Alternatively, the option for updating hydraulic parameters (check </span><span class="rvts104">Evolving Transport Properties</span><span class="rvts130">; check </span><span class="rvts104">Hydraulic Properties</span><span class="rvts130">) can be selected in the </span><a class="rvts213" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts130"> form of the </span><a class="rvts213" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts130">.</span></p>
-<p class="rvps54"><span class="rvts130"><br/></span></p>
-<p class="rvps23"><span class="rvts209">Important:</span><span class="rvts130"> The scaling factors of the hydraulic conductivity are only updated with the statements&nbsp;</span><span class="rvts153"> </span><a class="rvts135" href="change_sfcond.html">change_sfcond()</a><span class="rvts130">. The updated values are only used in the water flow and solute transport model with the identifier </span><a class="rvts101" href="update.html">-update hp </a><span class="rvts104">true</span><span class="rvts130">.</span></p>
-<h3 class="rvps47"><span class="rvts0"><span class="rvts96"><br/></span></span></h3>
-<p class="rvps23"><span class="rvts59"></span><span class="rvts6"></span></p>
+<p class="rvps33"><span class="rvts163">&nbsp;</span></p>
+<p class="rvps31"><span class="rvts90">Alternatively, the option for updating hydraulic parameters (check </span><span class="rvts61">Evolving Transport Properties</span><span class="rvts90">; check </span><span class="rvts61">Hydraulic Properties</span><span class="rvts90">) can be selected in the </span><a class="rvts172" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts90"> form of the </span><a class="rvts172" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts90">.</span></p>
+<p class="rvps31"><span class="rvts90"><br/></span></p>
+<p class="rvps2"><span class="rvts168">Important:</span><span class="rvts90"> The scaling factors of the hydraulic conductivity are only updated with the statements&nbsp;</span><span class="rvts114"> </span><a class="rvts96" href="change_sfcond.html">change_sfcond()</a><span class="rvts90">. The updated values are only used in the water flow and solute transport model with the identifier </span><a class="rvts58" href="update.html">-update hp </a><span class="rvts61">true</span><span class="rvts90">.</span></p>
+<h3 class="rvps24"><span class="rvts0"><span class="rvts54"><br/></span></span></h3>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             
-            <div id="topic_footer"><div id="topic_footer_content">&lt;use default value&gt;</div></div>
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
         </div>  <!-- /#topic-content -->
     </article>
 
