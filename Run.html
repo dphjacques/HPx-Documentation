@@ -187,7 +187,7 @@
    <p class="rvps2"><span class="rvts45">MY-BASIC</span></p>
   </td>
   <td style="padding: 1px; width: 830px;">
-   <p class="rvps2"><span class="rvts92">entity.run(&lt;:int:entity_number&gt;{,&lt;:int:selout&gt;}{,&lt;:str:option&gt;})</span></p>
+   <p class="rvps2"><span class="rvts73">entity.run(&lt;:int:entity_number&gt;{,&lt;:int:selout&gt;}{,&lt;:str:option&gt;})</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -195,28 +195,28 @@
    <p class="rvps2"><span class="rvts45">PYTHON</span></p>
   </td>
   <td style="padding: 1px; width: 830px;">
-   <p class="rvps2"><span class="rvts92">entity.run(&lt;:int:entity_number&gt;{,selout=&lt;:kw_int:selout&gt;}{,retvalue=&lt;:kw_bool:revalue&gt;})</span></p>
+   <p class="rvps2"><span class="rvts73">entity.run(&lt;:int:entity_number&gt;{,selout=&lt;:kw_int:selout&gt;}{,retvalue=&lt;:kw_bool:revalue&gt;})</span></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps33"><span class="rvts6">Run reaction simulations for a specific entity number; all reactants with that entity number are reacted together. Results are saved, punched, printed or returned depending on the arguments in the function. Punched and returned values are controlled by a </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6"> block.</span></p>
-<p class="rvps33"><span class="rvts6"><br/></span></p>
-<p class="rvps33"><span class="rvts84">Return value:&nbsp;</span><span class="rvts84"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">In </span><span class="rvts61">PYTHON</span><span class="rvts6">, a dict is returned consisting of the headings defined in the &nbsp;</span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6"> block.</span></p>
-<p class="rvps41"><span class="rvts6"><br/></span></p>
-<p class="rvps41"><span class="rvts6"><br/></span></p>
-<p class="rvps33"><span class="rvts84">Arguments</span></p>
-<p class="rvps33"><span class="rvts84"><br/></span></p>
-<div class="rvps33">
+<p class="rvps31"><span class="rvts6">Run reaction simulations for a specific entity number; all reactants with that entity number are reacted together. Results are saved, punched, printed or returned depending on the arguments in the function. Punched and returned values are controlled by a </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6"> block.</span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts65">Return value:&nbsp;</span><span class="rvts65"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">In </span><span class="rvts61">PYTHON</span><span class="rvts6">, a dict is returned consisting of the headings defined in the &nbsp;</span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6"> block.</span></p>
+<p class="rvps40"><span class="rvts6"><br/></span></p>
+<p class="rvps40"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts65">Arguments</span></p>
+<p class="rvps31"><span class="rvts65"><br/></span></p>
+<div class="rvps31">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
    <p class="rvps4"><span class="rvts61">entity_number</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts84">int</span><span class="rvts6">: Number of the reactants to be used.</span></p>
+   <p class="rvps4"><span class="rvts65">int</span><span class="rvts6">: Number of the reactants to be used.</span></p>
    <p class="rvps4"><span class="rvts6">If there is no solution (or mix) is defined with that number, an error is produced.</span></p>
   </td>
  </tr>
@@ -225,9 +225,9 @@
    <p class="rvps4"><span class="rvts61">selout</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts84">int</span><span class="rvts6">: Number of the used for punching, or returning variables.</span></p>
+   <p class="rvps4"><span class="rvts65">int</span><span class="rvts6">: Number of the used for punching, or returning variables.</span></p>
    <p class="rvps4"><span class="rvts6">If </span><span class="rvts61">selout</span><span class="rvts6"> is not in the argument list, it is assumed to be equal to </span><span class="rvts61">entity_number</span><span class="rvts6">.</span></p>
-   <p class="rvps4"><span class="rvts6">If </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output </a><span class="rvts61">selout</span><span class="rvts92"> </span><span class="rvts6">does not exist, no output is punched or returned.</span></p>
+   <p class="rvps4"><span class="rvts6">If </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output </a><span class="rvts61">selout</span><span class="rvts73"> </span><span class="rvts6">does not exist, no output is punched or returned.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -235,31 +235,31 @@
    <p class="rvps4"><span class="rvts61">retvalue</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts84">bool</span><span class="rvts6">: Indicate if there is a return value. Default: false</span></p>
+   <p class="rvps4"><span class="rvts65">bool</span><span class="rvts6">: Indicate if there is a return value. Default: false</span></p>
    <p class="rvps4"><span class="rvts6">If true, a list of pairs </span><span class="rvts61">&lt;name,value&gt;</span><span class="rvts6"> is returned. The list is defined by the output variables in </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output </a><span class="rvts61">selout</span><span class="rvts6">.&nbsp;</span></p>
    <p class="rvps4"><span class="rvts6">For a </span><span class="rvts61">PYTHON</span><span class="rvts6"> script, a </span><span class="rvts61">dict</span><span class="rvts6"> is returned with as </span><span class="rvts61">keys</span><span class="rvts6"> the names and as </span><span class="rvts61">value</span><span class="rvts6"> the corresponding value.</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts92"><br/></span></p>
+   <p class="rvps4"><span class="rvts73"><br/></span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts84"><br/></span></p>
+   <p class="rvps4"><span class="rvts65"><br/></span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
-   <p class="rvps4"><span class="rvts92"><br/></span></p>
+   <p class="rvps4"><span class="rvts73"><br/></span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
-   <p class="rvps4"><span class="rvts84"><br/></span></p>
+   <p class="rvps4"><span class="rvts65"><br/></span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps33"><span class="rvts6"><br/></span></p>
-<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">"print", "save", "punch", "return"</span><span class="rvts6"></span></p>
 
             </div>

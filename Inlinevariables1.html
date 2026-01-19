@@ -190,7 +190,7 @@
 <p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts57" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts61">ExchangeSite 0.1 "Site of the exchange site"</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts60">EXHANGE</span><span class="rvts6"> 1</span></p>
-<p class="rvps4"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">X </span><span class="rvts97">@ExchangeSite</span></p>
+<p class="rvps4"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">X </span><span class="rvts78">@ExchangeSite</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The values that will replace the inline variables are or can be defined in different ways:</span></p>
@@ -214,7 +214,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The special functions are detailed below.</span></p>
 <p class="rvps2"><span class="rvts11"><br/></span></p>
-<h1 class="rvps28"><a name="Inline"></a><span class="rvts0"><span class="rvts69">Inline variables</span></span></h1>
+<h1 class="rvps27"><a name="Inline"></a><span class="rvts0"><span class="rvts63">Inline variables</span></span></h1>
 <h2 class="rvps23"><span class="rvts0"><span class="rvts52">GLOBAL_VARIABLE</span></span></h2>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <h2 class="rvps23"><span class="rvts0"><span class="rvts52">COUNTER</span></span></h2>
@@ -224,68 +224,68 @@
 <h2 class="rvps23"><span class="rvts0"><span class="rvts52">CALCULATE_VALUES</span></span></h2>
 <p class="rvps2"><span class="rvts6">The inline variable consists simple of the name of the script defined in a calculate_value datablock:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts97">@calculate_values_name</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts78">@calculate_values_name</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Note that this is limited to numerical values only. When a - sign precedes the name, the inline value is a single space (note that the script still needs a (dummy) return value). This option is useful if one needs to adapt the value of several global variables (via put_var()):</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><span class="rvts97">@-calculate_values_name</span></p>
+<p class="rvps30"><span class="rvts78">@-calculate_values_name</span></p>
 <p class="rvps2"><span class="rvts11"><br/></span></p>
-<h1 class="rvps28"><a name="Functionalities"></a><span class="rvts0"><span class="rvts69">Functionalities</span></span></h1>
+<h1 class="rvps27"><a name="Functionalities"></a><span class="rvts0"><span class="rvts63">Functionalities</span></span></h1>
 <p class="rvps2"><span class="rvts11">Mathematical expression</span></p>
-<p class="rvps2"><span class="rvts6">To define a mathematical expression as a inline value, the following sequences is used @&lt;</span><span class="rvts84">mathematical expression</span><span class="rvts6">&gt; where the mathematical expression following the syntax of the mathematical parser and interpreter </span><a class="rvts21" href="MathparserX.html">muparserX</a><span class="rvts6"> :</span></p>
+<p class="rvps2"><span class="rvts6">To define a mathematical expression as a inline value, the following sequences is used @&lt;</span><span class="rvts65">mathematical expression</span><span class="rvts6">&gt; where the mathematical expression following the syntax of the mathematical parser and interpreter </span><a class="rvts21" href="MathparserX.html">muparserX</a><span class="rvts6"> :</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts57" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts61">ExchangeSiteDensity 0.01 "Site of the exchange site / g clay"</span></p>
 <p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><a class="rvts57" href="GLOBAL_VARIABLE.html">global_variable</a><span class="rvts6"> </span><span class="rvts61">AmountClay &nbsp;&nbsp;</span><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61"> &nbsp; 10 &nbsp; "gram of clay in the system"</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts60">EXHANGE</span><span class="rvts6"> 1</span></p>
-<p class="rvps4"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">X </span><span class="rvts97">@&lt;@ExchangeSiteDensity*@AmountClay&gt;</span></p>
+<p class="rvps4"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">X </span><span class="rvts78">@&lt;@ExchangeSiteDensity*@AmountClay&gt;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Mathematical expressions cannot be nested.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts11">Formation of the inline variable name</span></p>
-<p class="rvps2"><span class="rvts6">For the expression @!</span><span class="rvts84">expression</span><span class="rvts6">!, only !</span><span class="rvts84">expression</span><span class="rvts6">! is replaced and the expression remains an inline variable. It allows for defining the inline variables based on global or datablock variables.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">For the expression @!</span><span class="rvts65">expression</span><span class="rvts6">!, only !</span><span class="rvts65">expression</span><span class="rvts6">! is replaced and the expression remains an inline variable. It allows for defining the inline variables based on global or datablock variables.&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6">For example, assuming a datablock with pH values for different experiments (see </span><a class="rvts21" href="Examplesofinlinedefinitionanduse.html#DATABLOCK_Example1">Examples of inline definition and use</a><span class="rvts6">)</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">GLOBAL_VARIABLE Experiment$ Exp01</span></p>
 <p class="rvps2"><span class="rvts61"><br/></span></p>
 <p class="rvps2"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">solution</span></p>
-<p class="rvps2"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">-pH </span><span class="rvts97">@!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;!</span></p>
-<p class="rvps2"><span class="rvts97"><br/></span></p>
+<p class="rvps2"><span class="rvts61"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts61">-pH </span><span class="rvts78">@!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;!</span></p>
+<p class="rvps2"><span class="rvts78"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The expression </span><span class="rvts97">!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;! </span><span class="rvts6">will first be evaluated resulting in this particular example in </span><span class="rvts129">ExperimentalConditions:pH:Exp01</span><span class="rvts6">. The line remains&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">The expression </span><span class="rvts78">!@&lt;"ExperimentalConditions:pH:"//@Experiment$&gt;! </span><span class="rvts6">will first be evaluated resulting in this particular example in </span><span class="rvts112">ExperimentalConditions:pH:Exp01</span><span class="rvts6">. The line remains&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts97">@ExperimentalConditions:pH:Exp01</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts78">@ExperimentalConditions:pH:Exp01</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">This inline variable will then be replaced. The value will taken from the datablock </span><span class="rvts61">ExperimentalConditions</span><span class="rvts6">, the column </span><span class="rvts61">pH</span><span class="rvts6"> and the row with label </span><span class="rvts61">Exp01</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><a name="Format"></a><span class="rvts11">Format of numerical values</span></p>
-<p class="rvps2"><span class="rvts6">For an inline variable of the typ @%</span><span class="rvts84">format%name</span><span class="rvts6">, the value of </span><span class="rvts84">name</span><span class="rvts6"> is printed with the format </span><span class="rvts84">format. </span><span class="rvts6">This only applies for numerical values. </span><span class="rvts84">format</span><span class="rvts6"> follows basically the C++ format specifier:</span></p>
+<p class="rvps2"><span class="rvts6">For an inline variable of the typ @%</span><span class="rvts65">format%name</span><span class="rvts6">, the value of </span><span class="rvts65">name</span><span class="rvts6"> is printed with the format </span><span class="rvts65">format. </span><span class="rvts6">This only applies for numerical values. </span><span class="rvts65">format</span><span class="rvts6"> follows basically the C++ format specifier:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts130">%[flags][width][.precision][length]specifier</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts113">%[flags][width][.precision][length]specifier</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">with&nbsp;</span></p>
-<p class="rvps31"><span class="rvts6">specifier</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specifies the type of the output.&nbsp;</span></p>
-<p class="rvps44"><span class="rvts6">Most relevant specifiers are:</span></p>
-<p class="rvps45"><span class="rvts84">d&nbsp;</span><span class="rvts6"> or </span><span class="rvts84">i</span><span class="rvts6">&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integer</span></p>
-<p class="rvps45"><span class="rvts84">f</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">floating point</span></p>
-<p class="rvps45"><span class="rvts84">e</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scientific notation (mantissa/exponent), lowercase</span></p>
-<p class="rvps45"><span class="rvts84">E</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scientific notation (mantissa/exponent), uppercase</span></p>
-<p class="rvps45"><span class="rvts84">g</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">shorter notation of </span><span class="rvts84">e</span><span class="rvts6"> or </span><span class="rvts84">f</span></p>
-<p class="rvps45"><span class="rvts84">G</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">shorter notation of </span><span class="rvts84">E</span><span class="rvts6"> or </span><span class="rvts84">F</span></p>
-<p class="rvps45"><span class="rvts84"><br/></span></p>
-<p class="rvps32"><span class="rvts84">width</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Minimum number of characters to be printed; if the value to be printed is smaller, blank spaces are added.&nbsp;</span></p>
-<p class="rvps32"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><span class="rvts84">precision</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">for </span><span class="rvts84">f,e,E,g and </span><span class="rvts6">G</span><span class="rvts84">: </span><span class="rvts6">number of digits to be printed after the decimal point</span></p>
-<p class="rvps32"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><span class="rvts84">flags</span></p>
-<p class="rvps45"><span class="rvts84">-</span><span class="rvts84"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts84"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Left-justify within the given field width</span></p>
-<p class="rvps45"><span class="rvts6">+</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Result will be preceded by a - or + sign. By default, only negative numbers are preceded by a - sign.</span></p>
-<p class="rvps45"><span class="rvts6">0</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Left pads the number with zeroes instead of spaces</span></p>
-<p class="rvps45"><span class="rvts6"><br/></span></p>
-<p class="rvps44"><span class="rvts6">Note that the # symbol does not work as this will be interpreted as the comment character during reading</span></p>
+<p class="rvps29"><span class="rvts6">specifier</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">specifies the type of the output.&nbsp;</span></p>
+<p class="rvps43"><span class="rvts6">Most relevant specifiers are:</span></p>
+<p class="rvps44"><span class="rvts65">d&nbsp;</span><span class="rvts6"> or </span><span class="rvts65">i</span><span class="rvts6">&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">integer</span></p>
+<p class="rvps44"><span class="rvts65">f</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">floating point</span></p>
+<p class="rvps44"><span class="rvts65">e</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scientific notation (mantissa/exponent), lowercase</span></p>
+<p class="rvps44"><span class="rvts65">E</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">scientific notation (mantissa/exponent), uppercase</span></p>
+<p class="rvps44"><span class="rvts65">g</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">shorter notation of </span><span class="rvts65">e</span><span class="rvts6"> or </span><span class="rvts65">f</span></p>
+<p class="rvps44"><span class="rvts65">G</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">shorter notation of </span><span class="rvts65">E</span><span class="rvts6"> or </span><span class="rvts65">F</span></p>
+<p class="rvps44"><span class="rvts65"><br/></span></p>
+<p class="rvps30"><span class="rvts65">width</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Minimum number of characters to be printed; if the value to be printed is smaller, blank spaces are added.&nbsp;</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<p class="rvps30"><span class="rvts65">precision</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">for </span><span class="rvts65">f,e,E,g and </span><span class="rvts6">G</span><span class="rvts65">: </span><span class="rvts6">number of digits to be printed after the decimal point</span></p>
+<p class="rvps30"><span class="rvts6"><br/></span></p>
+<p class="rvps30"><span class="rvts65">flags</span></p>
+<p class="rvps44"><span class="rvts65">-</span><span class="rvts65"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts65"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Left-justify within the given field width</span></p>
+<p class="rvps44"><span class="rvts6">+</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Result will be preceded by a - or + sign. By default, only negative numbers are preceded by a - sign.</span></p>
+<p class="rvps44"><span class="rvts6">0</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Left pads the number with zeroes instead of spaces</span></p>
 <p class="rvps44"><span class="rvts6"><br/></span></p>
+<p class="rvps43"><span class="rvts6">Note that the # symbol does not work as this will be interpreted as the comment character during reading</span></p>
+<p class="rvps43"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The default format is %12.4e.</span></p>
-<p class="rvps2"><span class="rvts6">The format symbol @%</span><span class="rvts84">format%</span><span class="rvts6"> can be combined with the mathematical expression symbol (@%</span><span class="rvts84">format%</span><span class="rvts6">&lt;</span><span class="rvts84">mathematical expression</span><span class="rvts6">&gt;) or the formation symbol (@%</span><span class="rvts84">format%</span><span class="rvts6">!</span><span class="rvts84">expression</span><span class="rvts6">!</span><span class="rvts84">).</span><span class="rvts6"> &nbsp;&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">The format symbol @%</span><span class="rvts65">format%</span><span class="rvts6"> can be combined with the mathematical expression symbol (@%</span><span class="rvts65">format%</span><span class="rvts6">&lt;</span><span class="rvts65">mathematical expression</span><span class="rvts6">&gt;) or the formation symbol (@%</span><span class="rvts65">format%</span><span class="rvts6">!</span><span class="rvts65">expression</span><span class="rvts6">!</span><span class="rvts65">).</span><span class="rvts6"> &nbsp;&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
