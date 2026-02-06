@@ -234,7 +234,7 @@
 <p class="rvps30"><a class="rvts58" href="fig_multi.html">-fig_multi </a><a class="rvts59" href="fig_multi.html">l2,4 single group independent</a></p>
 <p class="rvps30"><a class="rvts58" href="fig_multi.html">-fig_multi </a><a class="rvts59" href="fig_multi.html">l2,4 single group variables</a></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The first line will use the times in the outer loop and the variables (</span><span class="rvts72">-fig_curve</span><span class="rvts6"> and </span><span class="rvts72">-fig_curves</span><span class="rvts6">) as an inner loop. The second line does the same (indicating that the independent variable is used as the outer loop)</span></p>
+<p class="rvps2"><span class="rvts6">The first line will use the times in the outer loop and the variables (</span><span class="rvts73">-fig_curve</span><span class="rvts6"> and </span><span class="rvts73">-fig_curves</span><span class="rvts6">) as an inner loop. The second line does the same (indicating that the independent variable is used as the outer loop)</span></p>
 <p class="rvps2"><span class="rvts6">The third line will use the variables as the outer loop and the times as the inner loop.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts61">profiletimes</span><span class="rvts6"> and </span><span class="rvts61">variables</span><span class="rvts6"> determine the curve property that will make the distinction. </span><span class="rvts61">Color</span><span class="rvts6">, </span><span class="rvts61">dash</span><span class="rvts6"> and </span><span class="rvts61">marks</span><span class="rvts6"> will, respectively, change color, dashtype and pointtype between the different curves in a group. For example:</span></p>
@@ -264,26 +264,26 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The figures below are made for the example with a three layered soil profile initially having a cation exchange complex in equilibrium with a Na-K-Cl solution and leached with a Ca-Cl solution - see&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">The calculated molalities of the exchange species (NaX, KX, and CaX</span><span class="rvts86">2</span><span class="rvts6">) are transformed to mmol/kg soil (in </span><span class="rvts60">USER_PUNCH</span><span class="rvts6"> with headings NaXm, KXm and CaX2m). For two print times (print time 1 and 2, corresponding to 25 and 50 days), a combination plot with the three transformed variables is defined.</span></p>
+<p class="rvps2"><span class="rvts6">The calculated molalities of the exchange species (NaX, KX, and CaX</span><span class="rvts87">2</span><span class="rvts6">) are transformed to mmol/kg soil (in </span><span class="rvts60">USER_PUNCH</span><span class="rvts6"> with headings NaXm, KXm and CaX2m). For two print times (print time 1 and 2, corresponding to 25 and 50 days), a combination plot with the three transformed variables is defined.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Hereafter, different options are illustrated. Following general settings are used</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts107"><br/></span></p>
+<p class="rvps4"><span class="rvts108"><br/></span></p>
 <div class="rvps32">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-   <p class="rvps50"><span class="rvts121">SELECTED_GRAPH</span><span class="rvts122"> </span><span class="rvts123">1</span></p>
-   <p class="rvps50"><span class="rvts124">-start</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> </span><span class="rvts125">for</span><span class="rvts122"> [</span><span class="rvts124">i </span><span class="rvts122">= </span><span class="rvts123">1</span><span class="rvts122">:</span><span class="rvts123">8</span><span class="rvts122">] </span><span class="rvts124">lt i </span><span class="rvts122">lw </span><span class="rvts123">3</span><span class="rvts122"> pt </span><span class="rvts123">2</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> xtics font </span><span class="rvts126">",20"</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> ytics font </span><span class="rvts126">",20"</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> xlabel font </span><span class="rvts126">",22"</span><span class="rvts122"> offset -</span><span class="rvts123">1</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> ylabel font </span><span class="rvts126">",22"</span><span class="rvts122"> offset -</span><span class="rvts123">1</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> key inside bottom font </span><span class="rvts126">",22"</span></p>
-   <p class="rvps50"><span class="rvts122">&nbsp; &nbsp;</span><span class="rvts125">set</span><span class="rvts122"> size ratio &nbsp;</span><span class="rvts123">0</span><span class="rvts122">.</span><span class="rvts123">8</span></p>
-   <p class="rvps51"><span class="rvts124">-end&nbsp;</span></p>
-   <p class="rvps49"><span class="rvts127"><br/></span></p>
+   <p class="rvps51"><span class="rvts130">SELECTED_GRAPH</span><span class="rvts131"> </span><span class="rvts132">1</span></p>
+   <p class="rvps51"><span class="rvts133">-start</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> </span><span class="rvts134">for</span><span class="rvts131"> [</span><span class="rvts133">i </span><span class="rvts131">= </span><span class="rvts132">1</span><span class="rvts131">:</span><span class="rvts132">8</span><span class="rvts131">] </span><span class="rvts133">lt i </span><span class="rvts131">lw </span><span class="rvts132">3</span><span class="rvts131"> pt </span><span class="rvts132">2</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> xtics font </span><span class="rvts135">",20"</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> ytics font </span><span class="rvts135">",20"</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> xlabel font </span><span class="rvts135">",22"</span><span class="rvts131"> offset -</span><span class="rvts132">1</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> ylabel font </span><span class="rvts135">",22"</span><span class="rvts131"> offset -</span><span class="rvts132">1</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> key inside bottom font </span><span class="rvts135">",22"</span></p>
+   <p class="rvps51"><span class="rvts131">&nbsp; &nbsp;</span><span class="rvts134">set</span><span class="rvts131"> size ratio &nbsp;</span><span class="rvts132">0</span><span class="rvts131">.</span><span class="rvts132">8</span></p>
+   <p class="rvps52"><span class="rvts133">-end&nbsp;</span></p>
+   <p class="rvps50"><span class="rvts136"><br/></span></p>
   </td>
  </tr>
 </table>
@@ -299,17 +299,17 @@
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
    <p class="rvps2"><span class="rvts6"><br/></span></p>
    <p class="rvps2"><span class="rvts6">The default options</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps46"><span class="rvts117">-fig_nr </span><span class="rvts118">1</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_type </span><span class="rvts118">profile&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_name </span><span class="rvts119">"01 Default"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> &nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;</span></p>
-      <p class="rvps47"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_nr </span><span class="rvts127">1</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_type </span><span class="rvts127">profile&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_name </span><span class="rvts128">"01 Default"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> &nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;</span></p>
+      <p class="rvps48"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mol/kg soil)"</span></p>
      </td>
     </tr>
    </table>
@@ -323,22 +323,22 @@
    <p class="rvps3"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2002%20Changed%20distance%20axis%2025%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
-   <p class="rvps2"><span class="rvts6">Additional options after </span><span class="rvts72">-fig_multi</span><span class="rvts6"> allows for adapting the independent variable (Y-axis, depth)</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">Additional options after </span><span class="rvts73">-fig_multi</span><span class="rvts6"> allows for adapting the independent variable (Y-axis, depth)</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">2</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_name </span><span class="rvts126">"02 Changed distance axis"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_multi </span><span class="rvts122">l1,</span><span class="rvts123">2</span><span class="rvts122"> &nbsp;transform </span><span class="rvts126">"-_THIS/100"</span><span class="rvts122"> label </span><span class="rvts126">"Distance below soil surface"</span><span class="rvts122"> unit </span><span class="rvts126">"m"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_curve&nbsp;</span><span class="rvts122"> NaXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"NaX"</span><span class="rvts122">&gt; &nbsp;KXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"KX"</span><span class="rvts122"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts124">k </span><span class="rvts126">"CaX_2"</span><span class="rvts122">&gt;&nbsp;</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_curvet </span><span class="rvts126">"Amount sorbed species (mol/kg soil)"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_start</span></p>
-      <p class="rvps48"><span class="rvts122">&nbsp; &nbsp; </span><span class="rvts125">set</span><span class="rvts122"> yrange [*:*] reverse</span></p>
-      <p class="rvps49"><span class="rvts124">-fig_end&nbsp;</span></p>
-      <p class="rvps49"><span class="rvts127"><br/></span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">2</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_name </span><span class="rvts135">"02 Changed distance axis"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_multi </span><span class="rvts131">l1,</span><span class="rvts132">2</span><span class="rvts131"> &nbsp;transform </span><span class="rvts135">"-_THIS/100"</span><span class="rvts131"> label </span><span class="rvts135">"Distance below soil surface"</span><span class="rvts131"> unit </span><span class="rvts135">"m"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_curve&nbsp;</span><span class="rvts131"> NaXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"NaX"</span><span class="rvts131">&gt; &nbsp;KXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"KX"</span><span class="rvts131"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts133">k </span><span class="rvts135">"CaX_2"</span><span class="rvts131">&gt;&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_curvet </span><span class="rvts135">"Amount sorbed species (mol/kg soil)"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_start</span></p>
+      <p class="rvps49"><span class="rvts131">&nbsp; &nbsp; </span><span class="rvts134">set</span><span class="rvts131"> yrange [*:*] reverse</span></p>
+      <p class="rvps50"><span class="rvts133">-fig_end&nbsp;</span></p>
+      <p class="rvps50"><span class="rvts136"><br/></span></p>
      </td>
     </tr>
    </table>
@@ -353,19 +353,19 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2003%20Flipped%20distance%20axis%2025%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px; height: 16px;">
-   <p class="rvps2"><span class="rvts6">The distance is changed to the X-axis by adding the indicator </span><span class="rvts61">flip</span><span class="rvts6"> after </span><span class="rvts72">-fig_type</span><span class="rvts6">.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">The distance is changed to the X-axis by adding the indicator </span><span class="rvts61">flip</span><span class="rvts6"> after </span><span class="rvts73">-fig_type</span><span class="rvts6">.</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">3</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_type </span><span class="rvts122">profile flip</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_name </span><span class="rvts126">"03 Flipped distance axis"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_multi </span><span class="rvts122">l1,</span><span class="rvts123">2</span><span class="rvts122"> &nbsp;transform </span><span class="rvts126">"-_THIS/100"</span><span class="rvts122"> label </span><span class="rvts126">"Distance below soil surface"</span><span class="rvts122"> unit </span><span class="rvts126">"m"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_curve&nbsp;</span><span class="rvts122"> NaXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"NaX"</span><span class="rvts122">&gt; &nbsp;KXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"KX"</span><span class="rvts122"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts124">k </span><span class="rvts126">"CaX_2"</span><span class="rvts122">&gt;&nbsp;</span></p>
-      <p class="rvps49"><span class="rvts124">-fig_curvet </span><span class="rvts126">"Amount sorbed species (mol/kg soil)"</span></p>
-      <p class="rvps49"><span class="rvts124">&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">3</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_type </span><span class="rvts131">profile flip</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_name </span><span class="rvts135">"03 Flipped distance axis"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_multi </span><span class="rvts131">l1,</span><span class="rvts132">2</span><span class="rvts131"> &nbsp;transform </span><span class="rvts135">"-_THIS/100"</span><span class="rvts131"> label </span><span class="rvts135">"Distance below soil surface"</span><span class="rvts131"> unit </span><span class="rvts135">"m"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_curve&nbsp;</span><span class="rvts131"> NaXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"NaX"</span><span class="rvts131">&gt; &nbsp;KXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"KX"</span><span class="rvts131"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts133">k </span><span class="rvts135">"CaX_2"</span><span class="rvts131">&gt;&nbsp;</span></p>
+      <p class="rvps50"><span class="rvts133">-fig_curvet </span><span class="rvts135">"Amount sorbed species (mol/kg soil)"</span></p>
+      <p class="rvps50"><span class="rvts133">&nbsp;</span></p>
      </td>
     </tr>
    </table>
@@ -373,7 +373,7 @@
    <p class="rvps2"><span class="rvts6"><br/></span></p>
    <p class="rvps2"><span class="rvts6">This results in 2 graphs (03 Flipped distance axis 25 days, 03 Flipped distance axis axis 50 days) illustrated here for the plot after 25 days.</span></p>
    <p class="rvps2"><span class="rvts6"><br/></span></p>
-   <p class="rvps2"><span class="rvts128"><br/></span></p>
+   <p class="rvps2"><span class="rvts137"><br/></span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">
@@ -381,19 +381,19 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2004%20Combination%20default%2025%20days,50%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
-   <p class="rvps2"><span class="rvts6">By adding </span><span class="rvts61">single</span><span class="rvts6"> in the </span><span class="rvts72">-fig_multi</span><span class="rvts6"> indicator, the variables and print times are combined in one plot. By default, the outer loop is over the print times, the dash type changes between print times, and the color changes between the variables.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">By adding </span><span class="rvts61">single</span><span class="rvts6"> in the </span><span class="rvts73">-fig_multi</span><span class="rvts6"> indicator, the variables and print times are combined in one plot. By default, the outer loop is over the print times, the dash type changes between print times, and the color changes between the variables.</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">4</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_name </span><span class="rvts126">"04 Combination default"</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_multi </span><span class="rvts122">l1,</span><span class="rvts123">2</span><span class="rvts122"> single</span></p>
-      <p class="rvps48"><span class="rvts124">-fig_curve&nbsp;</span><span class="rvts122"> NaXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"NaX"</span><span class="rvts122">&gt; &nbsp;KXm &lt;</span><span class="rvts124">k </span><span class="rvts126">"KX"</span><span class="rvts122"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts124">k </span><span class="rvts126">"CaX_2"</span><span class="rvts122">&gt;&nbsp;</span></p>
-      <p class="rvps49"><span class="rvts124">-fig_curvet </span><span class="rvts126">"Amount sorbed species (mol/kg soil)"</span></p>
-      <p class="rvps49"><span class="rvts124">&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">4</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_name </span><span class="rvts135">"04 Combination default"</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_multi </span><span class="rvts131">l1,</span><span class="rvts132">2</span><span class="rvts131"> single</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_curve&nbsp;</span><span class="rvts131"> NaXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"NaX"</span><span class="rvts131">&gt; &nbsp;KXm &lt;</span><span class="rvts133">k </span><span class="rvts135">"KX"</span><span class="rvts131"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts133">k </span><span class="rvts135">"CaX_2"</span><span class="rvts131">&gt;&nbsp;</span></p>
+      <p class="rvps50"><span class="rvts133">-fig_curvet </span><span class="rvts135">"Amount sorbed species (mol/kg soil)"</span></p>
+      <p class="rvps50"><span class="rvts133">&nbsp;</span></p>
      </td>
     </tr>
    </table>
@@ -407,19 +407,19 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2005%20Combination%20key-entry%2025%20days,50%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
-   <p class="rvps2"><span class="rvts6">To simplify the legend, adding </span><span class="rvts61">keyentry</span><span class="rvts6"> in the </span><span class="rvts72">-fig_multi</span><span class="rvts6"> indicator, the outer loop variable (time in this case) will appear as subtitles in the legend. The time indicator is not included in the labels of the different keys.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">To simplify the legend, adding </span><span class="rvts61">keyentry</span><span class="rvts6"> in the </span><span class="rvts73">-fig_multi</span><span class="rvts6"> indicator, the outer loop variable (time in this case) will appear as subtitles in the legend. The time indicator is not included in the labels of the different keys.</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">5</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_name </span><span class="rvts119">"05 Combination key-entry"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single keyentry</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts129">&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">5</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_name </span><span class="rvts128">"05 Combination key-entry"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single keyentry</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts138">&nbsp;</span></p>
      </td>
     </tr>
    </table>
@@ -434,18 +434,18 @@
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
    <p class="rvps2"><span class="rvts6">When </span><span class="rvts61">keyentry</span><span class="rvts6"> is followed by a string variable, the subtitle will be created with the template; </span><span class="rvts61">_LABEL</span><span class="rvts6"> is replaced by the outer variable. In this particular case, enhanced text mode is used to create a bold subtitle.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">6</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_name </span><span class="rvts126">"06 Combination key-entry bold"</span></p>
-      <p class="rvps47"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single keyentry </span><span class="rvts119">"{/:Bold _LABEL}"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts129">&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">6</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_name </span><span class="rvts135">"06 Combination key-entry bold"</span></p>
+      <p class="rvps48"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single keyentry </span><span class="rvts128">"{/:Bold _LABEL}"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts138">&nbsp;</span></p>
      </td>
     </tr>
    </table>
@@ -460,21 +460,21 @@
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
    <p class="rvps2"><span class="rvts6">Using the </span><span class="rvts61">maxrows</span><span class="rvts6"> option in gnuplot commands (in </span><span class="rvts61">set key</span><span class="rvts6">), the outer loop is forced to appear in different columns.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">7</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_name </span><span class="rvts126">"07 Combination key-entry maxrows"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single keyentry </span><span class="rvts119">"{/:Bold _LABEL}"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_start</span></p>
-      <p class="rvps46"><span class="rvts118">&nbsp; &nbsp; </span><span class="rvts130">set</span><span class="rvts118"> key maxrows </span><span class="rvts120">4</span></p>
-      <p class="rvps2"><span class="rvts117">-fig_end</span></p>
-      <p class="rvps46"><span class="rvts129">&nbsp;</span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">7</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_name </span><span class="rvts135">"07 Combination key-entry maxrows"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single keyentry </span><span class="rvts128">"{/:Bold _LABEL}"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_start</span></p>
+      <p class="rvps47"><span class="rvts127">&nbsp; &nbsp; </span><span class="rvts139">set</span><span class="rvts127"> key maxrows </span><span class="rvts129">4</span></p>
+      <p class="rvps2"><span class="rvts126">-fig_end</span></p>
+      <p class="rvps47"><span class="rvts138">&nbsp;</span></p>
      </td>
     </tr>
    </table>
@@ -488,23 +488,23 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2008%20Combination%20group%20variable%2025%20d,50%20d.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
-   <p class="rvps2"><span class="rvts6">Using the </span><span class="rvts61">group</span><span class="rvts6"> option in the </span><span class="rvts72">-fig_multi</span><span class="rvts6"> indicator, the outer loop can be defined being either the </span><span class="rvts61">profiletimes</span><span class="rvts6"> (default) or the </span><span class="rvts61">variable</span><span class="rvts6">.&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">Using the </span><span class="rvts61">group</span><span class="rvts6"> option in the </span><span class="rvts73">-fig_multi</span><span class="rvts6"> indicator, the outer loop can be defined being either the </span><span class="rvts61">profiletimes</span><span class="rvts6"> (default) or the </span><span class="rvts61">variable</span><span class="rvts6">.&nbsp;</span></p>
    <p class="rvps2"><span class="rvts6">The unit for the profile times can be changed, adding the </span><span class="rvts61">profiletimes</span><span class="rvts6"> followed by a string variable (here "days" is replaced by "d")</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">8</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_name </span><span class="rvts119">"08 Combination group variable"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single group variable keyentry </span><span class="rvts119">"{/:Bold _LABEL}"</span><span class="rvts118"> profiletimes </span><span class="rvts119">"d"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_start</span></p>
-      <p class="rvps46"><span class="rvts118">&nbsp; &nbsp; </span><span class="rvts130">set</span><span class="rvts118"> key maxrows </span><span class="rvts120">3</span></p>
-      <p class="rvps47"><span class="rvts117">-fig_end&nbsp;</span></p>
-      <p class="rvps47"><span class="rvts131"><br/></span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">8</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_name </span><span class="rvts128">"08 Combination group variable"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single group variable keyentry </span><span class="rvts128">"{/:Bold _LABEL}"</span><span class="rvts127"> profiletimes </span><span class="rvts128">"d"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_start</span></p>
+      <p class="rvps47"><span class="rvts127">&nbsp; &nbsp; </span><span class="rvts139">set</span><span class="rvts127"> key maxrows </span><span class="rvts129">3</span></p>
+      <p class="rvps48"><span class="rvts126">-fig_end&nbsp;</span></p>
+      <p class="rvps48"><span class="rvts140"><br/></span></p>
      </td>
     </tr>
    </table>
@@ -518,22 +518,22 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2009%20Combination%20dash-color%2025%20days,50%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px; height: 508px;">
-   <p class="rvps2"><span class="rvts6">Instead of changing the dash type between print times, and the color &nbsp;between the variables, the reverse can be asked using profiletimes and variable options in the </span><span class="rvts72">-fig_multi</span><span class="rvts6"> indicator. In the exampel, color will change between print times and dash type between variables, both starting from a value of 1.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">Instead of changing the dash type between print times, and the color &nbsp;between the variables, the reverse can be asked using profiletimes and variable options in the </span><span class="rvts73">-fig_multi</span><span class="rvts6"> indicator. In the exampel, color will change between print times and dash type between variables, both starting from a value of 1.</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">9</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_name </span><span class="rvts119">"09 Combination dash-color"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single profiletimes color </span><span class="rvts120">1</span><span class="rvts118"> variable dash </span><span class="rvts120">1</span><span class="rvts118"> &nbsp;keyentry </span><span class="rvts119">"{/:Bold _LABEL}"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_start</span></p>
-      <p class="rvps46"><span class="rvts118">&nbsp; &nbsp; </span><span class="rvts130">set</span><span class="rvts118"> key maxrows </span><span class="rvts120">4</span></p>
-      <p class="rvps47"><span class="rvts117">-fig_end&nbsp;</span><span class="rvts129">&nbsp;</span></p>
-      <p class="rvps47"><span class="rvts129"><br/></span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">9</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_name </span><span class="rvts128">"09 Combination dash-color"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single profiletimes color </span><span class="rvts129">1</span><span class="rvts127"> variable dash </span><span class="rvts129">1</span><span class="rvts127"> &nbsp;keyentry </span><span class="rvts128">"{/:Bold _LABEL}"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_start</span></p>
+      <p class="rvps47"><span class="rvts127">&nbsp; &nbsp; </span><span class="rvts139">set</span><span class="rvts127"> key maxrows </span><span class="rvts129">4</span></p>
+      <p class="rvps48"><span class="rvts126">-fig_end&nbsp;</span><span class="rvts138">&nbsp;</span></p>
+      <p class="rvps48"><span class="rvts138"><br/></span></p>
      </td>
     </tr>
    </table>
@@ -547,23 +547,23 @@
    <p class="rvps2"><img alt="" style="width : 720px; height : 504px; padding : 1px;" src="lib/Profiles%20-%20Combination%20-%2010%20Combination%20mark-color%2025%20days,50%20days.png"></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 556px;">
-   <p class="rvps2"><span class="rvts6">The option </span><span class="rvts73">mark</span><span class="rvts6"> will change the point type, here between the print times.</span></p>
-   <p class="rvps2"><span class="rvts107"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">The option </span><span class="rvts74">mark</span><span class="rvts6"> will change the point type, here between the print times.</span></p>
+   <p class="rvps2"><span class="rvts108"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
     <tr style="vertical-align: top;">
      <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
-      <p class="rvps48"><span class="rvts124">-fig_nr </span><span class="rvts122">10</span></p>
-      <p class="rvps52"><span class="rvts124">-fig_type </span><span class="rvts122">profile&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_name </span><span class="rvts119">"10 Combination mark-color"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_multi </span><span class="rvts118">l1,</span><span class="rvts120">2</span><span class="rvts118"> single profiletimes mark l4,</span><span class="rvts120">6</span><span class="rvts118"> keyentry </span><span class="rvts119">"{/:Bold _LABEL}"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curve&nbsp;</span><span class="rvts118"> NaXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"NaX"</span><span class="rvts118">&gt; &nbsp;KXm &lt;</span><span class="rvts117">k </span><span class="rvts119">"KX"</span><span class="rvts118"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts117">k </span><span class="rvts119">"CaX_2"</span><span class="rvts118">&gt;&nbsp;</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_curvet </span><span class="rvts119">"Amount sorbed species (mmol/kg soil)"</span></p>
-      <p class="rvps46"><span class="rvts117">-fig_start</span></p>
-      <p class="rvps46"><span class="rvts118">&nbsp; &nbsp; </span><span class="rvts130">set</span><span class="rvts118"> key maxrows </span><span class="rvts120">4</span></p>
-      <p class="rvps46"><span class="rvts118">&nbsp; &nbsp; </span><span class="rvts130">set</span><span class="rvts118"> </span><span class="rvts130">for</span><span class="rvts118"> [</span><span class="rvts117">i </span><span class="rvts118">= </span><span class="rvts120">1</span><span class="rvts118">:</span><span class="rvts120">3</span><span class="rvts118">] </span><span class="rvts117">lt i </span><span class="rvts118">lw </span><span class="rvts120">3</span><span class="rvts118"> pi </span><span class="rvts120">8</span><span class="rvts118">+</span><span class="rvts117">i </span><span class="rvts118">ps </span><span class="rvts120">2</span></p>
-      <p class="rvps2"><span class="rvts117">-fig_end</span><span class="rvts129"> &nbsp;</span></p>
-      <p class="rvps47"><span class="rvts129"><br/></span></p>
+      <p class="rvps49"><span class="rvts133">-fig_nr </span><span class="rvts131">10</span></p>
+      <p class="rvps53"><span class="rvts133">-fig_type </span><span class="rvts131">profile&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_name </span><span class="rvts128">"10 Combination mark-color"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_multi </span><span class="rvts127">l1,</span><span class="rvts129">2</span><span class="rvts127"> single profiletimes mark l4,</span><span class="rvts129">6</span><span class="rvts127"> keyentry </span><span class="rvts128">"{/:Bold _LABEL}"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curve&nbsp;</span><span class="rvts127"> NaXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"NaX"</span><span class="rvts127">&gt; &nbsp;KXm &lt;</span><span class="rvts126">k </span><span class="rvts128">"KX"</span><span class="rvts127"> &gt; &nbsp;CaX2m &lt;</span><span class="rvts126">k </span><span class="rvts128">"CaX_2"</span><span class="rvts127">&gt;&nbsp;</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_curvet </span><span class="rvts128">"Amount sorbed species (mmol/kg soil)"</span></p>
+      <p class="rvps47"><span class="rvts126">-fig_start</span></p>
+      <p class="rvps47"><span class="rvts127">&nbsp; &nbsp; </span><span class="rvts139">set</span><span class="rvts127"> key maxrows </span><span class="rvts129">4</span></p>
+      <p class="rvps47"><span class="rvts127">&nbsp; &nbsp; </span><span class="rvts139">set</span><span class="rvts127"> </span><span class="rvts139">for</span><span class="rvts127"> [</span><span class="rvts126">i </span><span class="rvts127">= </span><span class="rvts129">1</span><span class="rvts127">:</span><span class="rvts129">3</span><span class="rvts127">] </span><span class="rvts126">lt i </span><span class="rvts127">lw </span><span class="rvts129">3</span><span class="rvts127"> pi </span><span class="rvts129">8</span><span class="rvts127">+</span><span class="rvts126">i </span><span class="rvts127">ps </span><span class="rvts129">2</span></p>
+      <p class="rvps2"><span class="rvts126">-fig_end</span><span class="rvts138"> &nbsp;</span></p>
+      <p class="rvps48"><span class="rvts138"><br/></span></p>
      </td>
     </tr>
    </table>

@@ -180,18 +180,18 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts71">The concept of scaling hydraulic properties is used in the HYDRUS codes to describe spatial variability in the unsaturated soil hydraulic properties in the flow domain. The spatial variability is approximated by a set of three scaling factors in a linear model for the spatial variability (</span><a class="rvts176" href="References.html#Vogeletal_1991">Vogel et al., 1991</a><span class="rvts71">). In HPx, this concept is extended to describe also the temporal variation of soil hydraulic properties. Thus, by defining spatially-temporal scaling factors, a complex time-variable parameter field can be defined.</span></p>
-<p class="rvps2"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">The first is the </span><span class="rvts172">scaling factor of the water content</span><span class="rvts71">, </span><span class="rvts99">α</span><span class="rvts101">θ</span><span class="rvts71">, defined as:</span></p>
-<p class="rvps2"><span class="rvts167"><br/></span></p>
+<p class="rvps2"><span class="rvts72">The concept of scaling hydraulic properties is used in the HYDRUS codes to describe spatial variability in the unsaturated soil hydraulic properties in the flow domain. The spatial variability is approximated by a set of three scaling factors in a linear model for the spatial variability (</span><a class="rvts186" href="References.html#Vogeletal_1991">Vogel et al., 1991</a><span class="rvts72">). In HPx, this concept is extended to describe also the temporal variation of soil hydraulic properties. Thus, by defining spatially-temporal scaling factors, a complex time-variable parameter field can be defined.</span></p>
+<p class="rvps2"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">The first is the </span><span class="rvts182">scaling factor of the water content</span><span class="rvts72">, </span><span class="rvts100">α</span><span class="rvts102">θ</span><span class="rvts72">, defined as:</span></p>
+<p class="rvps2"><span class="rvts177"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20water%20content%20-%20Porosity.gif"></p>
-<p class="rvps2"><span class="rvts199"><br/></span></p>
-<p class="rvps2"><span class="rvts71">where &nbsp;</span></p>
-<div class="rvps43">
+<p class="rvps2"><span class="rvts209"><br/></span></p>
+<p class="rvps2"><span class="rvts72">where &nbsp;</span></p>
+<div class="rvps44">
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts198">x</span></p>
+   <p class="rvps2"><span class="rvts208">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -199,7 +199,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">t</span></p>
+   <p class="rvps2"><span class="rvts66">t</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">time</span></p>
@@ -207,7 +207,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts99">ϕ</span></p>
+   <p class="rvps2"><span class="rvts100">ϕ</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">porosity (-)</span></p>
@@ -215,7 +215,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts99">θ</span><span class="rvts86">s</span><span class="rvts105">*</span></p>
+   <p class="rvps2"><span class="rvts100">θ</span><span class="rvts87">s</span><span class="rvts106">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">Reference saturated water content</span></p>
@@ -223,7 +223,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts99">θ</span><span class="rvts86">r</span><span class="rvts105">*</span></p>
+   <p class="rvps2"><span class="rvts100">θ</span><span class="rvts87">r</span><span class="rvts106">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">Reference residual water content</span></p>
@@ -231,18 +231,18 @@
  </tr>
 </table>
 </div>
-<p class="rvps43"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">The hydraulic conductivity is scaled with </span><span class="rvts172">the scaling factor of the hydraulic conductivity</span><span class="rvts71">, </span><span class="rvts99">α</span><span class="rvts200">K</span><span class="rvts71"> :</span></p>
-<p class="rvps2"><span class="rvts167"><br/></span></p>
+<p class="rvps44"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">The hydraulic conductivity is scaled with </span><span class="rvts182">the scaling factor of the hydraulic conductivity</span><span class="rvts72">, </span><span class="rvts100">α</span><span class="rvts210">K</span><span class="rvts72"> :</span></p>
+<p class="rvps2"><span class="rvts177"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20hydraulic%20conductivity.gif"></p>
-<p class="rvps30"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">where &nbsp;</span></p>
-<div class="rvps43">
+<p class="rvps30"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">where &nbsp;</span></p>
+<div class="rvps44">
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts198">x</span></p>
+   <p class="rvps2"><span class="rvts208">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -250,7 +250,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">t</span></p>
+   <p class="rvps2"><span class="rvts66">t</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">time</span></p>
@@ -258,7 +258,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">K</span><span class="rvts86">s</span></p>
+   <p class="rvps2"><span class="rvts66">K</span><span class="rvts87">s</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">saturated hydraulic conductivity</span></p>
@@ -266,7 +266,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">K</span><span class="rvts86">s</span><span class="rvts105">*</span></p>
+   <p class="rvps2"><span class="rvts66">K</span><span class="rvts87">s</span><span class="rvts106">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">reference saturated hydraulic conductivity</span></p>
@@ -274,34 +274,34 @@
  </tr>
 </table>
 </div>
-<p class="rvps43"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">There exists different models to link geochemical properties to change in hydraulic conductivity:</span></p>
+<p class="rvps44"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">There exists different models to link geochemical properties to change in hydraulic conductivity:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2 noindent"><span class="rvts71">Microstructural changes due to dissolution and precipitation of solid phases</span></li>
+ <li class="rvps2 noindent"><span class="rvts72">Microstructural changes due to dissolution and precipitation of solid phases</span></li>
  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;">
-  <li class="rvps4 noindent"><span class="rvts71">Total porosity</span></li>
+  <li class="rvps4 noindent"><span class="rvts72">Total porosity</span></li>
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-   <li class="rvps29 noindent"><a class="rvts176" href="Carman-Kozeny.html">Carman-Kozeny</a><span class="rvts71"> relationship</span></li>
+   <li class="rvps29 noindent"><a class="rvts186" href="Carman-Kozeny.html">Carman-Kozeny</a><span class="rvts72"> relationship</span></li>
   </ul>
-  <li class="rvps4 noindent"><span class="rvts71">Pore size distribution models</span></li>
+  <li class="rvps4 noindent"><span class="rvts72">Pore size distribution models</span></li>
   <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
-   <li class="rvps29 noindent"><a class="rvts176" href="SelectiveradiusshiftmodelWissmei.html">Selective radius shift model</a><span class="rvts71"> (</span><a class="rvts176" href="References.html#WissmeierBarry_2009">Wissmeier and Barry, 2009</a><span class="rvts71">)</span></li>
+   <li class="rvps29 noindent"><a class="rvts186" href="SelectiveradiusshiftmodelWissmei.html">Selective radius shift model</a><span class="rvts72"> (</span><a class="rvts186" href="References.html#WissmeierBarry_2009">Wissmeier and Barry, 2009</a><span class="rvts72">)</span></li>
   </ul>
  </ul>
- <li class="rvps2 noindent"><span class="rvts71">Temperature and salinity effects through their effect on density and viscosity</span></li>
+ <li class="rvps2 noindent"><span class="rvts72">Temperature and salinity effects through their effect on density and viscosity</span></li>
 </ul>
-<p class="rvps4"><span class="rvts71"><br/></span></p>
-<p class="rvps4"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">The pressure head is scaled with </span><span class="rvts172">the scaling factor of the pressure head</span><span class="rvts71">, </span><span class="rvts99">α</span><span class="rvts200">h</span><span class="rvts71"> :</span></p>
+<p class="rvps4"><span class="rvts72"><br/></span></p>
+<p class="rvps4"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">The pressure head is scaled with </span><span class="rvts182">the scaling factor of the pressure head</span><span class="rvts72">, </span><span class="rvts100">α</span><span class="rvts210">h</span><span class="rvts72"> :</span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Scaling%20factor%20pressure%20head.gif"></p>
-<p class="rvps2"><span class="rvts71"><br/></span></p>
-<p class="rvps30"><span class="rvts71"><br/></span></p>
-<p class="rvps2"><span class="rvts71">where &nbsp;</span></p>
-<div class="rvps43">
+<p class="rvps2"><span class="rvts72"><br/></span></p>
+<p class="rvps30"><span class="rvts72"><br/></span></p>
+<p class="rvps2"><span class="rvts72">where &nbsp;</span></p>
+<div class="rvps44">
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts198">x</span></p>
+   <p class="rvps2"><span class="rvts208">x</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">vector with coordinates</span></p>
@@ -309,7 +309,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">t</span></p>
+   <p class="rvps2"><span class="rvts66">t</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">time</span></p>
@@ -317,7 +317,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">h</span></p>
+   <p class="rvps2"><span class="rvts66">h</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">pressure head</span></p>
@@ -325,7 +325,7 @@
  </tr>
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts65">h</span><span class="rvts105">*</span></p>
+   <p class="rvps2"><span class="rvts66">h</span><span class="rvts106">*</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">reference pressure head</span></p>
@@ -333,7 +333,7 @@
  </tr>
 </table>
 </div>
-<p class="rvps43"><span class="rvts71"></span><span class="rvts6"></span></p>
+<p class="rvps44"><span class="rvts72"></span><span class="rvts6"></span></p>
 
             </div>
             

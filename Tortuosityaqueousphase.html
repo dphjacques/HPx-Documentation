@@ -180,7 +180,7 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">The tortuosity factor relates the aqueous diffusion coefficient to the pore diffusion coefficient, i.e. multiplying </span><span class="rvts65">D</span><span class="rvts86">w</span><span class="rvts6"> with </span><span class="rvts65">t</span><span class="rvts86">w</span><span class="rvts6"> where </span><span class="rvts65">D</span><span class="rvts94">w</span><span class="rvts65"> </span><span class="rvts6">is the molecular diffusion coefficient in free water and </span><span class="rvts65">t</span><span class="rvts86">w</span><span class="rvts6"> is tortuosity fractor in water (see </span><a class="rvts21" href="Dispersioncoefficient.html#DispCoefLiquid">General definition of dispersion coefficient (liquid phase)</a><span class="rvts6">). The resulting product is called the pore diffusion coefficient. The tortuosity factor depends on the microstructure of the porous medium and on the water saturation degree. Several models exist to calculate the tortuosity factor. In HPx, the models of Millington-Quirk ([</span><a class="rvts21" href="References.html#MillingtonQuirk_1961">Millington and Quirk, 1991</a><span class="rvts6">], see </span><a class="rvts21" href="Dispersioncoefficient.html#MillingtonQuirk">Tortuosity Models</a><span class="rvts6">) and Moldrup (</span><a class="rvts21" href="References.html#Moldrup_1997">Moldrup et al., 1997</a><span class="rvts6">; </span><a class="rvts21" href="References.html#Moldrup_1997">Moldrup et al., 2000</a><span class="rvts6">], see </span><a class="rvts21" href="Dispersioncoefficient.html#Moldrup">Tortuosity Models</a><span class="rvts6">) are implemented and can be used via the </span><span class="rvts11">Solute Transport - General Parameters</span><span class="rvts6"> dialogue window of the HYDRUS GUI.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts6">The tortuosity factor relates the aqueous diffusion coefficient to the pore diffusion coefficient, i.e. multiplying </span><span class="rvts66">D</span><span class="rvts87">w</span><span class="rvts6"> with </span><span class="rvts66">t</span><span class="rvts87">w</span><span class="rvts6"> where </span><span class="rvts66">D</span><span class="rvts95">w</span><span class="rvts66"> </span><span class="rvts6">is the molecular diffusion coefficient in free water and </span><span class="rvts66">t</span><span class="rvts87">w</span><span class="rvts6"> is tortuosity fractor in water (see </span><a class="rvts21" href="Dispersioncoefficient.html#DispCoefLiquid">General definition of dispersion coefficient (liquid phase)</a><span class="rvts6">). The resulting product is called the pore diffusion coefficient. The tortuosity factor depends on the microstructure of the porous medium and on the water saturation degree. Several models exist to calculate the tortuosity factor. In HPx, the models of Millington-Quirk ([</span><a class="rvts21" href="References.html#MillingtonQuirk_1961">Millington and Quirk, 1991</a><span class="rvts6">], see </span><a class="rvts21" href="Dispersioncoefficient.html#MillingtonQuirk">Tortuosity Models</a><span class="rvts6">) and Moldrup (</span><a class="rvts21" href="References.html#Moldrup_1997">Moldrup et al., 1997</a><span class="rvts6">; </span><a class="rvts21" href="References.html#Moldrup_1997">Moldrup et al., 2000</a><span class="rvts6">], see </span><a class="rvts21" href="Dispersioncoefficient.html#Moldrup">Tortuosity Models</a><span class="rvts6">) are implemented and can be used via the </span><span class="rvts11">Solute Transport - General Parameters</span><span class="rvts6"> dialogue window of the HYDRUS GUI.&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">In HP1 and HP2/3, tortuosity factor models can be defined by user-defined scripts to account for:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
@@ -209,34 +209,34 @@
  </ul>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts65">Calculate the tortuosity factor of the aqueous pahse</span></p>
-<p class="rvps29"><span class="rvts6">After the water flow and solute transport calculations in each time step and for each node, the tortuosity factor of the aqueous phase is calculated. The scripts associated with </span><a class="rvts58" href="state1.html">-state tortw</a><span class="rvts6"> of the </span><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts174"> </span><span class="rvts71">data block are executed for each node after water flow and solute transport steps in each time step. As such, the tortuosity is calculated using water contents and temperatures in the current time step, and microstructural/geochemical information from the previous time step.</span></p>
-<p class="rvps29"><span class="rvts71"><br/></span></p>
-<p class="rvps29"><span class="rvts71">To indicate what value in a script corresponds to the tortuosity factor of the aqueous phase, the </span><a class="rvts77" href="save.html">save()</a><span class="rvts71"> function needs to be used in which the variable corresponding to the tortuosity is saved.</span></p>
-<p class="rvps29"><span class="rvts71"><br/></span></p>
-<p class="rvps29"><span class="rvts172">Important</span><span class="rvts71">: Because the calculation of the tortuosity factor occurs outside the geochemical calculations, not all script functions will give relevant information, specifically the script functions for geochemical information on molalities, activities, amounts or saturation indices of minerals etc. Therefore, precalculations using specfiic geochemical information should be done in a script with </span><a class="rvts58" href="state1.html">state update</a><span class="rvts71">.</span></p>
-<p class="rvps29"><span class="rvts71"><br/></span></p>
+<p class="rvps4"><span class="rvts66">Calculate the tortuosity factor of the aqueous pahse</span></p>
+<p class="rvps29"><span class="rvts6">After the water flow and solute transport calculations in each time step and for each node, the tortuosity factor of the aqueous phase is calculated. The scripts associated with </span><a class="rvts58" href="state1.html">-state tortw</a><span class="rvts6"> of the </span><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a><span class="rvts184"> </span><span class="rvts72">data block are executed for each node after water flow and solute transport steps in each time step. As such, the tortuosity is calculated using water contents and temperatures in the current time step, and microstructural/geochemical information from the previous time step.</span></p>
+<p class="rvps29"><span class="rvts72"><br/></span></p>
+<p class="rvps29"><span class="rvts72">To indicate what value in a script corresponds to the tortuosity factor of the aqueous phase, the </span><a class="rvts78" href="save.html">save()</a><span class="rvts72"> function needs to be used in which the variable corresponding to the tortuosity is saved.</span></p>
+<p class="rvps29"><span class="rvts72"><br/></span></p>
+<p class="rvps29"><span class="rvts182">Important</span><span class="rvts72">: Because the calculation of the tortuosity factor occurs outside the geochemical calculations, not all script functions will give relevant information, specifically the script functions for geochemical information on molalities, activities, amounts or saturation indices of minerals etc. Therefore, precalculations using specfiic geochemical information should be done in a script with </span><a class="rvts58" href="state1.html">state update</a><span class="rvts72">.</span></p>
+<p class="rvps29"><span class="rvts72"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps32">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
    <p class="rvps4"><a class="rvts57" href="CALCULATE_VALUES.html">calculated_values</a></p>
-   <p class="rvps4"><a class="rvts58" href="state1.html">-state</a><span class="rvts72"> tortw</span></p>
+   <p class="rvps4"><a class="rvts58" href="state1.html">-state</a><span class="rvts73"> tortw</span></p>
    <p class="rvps4"><a class="rvts58" href="mybasic.html">-mybasic</a></p>
    <p class="rvps4"><a class="rvts58" href="start.html">-start</a></p>
-   <p class="rvps29"><span class="rvts68">#statements to calculate tortuosity factor</span></p>
-   <p class="rvps29"><span class="rvts68">#...</span></p>
-   <p class="rvps29"><span class="rvts68">#tortw = ...</span></p>
-   <p class="rvps29"><a class="rvts77" href="change_sfcond.html">save(</a><a class="rvts171" href="change_sfcond.html">tortw</a><a class="rvts77" href="change_por0.html">)</a></p>
+   <p class="rvps29"><span class="rvts69">#statements to calculate tortuosity factor</span></p>
+   <p class="rvps29"><span class="rvts69">#...</span></p>
+   <p class="rvps29"><span class="rvts69">#tortw = ...</span></p>
+   <p class="rvps29"><a class="rvts78" href="change_sfcond.html">save(</a><a class="rvts181" href="change_sfcond.html">tortw</a><a class="rvts78" href="change_por0.html">)</a></p>
    <p class="rvps4"><a class="rvts58" href="end.html">-end</a></p>
   </td>
  </tr>
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps4"><span class="rvts174">Indicate evolving using updated transport properties in the flow and transport model</span></p>
-<p class="rvps29"><span class="rvts71">To indicate that a changed porosity and scaling factor of the water content has to be used,</span><span class="rvts72"> </span><a class="rvts58" href="update.html">-update tortw</a><span class="rvts71"> in </span><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts71"> is set true.</span></p>
+<p class="rvps4"><span class="rvts184">Indicate evolving using updated transport properties in the flow and transport model</span></p>
+<p class="rvps29"><span class="rvts72">To indicate that a changed porosity and scaling factor of the water content has to be used,</span><span class="rvts73"> </span><a class="rvts58" href="update.html">-update tortw</a><span class="rvts72"> in </span><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts72"> is set true.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps32">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
@@ -248,10 +248,10 @@
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts167">&nbsp;</span></p>
-<p class="rvps29"><span class="rvts71">Alternatively, the option for updating the tortuosity of the liquid phase (check </span><span class="rvts61">Evolving Transport Properties</span><span class="rvts71">; check </span><span class="rvts61">Tortuosity Liquide Phase</span><span class="rvts71">) can be selected in the </span><a class="rvts176" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts71"> form of the </span><a class="rvts176" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts71">.</span></p>
-<p class="rvps29"><span class="rvts71"><br/></span></p>
-<p class="rvps29"><span class="rvts172">Important:</span><span class="rvts71"> .When </span><a class="rvts58" href="update.html">-update tortw</a><span class="rvts71"> in </span><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts71"> is set true, any of the options that was selected in the HYDRUS graphical user interface are overruled by the options defined in the geochemistry input.</span></p>
+<p class="rvps31"><span class="rvts177">&nbsp;</span></p>
+<p class="rvps29"><span class="rvts72">Alternatively, the option for updating the tortuosity of the liquid phase (check </span><span class="rvts61">Evolving Transport Properties</span><span class="rvts72">; check </span><span class="rvts61">Tortuosity Liquide Phase</span><span class="rvts72">) can be selected in the </span><a class="rvts186" href="Evolvingtransportproperties.html">Model options-&gt;Evolving transport properties</a><span class="rvts72"> form of the </span><a class="rvts186" href="Evolvingtransportproperties.html">Reactive Transport Panel</a><span class="rvts72">.</span></p>
+<p class="rvps29"><span class="rvts72"><br/></span></p>
+<p class="rvps29"><span class="rvts182">Important:</span><span class="rvts72"> .When </span><a class="rvts58" href="update.html">-update tortw</a><span class="rvts72"> in </span><a class="rvts57" href="REACTIVE_TRANSPORT.html">reactive_transport</a><span class="rvts72"> is set true, any of the options that was selected in the HYDRUS graphical user interface are overruled by the options defined in the geochemistry input.</span></p>
 <h3 class="rvps24"><span class="rvts0"><span class="rvts54"><br/></span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
