@@ -169,7 +169,7 @@
                         <li><a href="Examples.html">Examples</a></li><li><a href="GUIHPGeochemistryandHydrus-Gener.html">GUI HPGeochemistry and Hydrus - General examples</a></li>
                     </ol>
                     <div class="nav-arrows">
-                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GUIHPGeochemistryandHydrus-Gener.html" title="GUI HPGeochemistry and Hydrus - General examples" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Adddatabasegroupanddatabase.html" title="Add database group and database" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Createaplotfromadatafile.html" title="Create a plot from a datafile" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="GUIHPGeochemistryandHydrus-Gener.html" title="GUI HPGeochemistry and Hydrus - General examples" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a><a class="btn btn-default" href="HPGeochemistryExchangeisotherm.html" title="HPGeochemistry: Exchange isotherm" role="button"><span class="bi bi-chevron-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Createaplotfromadatafile.html" title="Create a plot from a datafile" role="button"><span class="bi bi-chevron-right" aria-hidden="true"></span></a></div>
                     </div>
                 </div> 
             
@@ -180,15 +180,160 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts6">This example&nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
-<p class="rvps2"><span class="rvts6">Consider a 25 cm long soil column in which a cation exchange complex with a capacity of 12 meq/dm³ bulk soil in equilibrium with a 1 mM &nbsp;NaCl and 0.2 mM KCl solution. The column is flushed for 75 d with a 0.6 mM CaCl</span><span class="rvts87">2</span><span class="rvts6"> solution.</span></p>
+<p class="rvps2"><span class="rvts6">This example simulates the chemical composition of the effluent from a column containing a cation exchanger and is adapted from Example 11 of the PHREEQC manual.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts11">Acronym</span><span class="rvts6"> </span><span class="rvts6">1DCEC01</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps29"><span class="rvts0"><span class="rvts63">Problem definition</span></span></h1>
+<p class="rvps2"><span class="rvts6">An 8-cm long column initially contains a Na-K-NO</span><span class="rvts87">3</span><span class="rvts6"> solution in equilibrium with the cation exchanger. The column is flushed with a CaCl</span><span class="rvts87">2</span><span class="rvts6"> solution. Ca, K and Na are at all times in equilibrium with the exchanger. The simulation is run for one day.</span></p>
+<p class="rvps2"><span class="rvts6">The soil has a porosity of 0.5 and a saturated hydraulic conductivity of 12 cm/d (0.0001389 cm/s). &nbsp;The bulk density is 1.5 kg/dm³. Dispersivity is 0.2 cm.</span></p>
+<p class="rvps2"><span class="rvts6">The initial Na-K-NO</span><span class="rvts87">3</span><span class="rvts6"> solution is made by using 1 x 10</span><span class="rvts112">-3</span><span class="rvts6"> M NaNO</span><span class="rvts87">3</span><span class="rvts6"> and 2 x 10</span><span class="rvts112">-4</span><span class="rvts6"> KNO</span><span class="rvts87">3</span><span class="rvts6"> M. The inflowing CaCl</span><span class="rvts87">2</span><span class="rvts6"> solution has a concentration of 6 x 10</span><span class="rvts112">-4</span><span class="rvts6"> M. Both solutions were prepared under oxidizing conditions (in equilibrium with the partial pressure of oxygen in the atmosphere). The amount of exchange sites (X) is 0.55 meq / dm³ soil. With a bulk density of 1.5 kg/dm³; this corresponds to a soil with only 0.0367 meq/100g soil (0.55 dividing by bulk density and by 100).</span></p>
+<p class="rvps2"><span class="rvts6">The column is discretized into 40 finite elements (i.e., 41 nodes). The example assumes that the same solution is initially associated with each node. Also, we use the same exchanger composition for all nodes.</span></p>
 <p class="rvps2"><span class="rvts6">A constant flux of 1 cm is applied on a column with a fixed pressure head of 0 cm at the bottom initially in gravitational equilibrium with the fixed pressure head at the bottom.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps29"><span class="rvts0"><span class="rvts63">TUTORIAL</span></span></h1>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">It is assumed that a managed project is created via </span><span class="rvts48">hpgeochemistry</span><span class="rvts6"> (see </span><a class="rvts12" href="Defineanewmanagedproject.html">Define a new managed project</a><span class="rvts6">) including the transport folder (21_transport-models, see </span><span class="rvts76">xx</span><span class="rvts6">). The transport project is created via the </span><span class="rvts48">HYDRUS</span><span class="rvts6"> </span><span class="rvts6">5.x</span><span class="rvts6"> GUI.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps28"><span class="rvts64">Create a new project</span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Define main settings and water&nbsp;</span></span></h3>
+<p class="rvps2"><span class="rvts6">Open the project manager of </span><span class="rvts48">HYDRUS</span><span class="rvts6"> </span><span class="rvts6">5.x</span><span class="rvts6"> (</span><img alt="" style="padding : 1px;" src="lib/Hydrus%20-%20Project%20Manager.png"><span class="rvts6">), select your project in the </span><span class="rvts61">Project Groups</span><span class="rvts6"> tab.</span></p>
+<p class="rvps2"><span class="rvts6">Go to the </span><span class="rvts61">Projects</span><span class="rvts6"> tab and create a new project</span></p>
+<p class="rvps2"><span class="rvts6">In the text box </span><span class="rvts61">Name</span><span class="rvts6">, write the name of the name of the transport project (</span><span class="rvts61">1DCEC01</span><span class="rvts6">)</span></p>
+<p class="rvps2"><span class="rvts6">In the text box </span><span class="rvts61">Description</span><span class="rvts6">, add a description, e.g. "</span><span class="rvts61">Transport and Cation Exchange, single pulse</span><span class="rvts6"> "</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">Create new project via the project manager or via </span><span class="rvts6"></span></p>
+<p class="rvps2"><span class="rvts6">Open the </span><span class="rvts11">Domain type</span><span class="rvts6"> dialogue window and select "</span><span class="rvts61">1D - Simple</span><span class="rvts6">" as the </span><span class="rvts61">Domain Type</span><span class="rvts6">.</span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Define general and &nbsp;water flow parameters</span></span></h3>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Main Processes </span><span class="rvts6">dialogue window, check</span><span class="rvts61"> Water Flow</span><span class="rvts6">, </span><span class="rvts61">Solute Transport</span><span class="rvts6">, and </span><span class="rvts61">HP-1</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Geometry </span><span class="rvts6">dialogue window, set the </span><span class="rvts61">Depth of the Soil Profile</span><span class="rvts6"> to 8 cm.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Time Information </span><span class="rvts6">dialogue window, set </span><span class="rvts61">Time Units</span><span class="rvts6"> to seconds, </span><span class="rvts61">Final Time</span><span class="rvts6"> to 86400,</span><span class="rvts61"> Initial Time Step</span><span class="rvts6"> to 180, </span><span class="rvts61">Minimum Time Step</span><span class="rvts6"> to 180 and </span><span class="rvts61">Maximum Time Step</span><span class="rvts6"> to 350.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Output Information </span><span class="rvts6">dialogue window, set </span><span class="rvts61">Count</span><span class="rvts6"> to 12.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Soil Hydraulic Parameters </span><span class="rvts6">dialogue window, select </span><span class="rvts61">Soil Catalog</span><span class="rvts6"> Loam and change the saturated water content (</span><span class="rvts61">Qs</span><span class="rvts6">) and saturated hydraulic conductivity (</span><span class="rvts61">Ks</span><span class="rvts6">) to respectively, 0.5 and 0.0002777.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Water Flow Boundary Conditions </span><span class="rvts6">dialogue window, set the </span><span class="rvts61">Upper</span><span class="rvts6"> and </span><span class="rvts61">Lower Boundary Condition</span><span class="rvts6"> to </span><span class="rvts61">Constant Pressure Head</span><span class="rvts6">.</span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Define solute transport and the geochemical model</span></span></h3>
+<p class="rvps2"><span class="rvts6">In the </span><a class="rvts50" href="Input2.html">HP1 Input Data</a><span class="rvts11"> </span><span class="rvts6">dialogue window:</span></p>
+<p class="rvps4"><a class="rvts12" href="Panel-ReactiveTransport.html">Reactive Transport Panel</a></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Select the database</span><span class="rvts74"> </span><span class="rvts61">phreeqc.dat</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Under the</span><a class="rvts12" href="SelectionofComponents.html"> Selection of Components</a><span class="rvts6"> item, select Ca, Cl, K, N(5) and Na.</span></p>
+<p class="rvps4"><span class="rvts6">Solution Definitions Panel</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Define the initial and boundary solutions (</span><a class="rvts57" href="SOLUTION.html">SOLUTION</a><span class="rvts6">) as shown below.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<div class="rvps34">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; height: 157px;">
+   <p class="rvps4"><span class="rvts60">SOLUTION</span><span class="rvts6"> </span><span class="rvts170">1001</span></p>
+   <p class="rvps4"><span class="rvts145">pH </span><span class="rvts170">7</span><span class="rvts19"> charge</span></p>
+   <p class="rvps4"><span class="rvts171">Na </span><span class="rvts170">1</span></p>
+   <p class="rvps4"><span class="rvts171">K </span><span class="rvts170">0</span><span class="rvts19">.</span><span class="rvts170">2</span></p>
+   <p class="rvps4"><span class="rvts171">N(5) </span><span class="rvts170">1</span><span class="rvts19">.</span><span class="rvts170">2</span></p>
+   <p class="rvps4"><span class="rvts171">O(0) </span><span class="rvts170">1</span><span class="rvts19"> </span><span class="rvts171">O2(g) </span><span class="rvts19">-</span><span class="rvts170">0</span><span class="rvts19">.</span><span class="rvts170">65</span></p>
+   <p class="rvps4"><span class="rvts6"><br/></span></p>
+   <p class="rvps4"><span class="rvts60">SOLUTION</span><span class="rvts6"> </span><span class="rvts170">3001</span></p>
+   <p class="rvps4"><span class="rvts145">pH </span><span class="rvts170">7</span><span class="rvts19"> charge</span></p>
+   <p class="rvps4"><span class="rvts171">Ca </span><span class="rvts170">0</span><span class="rvts19">.</span><span class="rvts170">6</span></p>
+   <p class="rvps4"><span class="rvts171">Cl </span><span class="rvts170">1</span><span class="rvts19">.</span><span class="rvts170">2</span></p>
+   <p class="rvps4"><span class="rvts171">O(0) </span><span class="rvts170">1</span><span class="rvts19"> </span><span class="rvts171">O2(g) </span><span class="rvts19">-</span><span class="rvts170">0</span><span class="rvts19">.</span><span class="rvts170">65</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6">Geochemistry Panel</span></p>
+<p class="rvps4"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Define the exchanger (</span><a class="rvts57" href="EXCHANGE.html">Exhange</a><span class="rvts6">) as shown below</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<div class="rvps34">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; height: 101px;">
+   <p class="rvps2"><span class="rvts60">EXCHANGE</span><span class="rvts6"> </span><span class="rvts170">1001</span></p>
+   <p class="rvps2"><span class="rvts145">-material </span><span class="rvts170">1</span><span class="rvts19">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts171">X </span><span class="rvts170">0.55E-3</span></p>
+   <p class="rvps2"><span class="rvts145">-equilibrate </span><span class="rvts19">with</span><span class="rvts145"> solution </span><span class="rvts170">1</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<p class="rvps4"><span class="rvts6">Output Panel</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">Define specific output via </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts6">, </span><a class="rvts57" href="USER_PUNCH.html">user_punch</a><span class="rvts6"> and </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6"> as shown below.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<div class="rvps34">
+<table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; height: 101px;">
+   <p class="rvps2"><span class="rvts60">Selected_output</span></p>
+   <p class="rvps2"><span class="rvts73">-totals</span><span class="rvts6"> Na K Ca Cl N(5)</span></p>
+   <p class="rvps2"><span class="rvts73">-molalities</span><span class="rvts6"> CaX2 KX NaX&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts60">USER_PUNCH</span></p>
+   <p class="rvps2"><span class="rvts145">-headings </span><span class="rvts6">mNaX mKX mCaX2 eNaX eKX eCaX2 eqNaX eqKX eqCaX2</span></p>
+   <p class="rvps2"><span class="rvts145">-plot_units </span><span class="rvts172">"M"</span><span class="rvts6"> </span><span class="rvts172">"M"</span><span class="rvts6"> </span><span class="rvts172">"M"</span><span class="rvts6"> </span><span class="rvts172">"meq/100g"</span><span class="rvts6"> </span><span class="rvts172">"meq/100g"</span><span class="rvts6"> </span><span class="rvts172">"meq/100g"</span><span class="rvts6"> </span><span class="rvts172">"-"</span><span class="rvts6"> </span><span class="rvts172">"-"</span><span class="rvts6"> </span><span class="rvts172">"-"</span></p>
+   <p class="rvps2"><span class="rvts145">-plot_titles </span><span class="rvts172">"Concentration"</span><span class="rvts6"> </span><span class="rvts172">"Concentration"</span><span class="rvts6"> </span><span class="rvts172">"Concentration"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent Fraction"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent Fraction"</span><span class="rvts6"> </span><span class="rvts172">"Equivalent Fraction"</span></p>
+   <p class="rvps2"><span class="rvts145">-mybasic</span></p>
+   <p class="rvps2"><span class="rvts145">-start&nbsp;</span><span class="rvts6"> &nbsp; &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; </span><span class="rvts173">#convert to mol/kg soil</span></p>
+   <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; bd = </span><span class="rvts170">1</span><span class="rvts6">.</span><span class="rvts170">5</span><span class="rvts6"> </span><span class="rvts173">#kg/dm3</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts6">( </span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"NaX"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd)</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts6">( </span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"KX"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd)</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts6">( </span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"CaX2"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd)</span></p>
+   <p class="rvps2"><span class="rvts6">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">&nbsp; &nbsp; </span><span class="rvts173">#convert to meq/100 g soil</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts178">punch</span><span class="rvts6">( </span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"NaX"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd *</span><span class="rvts170">100</span><span class="rvts6">)&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts178">punch</span><span class="rvts6">( </span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"KX"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd *</span><span class="rvts170">100</span><span class="rvts6">)&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts174">&nbsp; &nbsp; </span><span class="rvts178">punch</span><span class="rvts6">( </span><span class="rvts170">2</span><span class="rvts6">*</span><span class="rvts175">mol</span><span class="rvts6">(</span><span class="rvts172">"CaX2"</span><span class="rvts6">) * </span><span class="rvts175">tot</span><span class="rvts6">(</span><span class="rvts172">"water"</span><span class="rvts6">) / bd *</span><span class="rvts170">100</span><span class="rvts6">)&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">&nbsp; &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts19">&nbsp; &nbsp; </span><span class="rvts176">#Equivalent fraction</span></p>
+   <p class="rvps2"><span class="rvts177">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts19">( </span><span class="rvts68">mol</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">NaX</span><span class="rvts176">"</span><span class="rvts19">) / </span><span class="rvts68">tot</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">X</span><span class="rvts176">"</span><span class="rvts19">) )</span></p>
+   <p class="rvps2"><span class="rvts177">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts19">( </span><span class="rvts68">mol</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">KX</span><span class="rvts176">"</span><span class="rvts19">) / </span><span class="rvts68">tot</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">X</span><span class="rvts176">"</span><span class="rvts19">) )</span></p>
+   <p class="rvps2"><span class="rvts177">&nbsp; &nbsp; </span><span class="rvts68">punch</span><span class="rvts19">( 2*</span><span class="rvts68">mol</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">CaX2</span><span class="rvts176">"</span><span class="rvts19">) / </span><span class="rvts68">tot</span><span class="rvts19">(</span><span class="rvts176">"</span><span class="rvts105">X</span><span class="rvts176">"</span><span class="rvts19">) )</span></p>
+   <p class="rvps2"><span class="rvts145">-end</span></p>
+   <p class="rvps2"><span class="rvts60">Selected_graph</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_nr</span><span class="rvts6"> </span><span class="rvts170">1</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_type</span><span class="rvts6"> </span><span class="rvts175">time</span><span class="rvts19">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_name</span><span class="rvts6"> </span><span class="rvts172">"Concentrations"</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_multi all&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curve &nbsp;&amp;tot</span><span class="rvts6"> </span><span class="rvts171">Na K Ca&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curvet</span><span class="rvts6"> </span><span class="rvts172">"Concentration "</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts73">-fig_nr</span><span class="rvts6"> </span><span class="rvts170">2</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_type</span><span class="rvts6"> </span><span class="rvts175">time</span><span class="rvts19">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_name</span><span class="rvts6"> </span><span class="rvts172">"Exchange - concentration"</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_multi all&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curve</span><span class="rvts6">&nbsp;</span><span class="rvts19"> &nbsp;mNaX mKX mCaX2 &nbsp;&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curvet</span><span class="rvts6"> </span><span class="rvts172">"Concentration (M)"</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts6">-</span><span class="rvts73">fig_nr</span><span class="rvts6"> </span><span class="rvts170">3</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_type</span><span class="rvts6"> </span><span class="rvts175">time</span><span class="rvts19">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_name</span><span class="rvts6"> </span><span class="rvts172">"Exchange - meq/100g"</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_multi all</span><span class="rvts6">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curve&nbsp;</span><span class="rvts19"> &nbsp; eNaX eKX eCaX2 &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curvet</span><span class="rvts6"> </span><span class="rvts172">"Equivalents (meq/100g) "</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts73">-fig_nr</span><span class="rvts6"> </span><span class="rvts170">4</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_type</span><span class="rvts6"> </span><span class="rvts175">time</span><span class="rvts19">&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_name</span><span class="rvts6"> </span><span class="rvts172">"Exchange - Equivalent fraction"</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_multi all&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts6">-</span><span class="rvts73">fig_curve&nbsp;</span><span class="rvts19"> &nbsp;eqNaX eqKX eqCaX2 &nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curvet </span><span class="rvts172">"Equivalent fraction (-)"</span></p>
+   <p class="rvps2"><span class="rvts6"><br/></span></p>
+   <p class="rvps2"><span class="rvts73">-fig_nr</span><span class="rvts6"> </span><span class="rvts170">5</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_type</span><span class="rvts6"> </span><span class="rvts175">profile</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_name</span><span class="rvts6"> </span><span class="rvts172">"Exchange - Equivalent fraction"</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_multi</span><span class="rvts6"> all&nbsp;</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curve</span><span class="rvts6">&nbsp;</span><span class="rvts19"> &nbsp;eqNaX eqKX eqCaX2</span></p>
+   <p class="rvps2"><span class="rvts73">-fig_curvet</span><span class="rvts6"> </span><span class="rvts172">"Equivalent fraction (-)"</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Define domain properties and initial conditions</span></span></h3>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Main Processes </span><span class="rvts6">dialogue window, check</span><span class="rvts61"> Water Flow</span><span class="rvts6">, </span><span class="rvts61">Solute Transport</span><span class="rvts6">, and </span><span class="rvts61">HP-1</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">In the </span><span class="rvts11">Geometry </span><span class="rvts6">dialogue window, set the </span><span class="rvts61">Depth of the Soil Profile</span><span class="rvts6"> to 8 cm.</span></p>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Run Project</span></span></h3>
+<p class="rvps4"><span class="rvts6"><br/></span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Define domain properties and initial conditions</span></span><span class="rvts0"><span class="rvts54"></span></span></h3>
 
             </div>
             

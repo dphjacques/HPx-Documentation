@@ -183,7 +183,7 @@
 <p class="rvps2"><span class="rvts60">reactive_transport_output</span><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">defines options for generating output. The user defines elements over which output variables (defined by </span><a class="rvts57" href="SELECTED_OUTPUT.html">selected_output</a><span class="rvts60"> </span><span class="rvts6">and </span><a class="rvts57" href="USER_PUNCH.html">user_punch</a><span class="rvts6">) are summed.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Definition</span></span></h3>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Definition</span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts60">REACTIVE_TRANSPORT_OUTPUT</span></p>
 <p class="rvps4"><span class="rvts6">-totalsum</span></p>
@@ -195,9 +195,9 @@
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Additional information</span></span></h3>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Additional information</span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h4 class="rvps25"><a name="typeofsum"></a><span class="rvts0"><span class="rvts56">Sums of variables over a region of the domain</span></span></h4>
+<h4 class="rvps27"><a name="typeofsum"></a><span class="rvts0"><span class="rvts56">Sums of variables over a region of the domain</span></span></h4>
 <p class="rvps2"><span class="rvts6">The identifiers </span><a class="rvts58" href="horizon.html">-horizon</a><span class="rvts6">,</span><a class="rvts58" href="layer.html">-layer</a><span class="rvts6">, </span><a class="rvts58" href="node.html">-node</a><span class="rvts6">, and </span><a class="rvts58" href="depth.html">-depth</a><span class="rvts6"> indicate the region in the simulation domain over which the sum of a variable is taken. The exact formula of the sum depends on the variable. Following types are available:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts11">Simple sum</span></p>
@@ -214,18 +214,18 @@
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">For the one-dimensional variant, the summed variable is obtained by:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps26"><img alt="" style="width : 250px; height : 53px; padding : 1px;" src="lib/IntegralSum%20-%201D.png"></p>
-<p class="rvps26"><span class="rvts6"><br/></span></p>
-<p class="rvps30"><span class="rvts6"><br/></span></p>
-<p class="rvps30"><span class="rvts6">where </span><span class="rvts66">N</span><span class="rvts87">n</span><span class="rvts6"> is the number of nodes, and </span><span class="rvts66">x</span><span class="rvts6"> is the distance in the unit of the transport problem (U</span><span class="rvts87">L</span><span class="rvts6">). The unit of </span><span class="rvts88">Σ</span><span class="rvts66">var</span><span class="rvts6"> is thus M U</span><span class="rvts87">L</span><span class="rvts6"> / dm³ with M the unit of </span><span class="rvts66">var</span><span class="rvts6">. Note that for example, for a concentration, </span><span class="rvts66">var</span><span class="rvts6"> is concentration times water content.</span></p>
-<p class="rvps26"><span class="rvts6"><br/></span></p>
+<p class="rvps28"><img alt="" style="width : 250px; height : 53px; padding : 1px;" src="lib/IntegralSum%20-%201D.png"></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
+<p class="rvps32"><span class="rvts6"><br/></span></p>
+<p class="rvps32"><span class="rvts6">where </span><span class="rvts66">N</span><span class="rvts87">n</span><span class="rvts6"> is the number of nodes, and </span><span class="rvts66">x</span><span class="rvts6"> is the distance in the unit of the transport problem (U</span><span class="rvts87">L</span><span class="rvts6">). The unit of </span><span class="rvts88">Σ</span><span class="rvts66">var</span><span class="rvts6"> is thus M U</span><span class="rvts87">L</span><span class="rvts6"> / dm³ with M the unit of </span><span class="rvts66">var</span><span class="rvts6">. Note that for example, for a concentration, </span><span class="rvts66">var</span><span class="rvts6"> is concentration times water content.</span></p>
+<p class="rvps28"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The next table shows what summed variable is used for different variables in selected_output. The type for variables defined in </span><a class="rvts57" href="USER_PUNCH.html">user_punch</a><span class="rvts6"> are defined by the user in </span><a class="rvts58" href="integralsum.html">-integralsum</a><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<div class="rvps29">
+<div class="rvps31">
 <table width="800" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 429px;">
@@ -273,7 +273,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Alternatives</span></span></h3>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Alternatives</span></span></h3>
 <p class="rvps4"><span class="rvts60">RT_OUTPUT</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>

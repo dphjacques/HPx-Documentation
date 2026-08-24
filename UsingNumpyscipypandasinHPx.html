@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 10.2.0.196">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Using Numpy, scipy, pandas in HPx</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Using Numpy, scipy, pandas in HPx">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Using Numpy, scipy, pandas in HPx" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="HPx" /> 
+
+  <!-- Bootstrap CSS -->
+  <link href="vendors/bootstrap-5.3.7/bootstrap.min.css" rel="stylesheet"/>
+  <link href="vendors/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet"/>
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>HPx</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="bi bi-x" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="nav-item tab">
+            <a href="#contents" id="tab-contents" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#contents" aria-controls="contents" aria-selected="true">
+                <i class="bi bi-list-ul"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#index" id="tab-index" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#index" aria-controls="index" aria-selected="false">
+                <i class="bi bi-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="nav-item tab">
+            <a href="#search" id="tab-search" class="nav-link" role="tab" data-bs-toggle="tab" data-bs-target="#search" aria-controls="search" aria-selected="false">
+                <i class="bi bi-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="bi bi-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="UsingNumpyscipypandasinHPx"
+		  data-hnd-context="403"
+		  data-hnd-title="Using Numpy, scipy, pandas in HPx"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="InputCommandsGeochemistry.html">Input Commands Geochemistry</a></li><li><a href="Scripting.html">Scripting</a></li><li><a href="Python.html">Python</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Python.html" title="Python" role="button"><span class="bi bi-chevron-up" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Using Numpy, scipy, pandas in HPx</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">Example for numpy - similar for scipy, pandas</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">1. Install numpy into a user folder using Anaconda's pip with -- target:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">User folder - for example "Directory for configuration files and programs settings" or "Folder for HPx data"</span></p>
+<p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">see HYDRUS5.x -&gt;Options-&gt;Program Options-&gt;Files and Directories</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6">Here, the first folder is selected ("</span><span class="rvts107">C:\Users\djacques\OneDrive - Studiecentrum voor Kernenergie\Documents\PC-Progress\HYDRUS 5.x\Settings\HP\packages</span><span class="rvts6">")</span></p>
+<p class="rvps42"><span class="rvts6"><br/></span></p>
+<p class="rvps42"><span class="rvts6">Open an Anaconda prompt and run:</span></p>
+<p class="rvps42"><span class="rvts6"><br/></span></p>
+<p class="rvps43"><span class="rvts6">conda activate py38</span></p>
+<p class="rvps43"><span class="rvts6">pip </span><span class="rvts106">install</span><span class="rvts6"> numpy --target </span><span class="rvts107">"C:\Users\djacques\OneDrive - Studiecentrum voor Kernenergie\Documents\PC-Progress\HYDRUS 5.x\Settings\HP\packages"</span></p>
+<p class="rvps43"><span class="rvts107"><br/></span></p>
+<p class="rvps43"><span class="rvts107"><br/></span></p>
+<p class="rvps2"><span class="rvts6">2. Copied all DLLs from numpy\.libs into numpy\core &nbsp;(this can be run from HPx (only once) and also python38.dll</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">import sys</span></p>
+<p class="rvps33"><span class="rvts6">import os</span></p>
+<p class="rvps33"><span class="rvts6">import shutil</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">numpy_core = r"C:\Users\djacques\OneDrive - Studiecentrum voor Kernenergie\Documents\PC-Progress\HYDRUS 5.x\Settings\HP\packages\numpy\core"</span></p>
+<p class="rvps33"><span class="rvts6">numpy_libs = r"C:\Users\djacques\OneDrive - Studiecentrum voor Kernenergie\Documents\PC-Progress\HYDRUS 5.x\Settings\HP\packages\numpy\.libs"</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">for f in os.listdir(numpy_libs):</span></p>
+<p class="rvps33"><span class="rvts6">&nbsp; &nbsp; if f.endswith(".dll"):</span></p>
+<p class="rvps33"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; shutil.copy(os.path.join(numpy_libs, f), numpy_core)</span></p>
+<p class="rvps33"><span class="rvts6">&nbsp; &nbsp; &nbsp; &nbsp; print("Copied:", f)</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">#IUse here the folder where HPx.exe is installed</span></p>
+<p class="rvps33"><span class="rvts6">shutil.copy(r"D:\PC-Progress\HYDRUS 5.06 64-bit\Bin\HPx\Bin\python38.dll", numpy_core) &nbsp;&nbsp;</span></p>
+<p class="rvps33"><span class="rvts6">print("Copied python38.dll")</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">3. Add the package folder to sys.path at the top of the script:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6">import sys</span></p>
+<p class="rvps31"><span class="rvts6">packages_dir = r"C:\Users\djacques\OneDrive - Studiecentrum voor Kernenergie\Documents\PC-Progress\HYDRUS 5.x\Settings\HP\packages"</span></p>
+<p class="rvps31"><span class="rvts6">sys.path.insert(0, packages_dir)</span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6">import numpy as np</span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps31"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The key point is to place all dlls right to the .pyd file (so, Windows find them without problems).</span></p>
+<p class="rvps2"><span class="rvts6">So:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps44"><span class="rvts6">The </span><span class="rvts108">.pyd</span><span class="rvts6"> file that fails is always mentioned in the error message. For numpy, this could be:</span></p>
+<p class="rvps46"><span class="rvts109">_multiarray_umath.cp38-win_amd64.pyd</span></p>
+<p class="rvps44"><span class="rvts6">found in </span><span class="rvts108">numpy\core\</span><span class="rvts6">.</span></p>
+<p class="rvps2"><span class="rvts6">The pattern will be the same:</span></p>
+<p class="rvps44"><span class="rvts6">look at the error message which will say something like:</span></p>
+<p class="rvps45"><img alt="" style="width : 20px; height : 20px;" src="lib/NewItem%204.svg"><img alt="" style="width : 20px; height : 20px;" src="lib/NewItem%203.svg"></p>
+<p class="rvps46"><span class="rvts109">DLL load failed while importing _somemodule</span></p>
+<p class="rvps44"><span class="rvts6"><br/></span></p>
+<p class="rvps44"><span class="rvts6">That </span><span class="rvts108">_somemodule</span><span class="rvts6"> is the name of the </span><span class="rvts108">.pyd</span><span class="rvts6"> file. For example:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps47 noindent"><span class="rvts110">scipy</span><span class="rvts6"> might give </span><span class="rvts108">_fitpack.cp38-win_amd64.pyd</span><span class="rvts6"> in </span><span class="rvts108">scipy\interpolate\</span></li>
+ <li class="rvps48 noindent"><span class="rvts110">pandas</span><span class="rvts6"> might give </span><span class="rvts108">_libs\hashtable.cp38-win_amd64.pyd</span><span class="rvts6"> in </span><span class="rvts108">pandas\_libs\</span></li>
+</ul>
+<p class="rvps44"><span class="rvts6">The general rule is:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps49 noindent"><span class="rvts6">The </span><span class="rvts108">.pyd</span><span class="rvts6"> file has the same name as the failing module in the error</span></li>
+ <li class="rvps50 noindent"><span class="rvts6">It is always in the subfolder matching the import path shown in the stack trace</span></li>
+ <li class="rvps50 noindent"><span class="rvts6">Copy the DLLs from that package's </span><span class="rvts108">.libs</span><span class="rvts6"> folder (e.g. </span><span class="rvts108">scipy\.libs</span><span class="rvts6">) into the same folder as the </span><span class="rvts108">.pyd</span><span class="rvts6"> file</span></li>
+</ol>
+<p class="rvps50"><span class="rvts6"><br/></span></p>
+<p class="rvps50"><span class="rvts6"><br/></span></p>
+<p class="rvps50"><span class="rvts6"><br/></span></p>
+<p class="rvps50"><span class="rvts6"><br/></span></p>
+<p class="rvps50"><span class="rvts6">Acknowledge: Code structure was suggested by Claude.ia (Anthropic (2026). </span><span class="rvts111">Claude Sonnet 4.6</span><span class="rvts6"> [Large language model]. </span><a class="rvts12" href="https://www.anthropic.com">https://www.anthropic.com</a><span class="rvts6">)</span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2025 by Diederik Jacques. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-bs-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-5.3.7/bootstrap.bundle.min.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

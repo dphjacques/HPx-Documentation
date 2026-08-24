@@ -195,12 +195,12 @@
 </table>
 </div>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">Format a string, integer or floating value (second argument) according the format-control string (first argument).</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66">Return value:&nbsp;</span><span class="rvts66"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">string</span></p>
-<p class="rvps31"><span class="rvts66"><br/></span></p>
-<p class="rvps31"><span class="rvts66">Arguments</span></p>
-<div class="rvps31">
+<p class="rvps33"><span class="rvts6">Format a string, integer or floating value (second argument) according the format-control string (first argument).</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66">Return value:&nbsp;</span><span class="rvts66"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts6">string</span></p>
+<p class="rvps33"><span class="rvts66"><br/></span></p>
+<p class="rvps33"><span class="rvts66">Arguments</span></p>
+<div class="rvps33">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
@@ -209,7 +209,7 @@
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 722px;">
    <p class="rvps4"><span class="rvts66">str</span><span class="rvts6">: Format control string with syntax:</span></p>
    <p class="rvps4"><span class="rvts6"><br/></span></p>
-   <p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts114">%[flags][width][.precision][length]specifier</span></p>
+   <p class="rvps2"><span class="rvts6"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts120">%[flags][width][.precision][length]specifier</span></p>
    <p class="rvps2"><span class="rvts6"><br/></span></p>
    <div class="rvps2">
    <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
@@ -357,61 +357,61 @@
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66">Examples</span></p>
-<p class="rvps31"><a name="Example_userprint"></a><span class="rvts6">Print the total moles in the system, the phases (exchange, minerals, solid-solutions) and the aqueous phase of the primary components.</span></p>
-<div class="rvps32">
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66">Examples</span></p>
+<p class="rvps33"><a name="Example_userprint"></a><span class="rvts6">Print the total moles in the system, the phases (exchange, minerals, solid-solutions) and the aqueous phase of the primary components.</span></p>
+<div class="rvps34">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 839px;">
    <p class="rvps2"><span class="rvts60">USER_PRINT</span></p>
    <p class="rvps2"><span class="rvts73">-mybasic</span></p>
    <p class="rvps2"><span class="rvts73">-start</span></p>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts115">&nbsp;</span></span><span class="rvts0"><span class="rvts116"> nmoles = </span></span><span class="rvts0"><span class="rvts118">sys</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">elements</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117">count</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117">names</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117">types</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117">moles</span></span><span class="rvts0"><span class="rvts116">")</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp;&nbsp;</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; </span></span><span class="rvts0"><span class="rvts119">for</span></span><span class="rvts0"><span class="rvts116"> i = 1 </span></span><span class="rvts0"><span class="rvts119">to</span></span><span class="rvts0"><span class="rvts116"> count</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; comp = names(i)</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts119">if</span></span><span class="rvts0"><span class="rvts116">(</span></span><span class="rvts0"><span class="rvts118">string.find</span></span><span class="rvts0"><span class="rvts116">(comp,"(") &lt; 0) </span></span><span class="rvts0"><span class="rvts119">then</span></span><span class="rvts0"><span class="rvts116">&nbsp;</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts118">write</span></span><span class="rvts0"><span class="rvts116">(</span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-5s</span></span><span class="rvts0"><span class="rvts116">",comp) + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-20s</span></span><span class="rvts0"><span class="rvts116">"," </span></span><span class="rvts0"><span class="rvts117">Total &nbsp; (mole) </span></span><span class="rvts0"><span class="rvts116">") + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%18.12e</span></span><span class="rvts0"><span class="rvts116">",</span></span><span class="rvts0"><span class="rvts118">sys</span></span><span class="rvts0"><span class="rvts116">(comp)) + </span></span><span class="rvts0"><span class="rvts118">eol</span></span><span class="rvts0"><span class="rvts116">)</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts118">write</span></span><span class="rvts0"><span class="rvts116">(</span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-5s</span></span><span class="rvts0"><span class="rvts116">",comp) + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-20s</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117"> Aqueous (mole) </span></span><span class="rvts0"><span class="rvts116">") + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%18.12e</span></span><span class="rvts0"><span class="rvts116">",</span></span><span class="rvts0"><span class="rvts118">totmole</span></span><span class="rvts0"><span class="rvts116">(comp)) + </span></span><span class="rvts0"><span class="rvts118">eol</span></span><span class="rvts0"><span class="rvts116">)</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts118">write</span></span><span class="rvts0"><span class="rvts116">(</span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-5s</span></span><span class="rvts0"><span class="rvts116">",comp) + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%-20s</span></span><span class="rvts0"><span class="rvts116">","</span></span><span class="rvts0"><span class="rvts117"> Solid &nbsp; (mole)</span></span><span class="rvts0"><span class="rvts116"> ") + </span></span><span class="rvts0"><span class="rvts118">string.format</span></span><span class="rvts0"><span class="rvts116">("</span></span><span class="rvts0"><span class="rvts117">%18.12e</span></span><span class="rvts0"><span class="rvts116">",</span></span><span class="rvts0"><span class="rvts118">sys</span></span><span class="rvts0"><span class="rvts116">(comp)-</span></span><span class="rvts0"><span class="rvts118">totmole</span></span><span class="rvts0"><span class="rvts116">(comp)) + </span></span><span class="rvts0"><span class="rvts118">eol</span></span><span class="rvts0"><span class="rvts116">)</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts119">endif</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts116">&nbsp; </span></span><span class="rvts0"><span class="rvts119">next</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts121">&nbsp;</span></span><span class="rvts0"><span class="rvts122"> nmoles = </span></span><span class="rvts0"><span class="rvts124">sys</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">elements</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123">count</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123">names</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123">types</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123">moles</span></span><span class="rvts0"><span class="rvts122">")</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp;&nbsp;</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; </span></span><span class="rvts0"><span class="rvts125">for</span></span><span class="rvts0"><span class="rvts122"> i = 1 </span></span><span class="rvts0"><span class="rvts125">to</span></span><span class="rvts0"><span class="rvts122"> count</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; comp = names(i)</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts125">if</span></span><span class="rvts0"><span class="rvts122">(</span></span><span class="rvts0"><span class="rvts124">string.find</span></span><span class="rvts0"><span class="rvts122">(comp,"(") &lt; 0) </span></span><span class="rvts0"><span class="rvts125">then</span></span><span class="rvts0"><span class="rvts122">&nbsp;</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts124">write</span></span><span class="rvts0"><span class="rvts122">(</span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-5s</span></span><span class="rvts0"><span class="rvts122">",comp) + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-20s</span></span><span class="rvts0"><span class="rvts122">"," </span></span><span class="rvts0"><span class="rvts123">Total &nbsp; (mole) </span></span><span class="rvts0"><span class="rvts122">") + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%18.12e</span></span><span class="rvts0"><span class="rvts122">",</span></span><span class="rvts0"><span class="rvts124">sys</span></span><span class="rvts0"><span class="rvts122">(comp)) + </span></span><span class="rvts0"><span class="rvts124">eol</span></span><span class="rvts0"><span class="rvts122">)</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts124">write</span></span><span class="rvts0"><span class="rvts122">(</span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-5s</span></span><span class="rvts0"><span class="rvts122">",comp) + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-20s</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123"> Aqueous (mole) </span></span><span class="rvts0"><span class="rvts122">") + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%18.12e</span></span><span class="rvts0"><span class="rvts122">",</span></span><span class="rvts0"><span class="rvts124">totmole</span></span><span class="rvts0"><span class="rvts122">(comp)) + </span></span><span class="rvts0"><span class="rvts124">eol</span></span><span class="rvts0"><span class="rvts122">)</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts124">write</span></span><span class="rvts0"><span class="rvts122">(</span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-5s</span></span><span class="rvts0"><span class="rvts122">",comp) + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%-20s</span></span><span class="rvts0"><span class="rvts122">","</span></span><span class="rvts0"><span class="rvts123"> Solid &nbsp; (mole)</span></span><span class="rvts0"><span class="rvts122"> ") + </span></span><span class="rvts0"><span class="rvts124">string.format</span></span><span class="rvts0"><span class="rvts122">("</span></span><span class="rvts0"><span class="rvts123">%18.12e</span></span><span class="rvts0"><span class="rvts122">",</span></span><span class="rvts0"><span class="rvts124">sys</span></span><span class="rvts0"><span class="rvts122">(comp)-</span></span><span class="rvts0"><span class="rvts124">totmole</span></span><span class="rvts0"><span class="rvts122">(comp)) + </span></span><span class="rvts0"><span class="rvts124">eol</span></span><span class="rvts0"><span class="rvts122">)</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; &nbsp; &nbsp;</span></span><span class="rvts0"><span class="rvts125">endif</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts122">&nbsp; </span></span><span class="rvts0"><span class="rvts125">next</span></span></h1>
    <p class="rvps2"><span class="rvts73">-end</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">In a system with H, O, Ca, and Si, the user_print block in the output file is, for example,</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<div class="rvps32">
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">In a system with H, O, Ca, and Si, the user_print block in the output file is, for example,</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<div class="rvps34">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 839px;">
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts121">----------------------------------User print-----------------------------------</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120"><br/></span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">H &nbsp; &nbsp; Total &nbsp; (mole) &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts117">5.852226105076e+01.</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">H &nbsp; &nbsp; Aqueous (mole) &nbsp; &nbsp; 5.552766913095e+01</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">H &nbsp; &nbsp; Solid &nbsp; (mole) &nbsp; &nbsp; 2.994591919807e+00</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">O &nbsp; &nbsp; Total &nbsp; (mole) &nbsp; &nbsp; 3.100037832923e+01</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">O &nbsp; &nbsp; Aqueous (mole) &nbsp; &nbsp; 2.777352864120e+01</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">O &nbsp; &nbsp; Solid &nbsp; (mole) &nbsp; &nbsp; 3.226849688032e+00</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Ca &nbsp; &nbsp;Total &nbsp; (mole) &nbsp; &nbsp; 1.119218076064e+00</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Ca &nbsp; &nbsp;Aqueous (mole) &nbsp; &nbsp; 9.662913359766e-03</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Ca &nbsp; &nbsp;Solid &nbsp; (mole) &nbsp; &nbsp; 1.109555162705e+00</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Si &nbsp; &nbsp;Total &nbsp; (mole) &nbsp; &nbsp; 3.100148638994e-01</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Si &nbsp; &nbsp;Aqueous (mole) &nbsp; &nbsp; 1.558118753008e-05</span></span></h1>
-   <h1 class="rvps43"><span class="rvts0"><span class="rvts120">Si &nbsp; &nbsp;Solid &nbsp; (mole) &nbsp; &nbsp; 3.099992827118e-01</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts127">----------------------------------User print-----------------------------------</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126"><br/></span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">H &nbsp; &nbsp; Total &nbsp; (mole) &nbsp; &nbsp; </span></span><span class="rvts0"><span class="rvts123">5.852226105076e+01.</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">H &nbsp; &nbsp; Aqueous (mole) &nbsp; &nbsp; 5.552766913095e+01</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">H &nbsp; &nbsp; Solid &nbsp; (mole) &nbsp; &nbsp; 2.994591919807e+00</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">O &nbsp; &nbsp; Total &nbsp; (mole) &nbsp; &nbsp; 3.100037832923e+01</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">O &nbsp; &nbsp; Aqueous (mole) &nbsp; &nbsp; 2.777352864120e+01</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">O &nbsp; &nbsp; Solid &nbsp; (mole) &nbsp; &nbsp; 3.226849688032e+00</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Ca &nbsp; &nbsp;Total &nbsp; (mole) &nbsp; &nbsp; 1.119218076064e+00</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Ca &nbsp; &nbsp;Aqueous (mole) &nbsp; &nbsp; 9.662913359766e-03</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Ca &nbsp; &nbsp;Solid &nbsp; (mole) &nbsp; &nbsp; 1.109555162705e+00</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Si &nbsp; &nbsp;Total &nbsp; (mole) &nbsp; &nbsp; 3.100148638994e-01</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Si &nbsp; &nbsp;Aqueous (mole) &nbsp; &nbsp; 1.558118753008e-05</span></span></h1>
+   <h1 class="rvps54"><span class="rvts0"><span class="rvts126">Si &nbsp; &nbsp;Solid &nbsp; (mole) &nbsp; &nbsp; 3.099992827118e-01</span></span></h1>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66"><br/></span></p>
-<p class="rvps31"><span class="rvts6"></span><span class="rvts6"></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66"><br/></span></p>
+<p class="rvps33"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>
             

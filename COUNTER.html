@@ -180,11 +180,11 @@
 
             <div class="main-content">
                 
-<p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts6"> defines a special kind of inline variable. When used in the input files, the value of the inline variable is adapted after replacement depending on the type, incremental value (see </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">) and the action (see </span><a class="rvts21" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">),&nbsp;</span></p>
+<p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts6"> defines a special kind of inline variable. When used in the input files, the value of the inline variable is adapted after replacement depending on the type, incremental value (see </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">) and the action (see </span><a class="rvts12" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">),&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts38">Counter defined as a variable</span></p>
-<p class="rvps2"><span class="rvts6">The primary use of </span><span class="rvts60">counter</span><span class="rvts6"> is to define the name of the start value and its initial value. When used as an inline variable in the input file (@ followed by the name of the </span><span class="rvts60">counter</span><span class="rvts6">), the current value of the </span><span class="rvts60">counter</span><span class="rvts6"> is included, and the value is changed by an incremental value (default is adding a value of 1, the value can be redefined by </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">, the operand by the symbol following @ (</span><a class="rvts21" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">)).</span></p>
+<p class="rvps2"><span class="rvts6">The primary use of </span><span class="rvts60">counter</span><span class="rvts6"> is to define the name of the start value and its initial value. When used as an inline variable in the input file (@ followed by the name of the </span><span class="rvts60">counter</span><span class="rvts6">), the current value of the </span><span class="rvts60">counter</span><span class="rvts6"> is included, and the value is changed by an incremental value (default is adding a value of 1, the value can be redefined by </span><a class="rvts57" href="COUNTERINCR.html">COUNTERINCR</a><span class="rvts6">, the operand by the symbol following @ (</span><a class="rvts12" href="Inlinevariables1.html">Inline Variable</a><span class="rvts6">)).</span></p>
 <p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts6"> also resets the value back to its start value when the name starts with &amp;.</span></p>
 <p class="rvps2"><span class="rvts6">Optionally, the end value of a counter can be defined as well. This value can be used to create plots when </span><a class="rvts57" href="SELECTED_GRAPH.html">selected_graph</a><span class="rvts6"> is used.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -207,7 +207,7 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">In that case, the counter keeps its actual value (no increment by the value of 1).</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Definition</span></span></h3>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Definition</span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts69">#Define a counter by a variable name - it can be linked to a COUNTERINCR statement to define the incremental value.</span></p>
 <p class="rvps2"><span class="rvts60">counteR </span><span class="rvts74">&lt;:txt:name&gt; &lt;flt:start_value&gt; [&lt;flt:end_value&gt;]</span></p>
@@ -219,7 +219,7 @@
 <p class="rvps2"><span class="rvts60">COUNTER</span><span class="rvts74"> </span><span class="rvts73">file</span><span class="rvts74"> &lt;txt:file name&gt; &lt;:str:file&gt;&nbsp;</span><span class="rvts74"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts74">[&lt;int:start_value&gt;]</span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
 <p class="rvps4"><span class="rvts6"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts54">Explanation</span></span></h3>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts54">Explanation</span></span></h3>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps4">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
@@ -267,7 +267,7 @@
    <p class="rvps2"><span class="rvts6">exp</span></p>
   </td>
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 822px;">
-   <p class="rvps2"><span class="rvts6">Inline expression for calculating the start value - see "</span><span class="rvts21">Definition of inline variables</span><span class="rvts6">" and "</span><a class="rvts21" href="Examplesofinlinedefinitionanduse.html">Examples of inline definition and use</a><span class="rvts6">"</span></p>
+   <p class="rvps2"><span class="rvts6">Inline expression for calculating the start value - see "</span><span class="rvts12">Definition of inline variables</span><span class="rvts6">" and "</span><a class="rvts12" href="Examplesofinlinedefinitionanduse.html">Examples of inline definition and use</a><span class="rvts6">"</span></p>
   </td>
  </tr>
  <tr style="vertical-align: top;">

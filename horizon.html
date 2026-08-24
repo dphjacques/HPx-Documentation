@@ -182,15 +182,15 @@
                 
 <p class="rvps2"><span class="rvts73">-horizon</span><span class="rvts74"> &lt;ints:list of numbers&gt; &lt;str:name&gt; [t &lt;int:mult&gt;] &nbsp;[&lt;ints:list of numbers&gt; &lt;str:name&gt; [t &lt;int:mult&gt;]]</span></p>
 <p class="rvps2"><span class="rvts73">-horizon</span><span class="rvts74"> t &lt;int:mult&gt; &lt;ints:list of numbers&gt; &lt;str:name&gt; [&lt;ints:list of numbers&gt; &lt;str:name&gt;]</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">Identifies specific horizons or groups of horizons over which a sum of a variable will be taken. A horizon refers to nodes with the same material number as defined in the HYDRUS graphical user interface.</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">The</span><a class="rvts21" href="REACTIVE_TRANSPORT_OUTPUT.html#typeofsum"> type of sum</a><span class="rvts6"> depends on the variable - &nbsp;see </span><a class="rvts57" href="REACTIVE_TRANSPORT_OUTPUT.html">REACTIVE_TRANSPORT_OUTPUT</a><span class="rvts6"> for variables defined with </span><a class="rvts57" href="SELECTED_OUTPUT.html">SELECTED_OUTPUT</a><span class="rvts6"> and</span><a class="rvts58" href="integralsum.html"> -integralsum</a><span class="rvts6"> for variables defined with</span><a class="rvts57" href="USER_PUNCH.html"> USER_PUNCH</a><span class="rvts6">.</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66"><br/></span></p>
-<div class="rvps31">
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">Identifies specific horizons or groups of horizons over which a sum of a variable will be taken. A horizon refers to nodes with the same material number as defined in the HYDRUS graphical user interface.</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">The</span><a class="rvts12" href="REACTIVE_TRANSPORT_OUTPUT.html#typeofsum"> type of sum</a><span class="rvts6"> depends on the variable - &nbsp;see </span><a class="rvts57" href="REACTIVE_TRANSPORT_OUTPUT.html">REACTIVE_TRANSPORT_OUTPUT</a><span class="rvts6"> for variables defined with </span><a class="rvts57" href="SELECTED_OUTPUT.html">SELECTED_OUTPUT</a><span class="rvts6"> and</span><a class="rvts58" href="integralsum.html"> -integralsum</a><span class="rvts6"> for variables defined with</span><a class="rvts57" href="USER_PUNCH.html"> USER_PUNCH</a><span class="rvts6">.</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66"><br/></span></p>
+<div class="rvps33">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px; width: 164px;">
@@ -227,26 +227,26 @@
  </tr>
 </table>
 </div>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts11">Example</span></p>
-<p class="rvps31"><span class="rvts11"><br/></span></p>
-<p class="rvps31"><span class="rvts6">In first option, different can be defined each with a different print interval. In the second option, all groups will have the same print interval.</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66">Option 1</span></p>
-<p class="rvps31"><span class="rvts66"><br/></span></p>
-<p class="rvps31"><span class="rvts73">-horizon</span><span class="rvts6"> </span><span class="rvts61">1-2 "Top" t 10 5 "Contamination" t 1</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">Two groups are defined. The first group named Top contains the nodes with a material number 1 and 2 and will be printed at regular print intervals with a frequency 10 times less that the print interval defined in the </span><span class="rvts11">Print Information</span><span class="rvts6"> dialogue window of the graphical user interface. The second group named Contamination contains the nodes with a material number 5 and will be printed at each regular print interval as defined in the </span><span class="rvts11">Print Information</span><span class="rvts6"> dialogue window of the graphical user interface.</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts66">Option 2</span></p>
-<p class="rvps31"><span class="rvts66"><br/></span></p>
-<p class="rvps31"><span class="rvts73">-horizon</span><span class="rvts6"> </span><span class="rvts61">t 1 1 "Ap"</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6">The first horizon (i.e. the nodes with the same material number) is integrated at each regular print interval as defined in the Print Information dialogue window of the graphical user interface.</span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts6"><br/></span></p>
-<p class="rvps31"><span class="rvts11">Alternatives</span><span class="rvts6"> </span><span class="rvts73">horizons</span><span class="rvts6">, </span><span class="rvts73">hor</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts11">Example</span></p>
+<p class="rvps33"><span class="rvts11"><br/></span></p>
+<p class="rvps33"><span class="rvts6">In first option, different can be defined each with a different print interval. In the second option, all groups will have the same print interval.</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66">Option 1</span></p>
+<p class="rvps33"><span class="rvts66"><br/></span></p>
+<p class="rvps33"><span class="rvts73">-horizon</span><span class="rvts6"> </span><span class="rvts61">1-2 "Top" t 10 5 "Contamination" t 1</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">Two groups are defined. The first group named Top contains the nodes with a material number 1 and 2 and will be printed at regular print intervals with a frequency 10 times less that the print interval defined in the </span><span class="rvts11">Print Information</span><span class="rvts6"> dialogue window of the graphical user interface. The second group named Contamination contains the nodes with a material number 5 and will be printed at each regular print interval as defined in the </span><span class="rvts11">Print Information</span><span class="rvts6"> dialogue window of the graphical user interface.</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts66">Option 2</span></p>
+<p class="rvps33"><span class="rvts66"><br/></span></p>
+<p class="rvps33"><span class="rvts73">-horizon</span><span class="rvts6"> </span><span class="rvts61">t 1 1 "Ap"</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6">The first horizon (i.e. the nodes with the same material number) is integrated at each regular print interval as defined in the Print Information dialogue window of the graphical user interface.</span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts6"><br/></span></p>
+<p class="rvps33"><span class="rvts11">Alternatives</span><span class="rvts6"> </span><span class="rvts73">horizons</span><span class="rvts6">, </span><span class="rvts73">hor</span></p>
 <p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
 
             </div>

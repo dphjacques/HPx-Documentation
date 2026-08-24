@@ -184,11 +184,11 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><img alt="" style="padding : 1px;" src="lib/Carman-Kozeny.gif"></p>
 <p class="rvps2"><span class="rvts6">where</span></p>
-<div class="rvps44">
+<div class="rvps55">
 <table width="100%" style="border-width: 0px; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="padding: 1px; width: 110px;">
-   <p class="rvps2"><span class="rvts180">K</span></p>
+   <p class="rvps2"><span class="rvts196">K</span></p>
   </td>
   <td style="padding: 1px; width: 953px;">
    <p class="rvps2"><span class="rvts6">modified hydraulic conductivity (L/T)</span></p>
@@ -220,7 +220,7 @@
  </tr>
 </table>
 </div>
-<p class="rvps44"><span class="rvts72"><br/></span></p>
+<p class="rvps55"><span class="rvts72"><br/></span></p>
 <p class="rvps2"><span class="rvts72"><br/></span></p>
 <p class="rvps2"><span class="rvts72">The scaling factor of the hydraulic conductivity is thus obtained as:</span></p>
 <p class="rvps2"><span class="rvts72"><br/></span></p>
@@ -230,7 +230,7 @@
 <p class="rvps2"><span class="rvts72">The script hereafter calculates the scaling factor assuming that there is a script that calculates the porosity (</span><span class="rvts68">calc_value</span><span class="rvts61">("calc_porosity")</span><span class="rvts72">):</span></p>
 <p class="rvps2"><span class="rvts72"><br/></span></p>
 <p class="rvps2"><span class="rvts72"><br/></span></p>
-<div class="rvps32">
+<div class="rvps34">
 <table width="100%" style="border-color: #000000; border-style: solid; border-width: 1px; background-color: #e6e4e3; border-spacing: 2px;">
  <tr style="vertical-align: top;">
   <td style="border-width : 1px; border-color: #000000; border-style: solid; padding: 1px;">
@@ -240,39 +240,39 @@
    <p class="rvps4"><span class="rvts73">-state initial</span></p>
    <p class="rvps4"><span class="rvts73">-mybasic</span></p>
    <p class="rvps4"><span class="rvts73">-start</span></p>
-   <p class="rvps29"><span class="rvts61">porosity0 = </span><span class="rvts68">calc_value</span><span class="rvts61">("calc_porosity")</span></p>
-   <p class="rvps29"><span class="rvts61">a = ((1-porosity0)^2 / porosity0^3)</span></p>
-   <p class="rvps29"><span class="rvts68">put_node</span><span class="rvts61">("IniFactor",a)</span></p>
-   <p class="rvps29"><span class="rvts68">change_por(</span><span class="rvts61">porosiy)</span></p>
-   <p class="rvps29"><span class="rvts68">change_por0</span><span class="rvts61">(porosity)</span></p>
+   <p class="rvps31"><span class="rvts61">porosity0 = </span><span class="rvts68">calc_value</span><span class="rvts61">("calc_porosity")</span></p>
+   <p class="rvps31"><span class="rvts61">a = ((1-porosity0)^2 / porosity0^3)</span></p>
+   <p class="rvps31"><span class="rvts68">put_node</span><span class="rvts61">("IniFactor",a)</span></p>
+   <p class="rvps31"><span class="rvts68">change_por(</span><span class="rvts61">porosiy)</span></p>
+   <p class="rvps31"><span class="rvts68">change_por0</span><span class="rvts61">(porosity)</span></p>
    <p class="rvps4"><span class="rvts73">-end</span></p>
    <p class="rvps4"><span class="rvts61"><br/></span></p>
    <p class="rvps4"><span class="rvts61">calc_update</span></p>
    <p class="rvps4"><span class="rvts73">-state update</span></p>
    <p class="rvps4"><span class="rvts73">-mybasic</span></p>
    <p class="rvps4"><span class="rvts73">-start</span></p>
-   <p class="rvps29"><span class="rvts61">porosity = </span><span class="rvts68">calc_value</span><span class="rvts61">("calc_porosity")</span></p>
-   <p class="rvps29"><span class="rvts61">scale = (porosity^3 / (1-porosity)^2) * </span><span class="rvts68">get_node</span><span class="rvts61">("IniFactor")</span></p>
-   <p class="rvps29"><span class="rvts68">change_sfcond</span><span class="rvts61">(scale)</span></p>
+   <p class="rvps31"><span class="rvts61">porosity = </span><span class="rvts68">calc_value</span><span class="rvts61">("calc_porosity")</span></p>
+   <p class="rvps31"><span class="rvts61">scale = (porosity^3 / (1-porosity)^2) * </span><span class="rvts68">get_node</span><span class="rvts61">("IniFactor")</span></p>
+   <p class="rvps31"><span class="rvts68">change_sfcond</span><span class="rvts61">(scale)</span></p>
    <p class="rvps4"><span class="rvts73">-end</span></p>
   </td>
  </tr>
 </table>
 </div>
-<p class="rvps32"><span class="rvts6"><br/></span></p>
-<p class="rvps32"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><span class="rvts6"><br/></span></p>
+<p class="rvps34"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts72"><br/></span></p>
-<h3 class="rvps24"><span class="rvts0"><span class="rvts215">See also</span></span></h3>
-<p class="rvps2"><span class="rvts184"><br/></span></p>
-<p class="rvps4"><span class="rvts183">Keywords, identifiers, scripting</span></p>
-<p class="rvps4"><span class="rvts183"><br/></span></p>
-<p class="rvps4"><span class="rvts183">How To...</span></p>
-<p class="rvps4"><span class="rvts183"><br/></span></p>
-<p class="rvps4"><span class="rvts183"><br/></span></p>
-<p class="rvps4"><span class="rvts183">Examples</span></p>
-<p class="rvps30"><span class="rvts184">&nbsp;</span></p>
-<p class="rvps2"><span class="rvts214"><br/></span></p>
-<p class="rvps2"><span class="rvts214"></span><span class="rvts6"></span></p>
+<h3 class="rvps26"><span class="rvts0"><span class="rvts231">See also</span></span></h3>
+<p class="rvps2"><span class="rvts200"><br/></span></p>
+<p class="rvps4"><span class="rvts199">Keywords, identifiers, scripting</span></p>
+<p class="rvps4"><span class="rvts199"><br/></span></p>
+<p class="rvps4"><span class="rvts199">How To...</span></p>
+<p class="rvps4"><span class="rvts199"><br/></span></p>
+<p class="rvps4"><span class="rvts199"><br/></span></p>
+<p class="rvps4"><span class="rvts199">Examples</span></p>
+<p class="rvps32"><span class="rvts200">&nbsp;</span></p>
+<p class="rvps2"><span class="rvts230"><br/></span></p>
+<p class="rvps2"><span class="rvts230"></span><span class="rvts6"></span></p>
 
             </div>
             
